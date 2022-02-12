@@ -6,7 +6,7 @@
 
 # 演示视频
 [https://youtu.be/Xgfu8oSjUUs](https://youtu.be/Xgfu8oSjUUs)  
-[![Foo](img/vmd_retargeting_demo.thumb.01.resize.jpg)](https://youtu.be/Xgfu8oSjUUs)  
+[![](img/vmd_retargeting_demo.thumb.01.resize.jpg)](https://youtu.be/Xgfu8oSjUUs)  
 
 # 功能
 * 导入vmd文件，无须mmd模型
