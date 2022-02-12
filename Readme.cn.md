@@ -5,7 +5,8 @@
 ![full](img/addon_screen_ful.jpg)
 
 # 演示视频
-[https://www.youtube.com/watch?v=Xgfu8oSjUUs](https://www.youtube.com/watch?v=Xgfu8oSjUUs)
+[https://youtu.be/Xgfu8oSjUUs](https://youtu.be/Xgfu8oSjUUs)  
+[![Foo](img/vmd_retargeting_demo.thumb.01.resize.jpg)](https://youtu.be/Xgfu8oSjUUs)  
 
 # 功能
 * 导入vmd文件，无须mmd模型
