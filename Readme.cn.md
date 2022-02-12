@@ -4,6 +4,9 @@
 ![basic](img/addon_screen_basic.jpg) 
 ![full](img/addon_screen_ful.jpg)
 
+# 演示视频
+[https://www.youtube.com/watch?v=Xgfu8oSjUUs](https://www.youtube.com/watch?v=Xgfu8oSjUUs)
+
 # 功能
 * 导入vmd文件，无须mmd模型
 * 或，从已经导入的mmd模型上转换动作数据
