@@ -9,6 +9,9 @@ This blender addon will import motion from mmd's .vmd file onto Daz or CC3 model
 ![basic](img/addon_screen_basic.jpg) 
 ![full](img/addon_screen_ful.jpg)
 
+# Demo Video
+[https://www.youtube.com/watch?v=Xgfu8oSjUUs](https://www.youtube.com/watch?v=Xgfu8oSjUUs)
+
 # Feature
 * Import motion from vmd file without a mmd model
 * Or retarget body motion from a mmd model.
