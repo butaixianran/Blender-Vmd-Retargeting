@@ -1,16 +1,16 @@
 # Info
-## Language
+### Language
 [中文](Readme.cn.md)  
 [日本語](Readme.jp.md)
 
-## Download
+### Download
 [https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)
 
-## Github
+### Github
 This github repo is for issues and translation.  
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
-## Version
+### Version
 1.0
 
 # Blender Addon: Vmd Retargeting
