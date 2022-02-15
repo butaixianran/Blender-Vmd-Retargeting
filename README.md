@@ -1,10 +1,16 @@
 # Language
 [中文](Readme.cn.md)  
-
-[日本語](Readme.jp.md)
+[日本語](Readme.jp.md)  
 
 # Download
 Will be in blender market soon
+
+# Github Page
+This github repo is for issues and translation.
+[https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
+
+# Version
+1.0
 
 # Blender Addon: Vmd Retargeting
 This blender addon will import motion from mmd's .vmd file onto Daz or CC3 models, with or without mmd model.  
