@@ -7,7 +7,7 @@
 [https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)
 
 ## Github
-This github repo is for issues and translation.
+This github repo is for issues and translation.  
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ## Version
