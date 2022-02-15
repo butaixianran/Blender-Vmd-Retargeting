@@ -22,6 +22,7 @@
 * 从本项目指定市场购买。比如，blender官方市场
 * 然后打开blender，安装你获得的.zip文件
 * 在扩展列表中，搜索 "Vmd retargeting" 进行启用  
+* 在工作区域，按下N，显示侧边栏工具面板。在里面选择"Vmd Retarget"面板即可  
 
 如果你不知道怎么给blender安装扩展，请网络搜索："blender 安装扩展"了解详情。
 
