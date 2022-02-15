@@ -84,7 +84,7 @@ It is pretty simple:
 * Select a vmd file
 * Select your model type(CC3 or Daz)
 * Check which part you'd like to import
-* Click "Vmd Retarget", done.
+* Click "Execute", done.
 
 Each part will be an action wraped into a strip on a track, in NLA(Nonlinear Animation).  
 So, it won't mess up your timeline, and you can move or delete them like clips.
