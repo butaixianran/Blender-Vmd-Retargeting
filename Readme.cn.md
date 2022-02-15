@@ -75,7 +75,7 @@ Diffeomorphic的daz importer强大而复杂。但这里只需要点击几个按�
 * 选择vmd文件
 * 选择人模类型(CC3 or Daz)
 * 勾选要导入的部分
-* 点击 "Vmd Retarget", 完成.
+* 点击 "Execute", 完成.
 
 每个部分，都会导入为一个action，并包装为一个strip，放到一条新轨道上。可在NLA(Nonlinear Animation)中查看  
 
