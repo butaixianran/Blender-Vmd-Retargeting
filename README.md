@@ -38,8 +38,7 @@ This blender addon will import motion from mmd's .vmd file onto Daz or CC3 model
 * Set camera height offset or rotation rate if needed  
 
 # Install
-* Buy it at blender official market website.
-* Then install the .zip file you get from online shop.  
+* Install the .zip file you get from online shop.  
 * Search "Vmd retargeting" in your addon list and enable it.  
 * In viewport, press "N" to display tool panels, select "Vmd Retarget" panel  
 
