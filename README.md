@@ -6,6 +6,9 @@
 ### Download
 [https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)
 
+### Blender Forum:
+https://blenderartists.org/t/addon-retarget-mmds-vmd-motion-to-daz-or-cc3/1361902
+
 ### Github
 This github repo is for issues and translation.  
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
