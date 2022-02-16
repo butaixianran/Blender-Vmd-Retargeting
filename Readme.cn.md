@@ -1,3 +1,13 @@
+# Blender扩展: Vmd Retargeting
+本扩展能够导入mmd的vmd数据到Daz或CC3模型而无须mmd模型，或通过mmd模型转换动作。  
+
+![basic](img/addon_screen_basic.jpg) 
+![full](img/addon_screen_ful.jpg)
+
+# 演示视频
+[https://youtu.be/Xgfu8oSjUUs](https://youtu.be/Xgfu8oSjUUs)  
+[![](img/vmd_retargeting_demo.thumb.01.resize.jpg)](https://youtu.be/Xgfu8oSjUUs)  
+
 # 基本信息
 ### 下载
 [https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)
@@ -11,16 +21,6 @@ github项目池用于交流反馈和多语言翻译
 
 ### 版本
 1.0
-
-# Blender扩展: Vmd Retargeting
-本扩展能够导入mmd的vmd数据到Daz或CC3模型而无须mmd模型，或通过mmd模型转换动作。  
-
-![basic](img/addon_screen_basic.jpg) 
-![full](img/addon_screen_ful.jpg)
-
-# 演示视频
-[https://youtu.be/Xgfu8oSjUUs](https://youtu.be/Xgfu8oSjUUs)  
-[![](img/vmd_retargeting_demo.thumb.01.resize.jpg)](https://youtu.be/Xgfu8oSjUUs)  
 
 # 功能
 * 导入vmd文件，无须mmd模型
