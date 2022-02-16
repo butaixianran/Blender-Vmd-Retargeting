@@ -1,3 +1,13 @@
+# Blender Addon: Vmd Retargeting
+This blender addon will import motion from mmd's .vmd file onto Daz or CC3 models, with or without mmd model.  
+
+![basic](img/addon_screen_basic.jpg) 
+![full](img/addon_screen_ful.jpg)
+
+# Demo Video
+[https://youtu.be/Xgfu8oSjUUs](https://youtu.be/Xgfu8oSjUUs)  
+[![](img/vmd_retargeting_demo.thumb.01.resize.jpg)](https://youtu.be/Xgfu8oSjUUs)  
+
 # Info
 ### Language
 [中文](Readme.cn.md)  
@@ -15,17 +25,6 @@ This github repo is for issues and translation.
 
 ### Version
 1.0
-
-# Blender Addon: Vmd Retargeting
-This blender addon will import motion from mmd's .vmd file onto Daz or CC3 models, with or without mmd model.  
-
-![basic](img/addon_screen_basic.jpg) 
-![full](img/addon_screen_ful.jpg)
-
-# Demo Video
-[https://youtu.be/Xgfu8oSjUUs](https://youtu.be/Xgfu8oSjUUs)  
-[![](img/vmd_retargeting_demo.thumb.01.resize.jpg)](https://youtu.be/Xgfu8oSjUUs)  
-
 
 # Feature
 * Import motion from vmd file without a mmd model
