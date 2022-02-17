@@ -2,7 +2,9 @@
 本扩展能够导入mmd的vmd数据到Daz或CC3模型而无须mmd模型，或通过mmd模型转换动作。  
 
 ![basic](img/addon_screen_basic.jpg) 
-![full](img/addon_screen_ful.jpg)
+![full](img/addon_screen_ful.jpg)  
+中文界面  
+![cn](img/addon_screen_cn.jpg)  
 
 # 演示视频
 [https://youtu.be/Xgfu8oSjUUs](https://youtu.be/Xgfu8oSjUUs)  
