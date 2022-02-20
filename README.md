@@ -169,6 +169,7 @@ And it doesn't need an IK bone on Daz/CC3 model.
 
 **There is a video tutorial for this:**   
 [https://youtu.be/rttA3v_5S2I](https://youtu.be/rttA3v_5S2I)  
+[![](img/convert_motion_from_mmd_model_to_daz_tutorial-resiez.jpg)](https://youtu.be/rttA3v_5S2I)  
 
 ### Eyeball/Facial/Viseme
 CC3 doesn't come with viseme morphs, it's a feature for iClone. So, this addon uses facial expression morphs to simulate viseme. It is ok, but won't as good as real viseme morphs, and it won't move teeth.  
