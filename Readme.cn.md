@@ -92,7 +92,7 @@ Diffeomorphic的daz importer强大而复杂。但这里只需要点击几个按�
 * 选择vmd文件
 * 选择人模类型(CC3 or Daz)
 * 勾选要导入的部分
-* 点击 "Execute", 完成.
+* 确保你当前选择的模型是Daz或CC3，点击 "Execute", 完成.
 
 每个部分，都会导入为一个action，并包装为一个strip，放到一条新轨道上。可在NLA(Nonlinear Animation)中查看  
 
@@ -149,18 +149,22 @@ Daz/CC3人模的手长和mmd人模不同。因此，如果mmd人模将手放到�
 [https://github.com/UuuNyaa/blender_mmd_tools](https://github.com/UuuNyaa/blender_mmd_tools)  
 
 **导入mmd模型时，取消勾选骨骼重命名！** 我们使用原日文骨骼名称来映射骨骼。    
-![](img/uncheck_rename_bones.jpg)
+![](img/uncheck_rename_bones.jpg)  
 
-
-然后，导入你的vmd文件，到这个mmd模型上。  
-
-**接着，选择这个模型的骨架作为源。注意，不要选择它的空父亲对象**  
+**然后，用mmd tools导入vmd动作到你的mmd模型，而不是用本扩展。** 方法如下：  
+选中mmd模型，前往`文件菜单->import->vmd file`选择一个vmd文件。  
+现在，mmd模型上，应该有了动作数据。  
+然后，选择你的daz或cc3模型，在本扩展的"Source"(源)部分，使用吸管选择器，选择这个mmd模型的骨架作为源。**注意，不要选择它的空父亲对象**   
 ![](img/mmd_armature.jpg)  
 
+最后，确保当前选择的骨架是Daz或CC3模型，点击"Execute"。  
 
 这样就会转换映射过的骨骼上的每一帧，而不只是关键帧，所以速度会非常慢。  
 
 这种方式，不需要给Daz/CC3添加Ik骨骼  
+
+**我们为此制作了一个单独的视频教程：**  
+[https://youtu.be/rttA3v_5S2I](https://youtu.be/rttA3v_5S2I)  
 
 ### 眼球/表情/口型
 CC3人模没有口型morph，这是iclone的功能。因此，本扩展用表情morph来模拟口型。虽然可用，但不会像真正的口型morph那么好，而且牙齿也不会动。  
