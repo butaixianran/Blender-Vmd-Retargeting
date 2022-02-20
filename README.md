@@ -153,15 +153,22 @@ You need blender mmd tools to import a mmd model into blender:
 ![](img/uncheck_rename_bones.jpg)
 
 
-Then import your vmd motion onto this model.  
+After importing mmd model, then import your vmd motion onto this mmd model **by using mmd tools, not this addon!**   
 
-**Then pick the armature of this mmd model. Not the empty parent!**  
+Which is: select your mmd model, go to `File menu->Import->Vmd file`, and select a vmd file.  
+Now, your mmd model should has a motion on it.   
+
+Then **select your Daz or CC3 model**, use the pick tool of "Source" from this addon's panel, **pick the armature of your mmd model. Not the empty parent!**    
 ![](img/mmd_armature.jpg)  
 
+**Make sure you select your Daz or CC3 model**, then click "Execute".    
 
-It will retargeting every frame of evey mapping bone's final rotation from mmd model, not just key frames, so it will be very slow.  
+It will retargeting every frame of evey mapping bone's final rotation from mmd model, not just key frames, so it will be very slow.   
 
 And it doesn't need an IK bone on Daz/CC3 model.  
+
+**There is a video tutorial for this:**   
+[https://youtu.be/rttA3v_5S2I](https://youtu.be/rttA3v_5S2I)  
 
 ### Eyeball/Facial/Viseme
 CC3 doesn't come with viseme morphs, it's a feature for iClone. So, this addon uses facial expression morphs to simulate viseme. It is ok, but won't as good as real viseme morphs, and it won't move teeth.  
