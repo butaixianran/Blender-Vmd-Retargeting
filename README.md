@@ -24,7 +24,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-1.0
+1.1.1
 
 # Feature
 * Import motion from vmd file without a mmd model
