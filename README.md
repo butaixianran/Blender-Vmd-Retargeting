@@ -206,3 +206,8 @@ So, for these kind of vmd motion, you need retarget body motion from a mmd model
 ## Prop motion
 This addon won't handle that.
 
+# Update Log:
+* When executing with a wrong model type, now shows a message.
+* Arm rotation rate now works when retargeting motion from a mmd model
+    - This is done by using a new way to convert mmd model's upper body motion
+    - 
