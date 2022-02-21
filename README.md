@@ -177,6 +177,8 @@ You can find examples from [https://easings.net/](https://easings.net/)
 
 ![](img/easing.jpg)
 
+If your model's motion is not smooth, you can try set interpolation to "Linear". In some cases, linear is pretty smooth.  
+
 This setting won't affect camera motion. Camera motion is always linear.
 
 ### Camera Rate/ Height Offset
