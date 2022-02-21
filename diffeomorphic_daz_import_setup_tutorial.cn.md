@@ -1,4 +1,4 @@
-# 基本说明
+# Diffeomorphic daz importer 基本说明
 ## 介绍
 把Daz的人模，姿势，场景，灯光等，导入Blender。这是非官方的插件，但是比官方更新的更加勤快，功能也更加强大。   
 
