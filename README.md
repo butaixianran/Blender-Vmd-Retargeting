@@ -17,7 +17,8 @@ This blender addon will import motion from mmd's .vmd file onto Daz or CC3 model
 [https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)
 
 ### Blender Forum
-https://blenderartists.org/t/addon-retarget-mmds-vmd-motion-to-daz-or-cc3/1361902
+[https://blenderartists.org/t/addon-retarget-mmds-vmd-motion-to-daz-or-cc3/1361902](https://blenderartists.org/t/addon-retarget-mmds-vmd-motion-to-daz-or-cc3/1361902)
+
 
 ### Github
 This github repo is for issues and translation.  
@@ -38,7 +39,7 @@ This github repo is for issues and translation.
 
 # Install
 * Install the .zip file you get from online shop.  
-* Search "Vmd retargeting" in your addon list and enable it.  
+* Search "Vmd retargeting" in your addon list and enable it
 * In viewport, press "N" to display tool panels, select "Vmd Retarget" panel  
 
 If you are new to blender and don't know how to install a blender addon, search: "blender install addon" in google.  
@@ -93,7 +94,7 @@ It is pretty simple:
 * Select a vmd file
 * Select your model type(CC3 or Daz)
 * Check which part you'd like to import
-* Click "Execute", done.
+* **Make sure** your active armature is your Daz or CC3 model, Click "Execute", done.
 
 Each part will be an action wraped into a strip on a track, in NLA(Nonlinear Animation).  
 So, it won't mess up your timeline, and you can move or delete them like clips.
@@ -122,17 +123,15 @@ For now, we only do this for: center and groove bone's location.
 #### IK
 CC3 and Daz model don't have IK by default. So this addon creates IK for legs when importing body motion from vmd file.  
 
-No IK is needed when retargeting motion from mmd model.  
+But a problem with Daz/CC3 model is: there is no bending on their knees' rest pose. In that case, IK will come with a IK Pole Bone, to tell knee which direction to point when bending.  
 
+So, Daz/CC3's knees are always pointing to IK Pole bones in front of them. And IK Pole Bones are following rotation of pelvis bone.  
 
-#### Rotation over 180 degree
-MikuMikuDance treats rotation 180 degree and -180 degree as same thing. So, a bone with a rotation key frame 170 degree and another key frame -170 degree, won't rotate 340 degree between them, just 20 degree.  
+That works fine in most cases. But, if legs rotate too much, then IK Pole bones won't work well since they just following pelvis bone.  
 
-For blender, that gonna be a problem.  
+So, in that case, you need to retarget motion from a mmd model. Since mmd model already has the motion on it, your Daz/CC3 model can get legs' final rotation without IK bone.  
 
-This addon handled some cases like this for you, but not all of them. So, if your model get different rotation direction with mmd, you may need to retarget this motion from a mmd model. In that way, addon gonna retarget very frame, not just key frames. So, there is no issue like this.  
-
-
+Check the section: **Pick a mmd model as Source**
 
 #### Arm rotation rate
 Daz/CC3 has different arm length with mmd model. So, if mmd model puts hands on chest, they always poke into body when on Daz/CC3 model.
@@ -148,15 +147,14 @@ You need blender mmd tools to import a mmd model into blender:
 [https://github.com/UuuNyaa/blender_mmd_tools](https://github.com/UuuNyaa/blender_mmd_tools)  
 
 **When importing a mmd model, uncheck rename bones!** We use its japanese bone name to map bones.    
-![](img/uncheck_rename_bones.jpg)
-
+![](img/uncheck_rename_bones.jpg)  
 
 After importing mmd model, then import your vmd motion onto this mmd model **by using mmd tools, not this addon!**   
 
 Which is: select your mmd model, go to `File menu->Import->Vmd file`, and select a vmd file.  
 Now, your mmd model should has a motion on it.   
 
-Then **select your Daz or CC3 model**, use the pick tool of "Source" from this addon's panel, **pick the armature of your mmd model. Not the empty parent!**    
+Then select your Daz or CC3 model, use the pick tool of "Source" from this addon's panel, **pick the armature of your mmd model. Not the empty parent!**    
 ![](img/mmd_armature.jpg)  
 
 **Make sure you select your Daz or CC3 model**, then click "Execute".    
@@ -175,11 +173,11 @@ CC3 doesn't come with viseme morphs, it's a feature for iClone. So, this addon u
 ### Interpolation/Easing:
 You can find examples from [https://easings.net/](https://easings.net/)  
 
-![](img/easing.jpg)
+![](img/easing.jpg)  
 
 If your model's motion is not smooth, you can try set interpolation to "Linear". In some cases, linear is pretty smooth.  
 
-This setting won't affect camera motion. Camera motion is always linear.
+This setting won't affect camera motion. Camera motion is always linear.  
 
 ### Camera Rate/ Height Offset
 Daz/CC3 model has different model size with mmd model. So, camera motion need to be adjusted.  
@@ -206,8 +204,8 @@ So, for these kind of vmd motion, you need retarget body motion from a mmd model
 ## Prop motion
 This addon won't handle that.
 
+
 # Update Log:
 * When executing with a wrong model type, now shows a message.
 * Arm rotation rate now works when retargeting motion from a mmd model
     - This is done by using a new way to convert mmd model's upper body motion
-    - 
