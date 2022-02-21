@@ -3,6 +3,7 @@
 
 ![basic](img/addon_screen_basic.jpg) 
 ![full](img/addon_screen_ful.jpg)  
+
 中文界面  
 ![cn](img/addon_screen_cn.jpg)  
 
@@ -14,8 +15,9 @@
 ### 下载
 [https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)
 
-### Blender 论坛
-https://blenderartists.org/t/addon-retarget-mmds-vmd-motion-to-daz-or-cc3/1361902
+### Blender论坛
+[https://blenderartists.org/t/addon-retarget-mmds-vmd-motion-to-daz-or-cc3/1361902](https://blenderartists.org/t/addon-retarget-mmds-vmd-motion-to-daz-or-cc3/1361902)
+
 
 ### Github
 github项目池用于交流反馈和多语言翻译  
@@ -35,9 +37,8 @@ github项目池用于交流反馈和多语言翻译
 * 设置相机偏移和旋转比例，以解决模型尺寸差异
 
 # 安装
-* 从本项目指定市场购买。比如，blender官方市场
-* 然后打开blender，安装你获得的.zip文件
-* 在扩展列表中，搜索 "Vmd retargeting" 进行启用  
+* 打开blender，安装你获得的.zip文件
+* 在扩展列表中，搜索 "Vmd retargeting" 进行启用
 * 在工作区域，按下N，显示侧边栏工具面板。在里面选择"Vmd Retarget"面板即可  
 
 如果你不知道怎么给blender安装扩展，请网络搜索："blender 安装扩展"了解详情。
@@ -122,22 +123,21 @@ Diffeomorphic的daz importer强大而复杂。但这里只需要点击几个按�
 #### IK
 CC3和Daz模型默认没有IK。因此本扩展在从vmd文件导入身体运动时，会创建IK  
 
-从mmd模型上转换动作数据时，则不需要IK。  
+但是，Daz/CC3人模有个问题：膝盖的默认姿势下完全没有弯曲。于是，就需要有个IK Pole骨骼，来告诉膝盖完全时，该指向哪个方向。  
 
+因此，Daz/CC3的膝盖，会一直指向它们前面的IK Pole骨骼。而IK Pole骨骼会跟随盆骨旋转。  
 
-#### 超过180度的旋转
-MikuMikuDance里，把旋转180度和-180度当作一回事。于是，一个骨骼带有一个旋转170度的关键帧 和 另一个-170度的关键帧，不会在两帧之间旋转340度，而是旋转20度。    
+这个机制在大部分时候工作良好。但是，如果腿部旋转过大，那么，只是跟随盆骨的IK Pole骨骼就不太行了。    
 
-对于Blender，这就是个问题。  
+这种情况下，你需要从一个mmd模型上转换动作数据。因为mmd模型上已经计算过IK了，所以Daz/CC3人模可以直接获取腿部的最终旋转，而无须再创建IK。  
 
-本扩展处理了一部分这种问题，但并没有全部处理。因此，如果你的模型，旋转方向和mmd的不一样，你可能需要通过从mmd模型上转换数据，而不是直接导入vmd文件。这样，本扩展会转换每一帧，而不只是关键帧。因此，就没有这种问题了。  
+请参考： **选择一个mmd模型作为数据源**  
 
 
 #### 手臂旋转比例
 Daz/CC3人模的手长和mmd人模不同。因此，如果mmd人模将手放到胸口，在Daz/CC3人模上手必然就会穿入身体。  
 
 设置前手臂旋转比例为0.8一般能够解决这个问题。  
-
 
 #### 选择一个mmd模型作为数据源
 如果你选择了一个mmd模型作为数据源，本扩展在导入身体运动时，就会忽视你选择的vmd文件，而从你指定的mmd模型上转换身体运动。  
@@ -166,6 +166,7 @@ Daz/CC3人模的手长和mmd人模不同。因此，如果mmd人模将手放到�
 [https://youtu.be/rttA3v_5S2I](https://youtu.be/rttA3v_5S2I)  
 [![](img/convert_motion_from_mmd_model_to_daz_tutorial-resiez.jpg)](https://youtu.be/rttA3v_5S2I)  
 
+
 ### 眼球/表情/口型
 CC3人模没有口型morph，这是iclone的功能。因此，本扩展用表情morph来模拟口型。虽然可用，但不会像真正的口型morph那么好，而且牙齿也不会动。  
 
@@ -173,7 +174,7 @@ CC3人模没有口型morph，这是iclone的功能。因此，本扩展用表情
 ### 补间曲线和平滑
 你可以从这里找到示例图： [https://easings.net/](https://easings.net/)  
 
-![](img/easing.jpg)
+![](img/easing.jpg)  
 
 如果你的动作不流畅，你可以设置补间曲线为"Linear"。有些情况下，"Linear"实际上很平滑。  
 
@@ -209,4 +210,3 @@ MMD模型也带有扭曲骨骼。但只有很少的vmd文件会使用。在直�
 * 当选择的模型不是Daz或CC3，却点击了执行时，进行提示
 * 手臂旋转比例现在对从mmd模型转换数据也可以使用了。
     - 重写了从mmd模型转换动作的方法，将其分为上半身和下半身两部分，用全新方式转换上半身，从而实现这个新特性。
-    - 
