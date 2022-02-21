@@ -137,9 +137,7 @@ This addon handled some cases like this for you, but not all of them. So, if you
 #### Arm rotation rate
 Daz/CC3 has different arm length with mmd model. So, if mmd model puts hands on chest, they always poke into body when on Daz/CC3 model.
 
-Set forearm rotation rate to 0.8 will fix that in most cases.
-
-Arm rotation rate only works when importing motion from vmd file  
+Set forearm rotation rate to 0.8 will fix that in most cases.  
 
 #### Pick a mmd model as Source
 If you picked a mmd model, addon will ignore body motion from vmd file and retarget body motion from your picked mmd model.  
