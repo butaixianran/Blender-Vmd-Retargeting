@@ -61,8 +61,9 @@ github项目池用于交流反馈和多语言翻译
 ### 准备Daz模型
 Diffeomorphic的daz importer强大而复杂。但这里只需要点击几个按钮即可。  
 
-首先，你需要了解它基本使用方法，如何在Daz Studio准备一个模型用于导出给Diffeomorphic daz importer用。
-这个请查看该扩展的官方教程。如果不愿意看英文，请搜索："Diffeomorphic daz blender 导入"查看中文教程。  
+首先，你需要了解它基本使用方法，如何在Daz Studio准备一个模型用于导出给Diffeomorphic daz importer用。入门教程参见：  
+[diffeomorphic_daz_import_setup_tutorial.cn.md](diffeomorphic_daz_import_setup_tutorial.cn.md)  
+
 
 然后，当要导入模型到blender时，你需要3个东西:
 * 合并所有骨架到人模身体骨架
