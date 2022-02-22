@@ -1,3 +1,6 @@
+**Notice: If you already bought it, make sure you update it to ver1.1.4, which fixed some important bugs**   
+
+
 # Language
 [中文](Readme.cn.md)  
 [日本語](Readme.jp.md)
@@ -16,7 +19,6 @@ This blender addon will import motion from mmd's .vmd file onto Daz or CC3 model
 ### Download
 [https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)
 
-
 ### Blender Forum
 [https://blenderartists.org/t/addon-retarget-mmds-vmd-motion-to-daz-or-cc3/1361902](https://blenderartists.org/t/addon-retarget-mmds-vmd-motion-to-daz-or-cc3/1361902)
 
@@ -26,7 +28,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-1.1.1
+1.1.4
 
 # Feature
 * Import motion from vmd file without a mmd model
@@ -206,11 +208,10 @@ So, for these kind of vmd motion, you need retarget body motion from a mmd model
 This addon won't handle that.
 
 
-# Known Issue
-* **Center Bone's Rotation:**
-Some clients report a kind of vmd files which use center bone for rotation. Center bone is designed as an addtional layer of moving location, vmd motion author should not use it for rotation. So we didn't handle its rotation. We will fix this in a few days. Then release a version as ver1.1.2 .   
-
 # Update Log:
-* When executing with a wrong model type, now shows a message.
+* Handle rotation for center bone
+* Remove leg's rotation when importing from vmd file since IK takes control
+* Fix feet rotation when retargeting from mmd model
 * Arm rotation rate now works when retargeting motion from a mmd model
     - This is done by using a new way to convert mmd model's upper body motion
+* When executing with a wrong model type, now shows a message.

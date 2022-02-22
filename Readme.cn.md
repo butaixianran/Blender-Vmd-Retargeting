@@ -1,3 +1,5 @@
+**注意：已经购买的用户请升级到1.1.4版本，修复了一些关键bug**
+
 # Blender扩展: Vmd Retargeting
 本扩展能够导入mmd的vmd数据到Daz或CC3模型而无须mmd模型，或通过mmd模型转换动作。  
 
@@ -17,7 +19,7 @@
 [https://weibo.com/a/hot/7618111255681025_1.html](https://weibo.com/a/hot/7618111255681025_1.html)  
 
 Blender市场：  
-[https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)
+[https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)  
 
 ### Blender论坛
 [https://blenderartists.org/t/addon-retarget-mmds-vmd-motion-to-daz-or-cc3/1361902](https://blenderartists.org/t/addon-retarget-mmds-vmd-motion-to-daz-or-cc3/1361902)
@@ -28,7 +30,7 @@ github项目池用于交流反馈和多语言翻译
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### 版本
-1.1.1
+1.1.4
 
 # 功能
 * 导入vmd文件，无须mmd模型
@@ -65,9 +67,8 @@ github项目池用于交流反馈和多语言翻译
 ### 准备Daz模型
 Diffeomorphic的daz importer强大而复杂。但这里只需要点击几个按钮即可。  
 
-首先，你需要了解它基本使用方法，如何在Daz Studio准备一个模型用于导出给Diffeomorphic daz importer用。**中文入门教程**参见：   
+首先，你需要了解它基本使用方法，如何在Daz Studio准备一个模型用于导出给Diffeomorphic daz importer用。**中文入门教程**参见：  
 [diffeomorphic_daz_import_setup_tutorial.cn.md](diffeomorphic_daz_import_setup_tutorial.cn.md)  
-
 
 然后，当要导入模型到blender时，你需要3个东西:
 * 合并所有骨架到人模身体骨架
@@ -136,7 +137,7 @@ CC3和Daz模型默认没有IK。因此本扩展在从vmd文件导入身体运动
 
 这种情况下，你需要从一个mmd模型上转换动作数据。因为mmd模型上已经计算过IK了，所以Daz/CC3人模可以直接获取腿部的最终旋转，而无须再创建IK。  
 
-请参考 "选择一个mmd模型作为数据源" 的部分
+请参考"选择一个mmd模型作为数据源"的部分
 
 
 #### 手臂旋转比例
@@ -212,6 +213,9 @@ MMD模型也带有扭曲骨骼。但只有很少的vmd文件会使用。在直�
 
 
 # 更新Log:
-* 当选择的模型不是Daz或CC3，却点击了执行时，进行提示
+* 处理Center骨骼的旋转
+* 当从vmd文件导入数据时，移除腿部额外旋转，因为IK已经在控制腿部了
+* 当从mmd模型转换数据时，修复脚踝旋转
 * 手臂旋转比例现在对从mmd模型转换数据也可以使用了。
     - 重写了从mmd模型转换动作的方法，将其分为上半身和下半身两部分，用全新方式转换上半身，从而实现这个新特性。
+* 当选择的模型不是Daz或CC3，却点击了执行时，进行提示
