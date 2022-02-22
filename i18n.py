@@ -36,6 +36,8 @@ dict = {
         (None, "Camera Setting:"):"Camera Setting:",
         (None, "Debug Mode"):"Debug Mode",
         (None, "Execute"):"Execute",
+        (None, "Combine Vmd and Mmd"):"Combine Vmd and Mmd",
+        (None, "Use Vmd file's Upper body motion and Mmd model's lower body motion"):"Use Vmd file's Upper body motion and Mmd model's lower body motion",
         
     },
     "zh_CN":{
@@ -73,6 +75,8 @@ dict = {
         (None, "Camera Setting:"):"摄影机设置:",
         (None, "Debug Mode"):"调试模式",
         (None, "Execute"):"执行",
+        (None, "Combine Vmd and Mmd"):"合并vmd和mmd动作",
+        (None, "Use Vmd file's Upper body motion and Mmd model's lower body motion"):"使用vmd文件的上半身和mmd模型的下半身合并身体动作",
     },
     "zh_TW":{
         (None, "Select Vmd File"):"選擇vmd文件",
@@ -109,6 +113,8 @@ dict = {
         (None, "Camera Setting:"):"攝影機設定:",
         (None, "Debug Mode"):"調試模式",
         (None, "Execute"):"執行",
+        (None, "Combine Vmd and Mmd"):"合併vmd和mmd動作",
+        (None, "Use Vmd file's Upper body motion and Mmd model's lower body motion"):"使用vmd文件的上半身和mmd模型的下半身合併身體動作",
     },
     "ja_JP":{
         (None, "Select Vmd File"):"Vmdファイルを選択",
@@ -145,6 +151,8 @@ dict = {
         (None, "Camera Setting:"):"カメラの設定:",
         (None, "Debug Mode"):"デバッグモード",
         (None, "Execute"):"実行",
+        (None, "Combine Vmd and Mmd"):"vmdとmmdのマージ",
+        (None, "Use Vmd file's Upper body motion and Mmd model's lower body motion"):"vmdファイルの上半身とmmdモデルの下半身を使用して体の動作をマージ",
     },
 }
 
