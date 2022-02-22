@@ -1,4 +1,4 @@
-# Notice: If you already bought it, make sure you update it to ver1.1.4, which fixed some important bugs   
+### Notice: If you already bought it, make sure you update it to ver1.1.4, which fixed some important bugs   
 
 
 # Language
