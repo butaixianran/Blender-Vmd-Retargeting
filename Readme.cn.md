@@ -13,6 +13,10 @@
 
 # 基本信息
 ### 下载
+微博专栏下载：  
+[https://weibo.com/a/hot/7618111255681025_1.html](https://weibo.com/a/hot/7618111255681025_1.html)  
+
+Blender市场：  
 [https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)
 
 ### Blender论坛
