@@ -67,7 +67,7 @@ Check its official tutorial for that.
 And when importing model to blender, you need 3 things:
 * Merge all armatures into body's armature
 * Face Unit morph and Viseme morph
-* Make all bone poseable.  
+* Make all bones poseable.  
 
 **The easiest way for these, is importing a character by click "Easy Import Daz" button.**  
 By default, it already checked Merge Rigs for you.  
@@ -92,16 +92,16 @@ This new vmd file will work.
 It is pretty simple:
 * Select your character's armature
 * Select a vmd file
-* Select your model type(CC3 or Daz)
+* Select your model type (CC3 or Daz)
 * Check which part you'd like to import
-* **Make sure** your active armature is your Daz or CC3 model, Click "Execute", done.
+* **Make sure** your active armature is your Daz or CC3 model, click "Execute", done.
 
-Each part will be an action wraped into a strip on a track, in NLA(Nonlinear Animation).  
+Each part will be an action wrapped into a strip on a track, in NLA (Nonlinear Animation).  
 So, it won't mess up your timeline, and you can move or delete them like clips.
 
 
 ## Options
-Move your mouse onto those operators(button, checkbox or list), will display a useful tooltip.  
+Move your mouse onto those operators (button, checkbox or list), will display a useful tooltip.  
 
 High Heel Tooltip:  
 ![tooltip_high_heel](img/tooltip_high_heel.jpg)  
