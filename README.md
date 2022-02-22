@@ -206,6 +206,10 @@ So, for these kind of vmd motion, you need retarget body motion from a mmd model
 This addon won't handle that.
 
 
+# Known Issue
+* **Center Bone's Rotation:**
+Some clients report a kind of vmd files which use center bone for rotation. Center bone is designed as an addtional layer of moving location, vmd motion author should not use it for rotation. So we didn't handle its rotation. We will fix this in a few days. Then release a version as ver1.1.2 .
+
 # Update Log:
 * When executing with a wrong model type, now shows a message.
 * Arm rotation rate now works when retargeting motion from a mmd model
