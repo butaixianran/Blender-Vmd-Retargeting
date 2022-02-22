@@ -14,7 +14,9 @@ This blender addon will import motion from mmd's .vmd file onto Daz or CC3 model
 
 # Info
 ### Download
+Blender Market:
 [https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)
+(Chinese user can find weibo download link from Chinese document)
 
 ### Blender Forum
 [https://blenderartists.org/t/addon-retarget-mmds-vmd-motion-to-daz-or-cc3/1361902](https://blenderartists.org/t/addon-retarget-mmds-vmd-motion-to-daz-or-cc3/1361902)
