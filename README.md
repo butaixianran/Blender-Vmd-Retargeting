@@ -28,7 +28,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-1.1.4
+1.2.0
 
 # Feature
 * Import motion from vmd file without a mmd model
@@ -124,6 +124,10 @@ For example, mmd doesn't have motion layers, so they use mutiple bones which doe
 For now, we only do this for: center and groove bone's location.  
 
 #### IK
+**If a vmd motion does not use IK, just uncheck it**.   
+
+**IK works fine in most cases. But if leg rotates widely, then you need to know following information:**  
+
 CC3 and Daz model don't have IK by default. So this addon creates IK for legs when importing body motion from vmd file.  
 
 But a problem with Daz/CC3 model is: there is no bending on their knees' rest pose. In that case, IK will come with a IK Pole Bone, to tell knee which direction to point when bending.  
@@ -139,7 +143,7 @@ Check the section: **Pick a mmd model as Source**
 #### Arm rotation rate
 Daz/CC3 has different arm length with mmd model. So, if mmd model puts hands on chest, they always poke into body when on Daz/CC3 model.
 
-Set forearm rotation rate to 0.8 will fix that in most cases.  
+Set upperarm and forearm rotation rate to 0.8 will fix that in most cases. (Now this is default) 
 
 #### Pick a mmd model as Source
 If you picked a mmd model, addon will ignore body motion from vmd file and retarget body motion from your picked mmd model.  
@@ -209,6 +213,9 @@ This addon won't handle that.
 
 
 # Update Log:
+* Set Arm rotation rate to 0.8 as default, since every vmd motion put hands to chest.
+* Add shoulder rotation rate then remove it, seems not very useful.
+* Add IK checkbox, uncheck to not create IK bones.
 * Handle rotation for center bone
 * Remove leg's rotation when importing from vmd file since IK takes control
 * Fix feet rotation when retargeting from mmd model
