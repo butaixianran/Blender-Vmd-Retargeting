@@ -157,9 +157,10 @@ Daz/CC3人模的手长和mmd人模不同。因此，如果mmd人模将手放到�
 ![](img/uncheck_rename_bones.jpg)  
 
 **然后，用mmd tools导入vmd动作到你的mmd模型，而不是用本扩展。** 方法如下：  
-选中mmd模型，前往`文件菜单->import->vmd file`选择一个vmd文件。  
-现在，mmd模型上，应该有了动作数据。  
-然后，选择你的daz或cc3模型，在本扩展的"Source"(源)部分，使用吸管选择器，选择这个mmd模型的骨架作为源。**注意，不要选择它的空父亲对象**   
+* 选中mmd模型，前往`文件菜单->import->vmd file`选择一个vmd文件。  
+* 现在，mmd模型上，应该有了动作数据。  
+* 然后，选择你的daz或cc3模型，在本扩展的"Source"(源)部分，使用吸管选择器，选择这个mmd模型的骨架作为源。
+* **注意，不要选择它的空父亲对象**    
 ![](img/mmd_armature.jpg)  
 
 最后，确保当前选择的骨架是Daz或CC3模型，点击"Execute"。  
