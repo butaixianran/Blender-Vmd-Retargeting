@@ -30,7 +30,8 @@ github项目池用于交流反馈和多语言翻译
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### 版本
-1.2.0
+扩展版本：1.2.0
+Blender版本：3.0
 
 # 功能
 * 导入vmd文件，无须mmd模型
@@ -61,7 +62,12 @@ github项目池用于交流反馈和多语言翻译
 如果你希望使用于通过fbx导入的Daz模型，请告诉我们原因。如果原因合理，我们就会添加对fbx的Daz的支持。  
 
 ### 准备CC3模型
-无须准备
+无须准备。但请不要从iClone导出人模，请直接从Character Creator导出人模。  
+
+导出时，请选择A-Pose。（CC3+才能选）  
+![](img/cc3_export_setting.jpg)  
+导入Blender后姿势需要如下图：  
+![](img/cc3_def.jpg)  
 
 
 ### 准备Daz模型

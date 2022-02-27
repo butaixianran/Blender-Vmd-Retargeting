@@ -28,7 +28,8 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-1.2.0
+Addon: 1.2.0
+Blender: 3.0
 
 # Feature
 * Import motion from vmd file without a mmd model
@@ -58,7 +59,13 @@ For characters imported by fbx, cc3 model should work too. But for daz model, re
 If you wanna use a Daz model imported by fbx, tell use why. If it is reasonable, we'll add it.  
 
 ### Prepare CC3 model
-No preparing is needed.
+**No preparing is needed.**   
+But do not export your character from iClone. We only tested by exporting from Character Creator.  
+
+When exporting, make sure you choose A-Pose.(Need CC3+)  
+![](img/cc3_export_setting.jpg)    
+The key is, after importing into Blender, its pose should be like this:    
+![](img/cc3_def.jpg)  
 
 
 ### Prepare Daz model
