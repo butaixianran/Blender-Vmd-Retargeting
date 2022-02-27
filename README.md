@@ -60,11 +60,11 @@ If you wanna use a Daz model imported by fbx, tell use why. If it is reasonable,
 
 ### Prepare CC3 model
 **No preparing is needed.**   
-But do not export your character from iClone. We only tested by exporting from Character Creator.  
+But we only tested with Character Creator. If you want to export model from iClone, make sure it is in A-Pose, like following.  
 
-When exporting, make sure you choose A-Pose.(Need CC3+)  
+When exporting from CC, make sure you choose A-Pose.(Need CC3+)  
 ![](img/cc3_export_setting.jpg)    
-The key is, after importing into Blender, its pose should be like this:    
+After importing into Blender, its pose should be like this:    
 ![](img/cc3_def.jpg)  
 
 
