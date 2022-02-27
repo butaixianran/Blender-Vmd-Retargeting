@@ -30,7 +30,7 @@ github项目池用于交流反馈和多语言翻译
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### 版本
-扩展版本：1.2.0
+扩展版本：1.2.0  
 Blender版本：3.0
 
 # 功能

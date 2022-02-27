@@ -28,7 +28,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.2.0
+Addon: 1.2.0  
 Blender: 3.0
 
 # Feature
