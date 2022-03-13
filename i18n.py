@@ -40,6 +40,8 @@ dict = {
         (None, "Execute"):"Execute",
         (None, "Combine Vmd and Mmd"):"Combine Vmd and Mmd",
         (None, "Use Vmd file's Upper body motion and Mmd model's lower body motion"):"Use Vmd file's Upper body motion and Mmd model's lower body motion",
+        (None, "Set Position X's rate"):"Set Position X's rate",
+        (None, "Position rate:"):"Position rate:",
         
     },
     "zh_CN":{
@@ -81,6 +83,8 @@ dict = {
         (None, "Execute"):"执行",
         (None, "Combine Vmd and Mmd"):"合并vmd和mmd动作",
         (None, "Use Vmd file's Upper body motion and Mmd model's lower body motion"):"使用vmd文件的上半身和mmd模型的下半身合并身体动作",
+        (None, "Set Position X's rate"):"设置X轴移动的比例",
+        (None, "Position rate:"):"移动比例:",
     },
     "zh_TW":{
         (None, "Select Vmd File"):"選擇vmd文件",
@@ -121,6 +125,8 @@ dict = {
         (None, "Execute"):"執行",
         (None, "Combine Vmd and Mmd"):"合併vmd和mmd動作",
         (None, "Use Vmd file's Upper body motion and Mmd model's lower body motion"):"使用vmd文件的上半身和mmd模型的下半身合併身體動作",
+        (None, "Set Position X's rate"):"設置X軸移動的比例",
+        (None, "Position rate:"):"移動比例:",
     },
     "ja_JP":{
         (None, "Select Vmd File"):"Vmdファイルを選択",
@@ -161,6 +167,8 @@ dict = {
         (None, "Execute"):"実行",
         (None, "Combine Vmd and Mmd"):"vmdとmmdのマージ",
         (None, "Use Vmd file's Upper body motion and Mmd model's lower body motion"):"vmdファイルの上半身とmmdモデルの下半身を使用して体の動作をマージ",
+        (None, "Set Position X's rate"):"X軸移動の割合を設定する",
+        (None, "Position rate:"):"移動の割合:",
     },
 }
 

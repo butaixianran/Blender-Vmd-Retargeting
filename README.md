@@ -28,8 +28,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.2.0  
-Blender: 3.0
+1.2.0
 
 # Feature
 * Import motion from vmd file without a mmd model
@@ -59,13 +58,7 @@ For characters imported by fbx, cc3 model should work too. But for daz model, re
 If you wanna use a Daz model imported by fbx, tell use why. If it is reasonable, we'll add it.  
 
 ### Prepare CC3 model
-**No preparing is needed.**   
-But we only tested with Character Creator. If you want to export model from iClone, make sure it is in A-Pose, like following.  
-
-When exporting from CC, make sure you choose A-Pose.(Need CC3+)  
-![](img/cc3_export_setting.jpg)    
-After importing into Blender, its pose should be like this:    
-![](img/cc3_def.jpg)  
+No preparing is needed.
 
 
 ### Prepare Daz model
@@ -222,7 +215,7 @@ This addon won't handle that.
 # Update Log:
 * Set Arm rotation rate to 0.8 as default, since every vmd motion put hands to chest.
 * Add shoulder rotation rate then remove it, seems not very useful.
-* Add IK checkbox, uncheck to not create IK bones.
+* Add IK checkbox, uncheck to do not create IK bones.
 * Handle rotation for center bone
 * Remove leg's rotation when importing from vmd file since IK takes control
 * Fix feet rotation when retargeting from mmd model
