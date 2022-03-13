@@ -1,6 +1,4 @@
-### Notice1: If you already bought it, make sure you update it to ver1.1.4, which fixed some important bugs   
-
-### Notice2: If you already bought it, and you are using Blender 3.1, you need to update it to ver1.4.1
+### Notice: If you already bought it, make sure you update it to latest version. Which fixed some important bugs and anded support for Blender 3.1. Also handled twist bones, for Natsumi San's vmd motion   
 
 
 # Language
@@ -30,7 +28,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.2.0  
+Addon: 1.5.0  
 Blender: 3.0
 
 # Feature
@@ -214,16 +212,38 @@ So only check it when importing a vmd file with a single pose.
 ## Shoulder Rotation
 There are 3 shoulder bones on a mmd model: shoulder, shoulder P, shoulder C. This addon ignored shoulder P and shoulder C.  
 
-## Twist Bone
-MMD model also comes with twist bones. They are used only in a few vmd files. They are not handled when importing with vmd file.  
 
-So, for these kind of vmd motion, you need retarget body motion from a mmd model.  
+## Twist Bone
+MMD model also comes with twist bones, only a few vmd motions use them. With Daz Model, this can be converted nicely. But CC3 model's twist bones work in a different way and won't be converted well.   
+
+So, if you are using a vmd file come with motion on twist bones, you better use Daz model.  
+
+So far as I know, only Natsumi San's vmd motion uses twist bones.   
+
+
+## Waist Bone
+Mmd's Waist Bone, is the parent of upper body and lower body. Which makes it can turn the whole body together, like a hip bone.   
+
+There is No other Character model treat Waist Bone that way. So, we convert Waist Bone's data into lower spine bone.
+
+Since most vmd motion never uses Waist Bone, it won't be a problem.  
+
+But, again, Natsumi San's vmd motion may use it. Still, as long as vmd motion does not use Waist Bone as hip bone to rotate the whole body, it gonna be fine.     
+
 
 ## Prop motion
 This addon won't handle that.
 
 
 # Update Log:
+## 1.5.0
+* Convert twist bone and Waist bone
+
+## 1.4.1
+* Support Blender 3.1
+* Add shoulder rotation rate
+
+## Older
 * Set Arm rotation rate to 0.8 as default, since every vmd motion put hands to chest.
 * Add shoulder rotation rate then remove it, seems not very useful.
 * Add IK checkbox, uncheck to not create IK bones.
