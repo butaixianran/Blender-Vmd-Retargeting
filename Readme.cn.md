@@ -1,4 +1,6 @@
-**注意：已经购买的用户请升级到1.1.4版本，修复了一些关键bug**
+### 注意1：已经购买的用户请升级到1.1.4版本，修复了一些关键bug  
+
+### 注意2: 已经购买的用户，如果使用Blender 3.1，请升级到ver1.4.1版本
 
 # Blender扩展: Vmd Retargeting
 本扩展能够导入mmd的vmd数据到Daz或CC3模型而无须mmd模型，或通过mmd模型转换动作。  
@@ -30,7 +32,8 @@ github项目池用于交流反馈和多语言翻译
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### 版本
-1.2.0
+扩展版本：1.2.0  
+Blender版本：3.0
 
 # 功能
 * 导入vmd文件，无须mmd模型
@@ -61,7 +64,12 @@ github项目池用于交流反馈和多语言翻译
 如果你希望使用于通过fbx导入的Daz模型，请告诉我们原因。如果原因合理，我们就会添加对fbx的Daz的支持。  
 
 ### 准备CC3模型
-无须准备
+无须准备。但请直接从Character Creator导出人模。如果使用iClone，请确保人模是如下图的A-Pose。  
+
+从CC导出时，请选择A-Pose。（CC3+才能选）  
+![](img/cc3_export_setting.jpg)  
+导入Blender后姿势需要如下图：  
+![](img/cc3_def.jpg)  
 
 
 ### 准备Daz模型
@@ -147,7 +155,9 @@ CC3和Daz模型默认没有IK。因此本扩展在从vmd文件导入身体运动
 #### 手臂旋转比例
 Daz/CC3人模的手长和mmd人模不同。因此，如果mmd人模将手放到胸口，在Daz/CC3人模上手必然就会穿入身体。  
 
-把上下手臂旋转比例都设为0.8一般能够解决这个问题。(现在这是默认设置)
+把上下手臂旋转比例都设为0.8一般能够解决这个问题。(现在这是默认设置)   
+
+但是如果你使用CC3模型，一般设置为1.0更好   
 
 #### 选择一个mmd模型作为数据源
 如果你选择了一个mmd模型作为数据源，本扩展在导入身体运动时，就会忽视你选择的vmd文件，而从你指定的mmd模型上转换身体运动。  
