@@ -19,7 +19,7 @@
 4. 对Blender，安装"import_daz"这个扩展
 5. 前往扩展面板的"Global Settings"，点击左下角"Load Root Paths"
 6. 在Daz中，保存场景为".duf"文件
-7. 点击文件菜单的"Export to Blender"，保存.dbz文件到.duf文件同名同目录下
+7. 点击文件菜单的"Export to Blender"，保存.dbz文件到.duf文件同名同目录下（**每次保存Daz模型，都要重新导出.dbz文件**）
 8. Blender中，扩展面板点击"Import Daz"，导入刚才的.duf文件。  
 
 
@@ -63,7 +63,7 @@ Blender配置完毕。
 ### 基本使用
 在Daz中，保存场景为.duf文件。  
 
-前往文件菜单，点击："Export to Blender"，保存一个后缀 `.dbz` 的json文件。文件名和路径要和场景的 `.duf` 文件相同。（默认即可）  
+前往文件菜单，点击："Export to Blender"，保存一个后缀 `.dbz` 的json文件。文件名和路径要和场景的 `.duf` 文件相同。（默认即可） （**每次保存Daz模型，都要重新导出.dbz文件**） 
 
 前往Blender，工作区按N，前往这个扩展的面板。  
 
