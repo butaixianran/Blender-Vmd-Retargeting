@@ -28,7 +28,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.5.0  
+Addon: 1.6.0  
 Blender: 3.0
 
 # Feature
@@ -51,12 +51,12 @@ If you are new to blender and don't know how to install a blender addon, search:
 # How to use
 ## Prepare a character
 This addon supports:
-* Daz Genesis 8 imported by [diffeomorphic daz importer addon](https://diffeomorphic.blogspot.com/) 
+* Daz Genesis 8 imported by [diffeomorphic daz importer addon](https://diffeomorphic.blogspot.com/)
+* Daz Genesis 8 imported by [Official Daz to Blender Bridge(updated version for blender 3.x)](https://github.com/butaixianran/DazToBlender)  
 * CC3(Character Creator) model imported by [cc3 blender tools addon](https://github.com/soupday/cc3_blender_tools)  
 
-For characters imported by fbx, cc3 model should work too. But for daz model, retargeting facial and viseme motion won't work.  
+For characters imported by fbx, cc3 model works too. But for daz model, facial and viseme motion won't work.  
 
-If you wanna use a Daz model imported by fbx, tell use why. If it is reasonable, we'll add it.  
 
 ### Prepare CC3 model
 **No preparing is needed.**   
@@ -68,7 +68,7 @@ After importing into Blender, its pose should be like this:
 ![](img/cc3_def.jpg)  
 
 
-### Prepare Daz model
+### Prepare Daz model(with Diffeomorphic Daz Importer)
 Diffeomorphic daz importer is complex. But we just need click a few buttons to get it done.  
 
 You need to know the basic of how to setup and export a daz model for Diffeomorphic daz importer.
@@ -85,10 +85,30 @@ So, you just need to check "Face Units" and "Visemes", then import.
 
 After importing, go to "**Finish**" section of Diffeomorphic daz importer's panel. Click "**Make All Bones Poseable**"
 
-Now, your daz model is prepared.
+Now, your daz model is prepared.  
+
+### Prepare Daz model (with Official Daz to Blender Bridge(DTB))
+This is for those who know how to use DTB. If you are not familiar with Daz or Blender, just choose the "Diffeomorphic Daz Importer" way.  
+
+The good part of DTB is, morph is on body mesh's shape key without driver. Also, there is no complex shader in material, only standard BSDF shader.   
+
+So, you can export this Daz model with motion and material from Blender to any other 3D tools, including game engine.  
+
+If you don't know how to use DTB, you need to read the installation part of its doument:  
+[https://github.com/butaixianran/DazToBlender](https://github.com/butaixianran/DazToBlender)  
+
+Also watch Daz Official tutorial:  
+[https://www.daz3d.com/daz-to-blender-bridge](https://www.daz3d.com/daz-to-blender-bridge)  
+
+**After you installed DTB:**   
+* In Daz, when exporting your model, check "**Include Morphs**"
+* Go to "**choose morphs**" dialog window, click **Genesis 8 Facial Morphs** and **Visemes** Buttons on the left to add those morphs into export list.  
+* Export.  
+* In Blender, on DTB's panel, click import, Done.
+
 
 ## Prepare a vmd file
-No preparing is needed in most cases.
+**No preparing is needed in most cases.**  
 
 But, there are some old or weird vmd files don't use normal bone names or file structure.  
 
@@ -128,7 +148,7 @@ Body motion is separated into mutiple tracks.
 
 For example, mmd doesn't have motion layers, so they use mutiple bones which does the same thing, to simulate motion layers. And we handle that by adding this bone's motion into a real new layer.
 
-For now, we only do this for: center and groove bone's location.  
+For now, we only do this for: center and groove bone.  
 
 #### IK
 **If a vmd motion does not use IK, just uncheck it**.   
@@ -239,6 +259,10 @@ This addon won't handle that.
 
 
 # Update Log:
+## 1.6.0
+* Support Daz model imported by Official Daz to Blender Bridge:
+[https://github.com/butaixianran/DazToBlender](https://github.com/butaixianran/DazToBlender)  
+
 ## 1.5.0
 * Convert twist bone and Waist bone
 

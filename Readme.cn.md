@@ -30,7 +30,7 @@ github项目池用于交流反馈和多语言翻译
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### 版本
-扩展版本：1.5.0  
+扩展版本：1.6.0  
 Blender版本：3.0
 
 # 功能
@@ -55,6 +55,7 @@ Blender版本：3.0
 ## 准备模型
 本扩展支持以下人模:
 * Daz Genesis 8，由 [diffeomorphic daz importer addon](https://diffeomorphic.blogspot.com/) 导入
+* Daz Genesis 8，由 [官方Daz to Blender桥接插件(blender 3.x 更新版本)](https://github.com/butaixianran/DazToBlender)导入  
 * CC3(Character Creator) 人模，由 [cc3 blender tools addon](https://github.com/soupday/cc3_blender_tools) 导入  
 
 通过fbx文件导入的人模，cc3应该也没问题。但daz的，本扩展将无法转换表情。  
@@ -70,7 +71,7 @@ Blender版本：3.0
 ![](img/cc3_def.jpg)  
 
 
-### 准备Daz模型
+### 准备Daz模型（使用Diffeomorphic Daz Importer）
 Diffeomorphic的daz importer强大而复杂。但这里只需要点击几个按钮即可。  
 
 首先，你需要了解它基本使用方法，如何在Daz Studio准备一个模型用于导出给Diffeomorphic daz importer用。**中文入门教程**参见：  
@@ -86,7 +87,29 @@ Diffeomorphic的daz importer强大而复杂。但这里只需要点击几个按�
 
 导入后，前往Diffeomorphic daz importer扩展的： "**Finish**" 部分，点击"**Make All Bones Poseable**"  
   
-准备完毕。
+准备完毕。  
+
+
+### 准备Daz模型（使用Daz官方Blender桥接插件，以下简称DTB）
+这个功能，是给能够自学使用DTB的用户使用的。DTB的好处是，morph就在身体模型的shape key上且没有driver。而且，材质也是标准BSDF材质。  
+
+因此，Daz模型导入mmd的动作后，可以连同动作和材质一起，从Blender导出到任何其他3D软件。包括游戏引擎。  
+
+如果你不知道如何使用DTB，需要自行阅读它的文档的安装部分（英文）：
+[https://github.com/butaixianran/DazToBlender](https://github.com/butaixianran/DazToBlender)  
+
+并且浏览官方视频教程（英文）:  
+[https://www.daz3d.com/daz-to-blender-bridge](https://www.daz3d.com/daz-to-blender-bridge)  
+
+建议对Daz和Blender不够熟悉的用户选择Diffeomorphic Daz Importer。  
+
+**在安装DTB之后:**   
+* Daz中，导出人模时，勾选"**Include Morphs**"来导出morph
+* 进入"**choose morphs**"，点击左下角**Genesis 8 Facial Morphs** 和 **Visemes**按钮，把这些morph添加到输出列表。
+* 输出人模
+* 在Blender中，在DTB扩展面板上，点击导入，完成。
+
+
 
 ## 准备一个vmd文件
 一般来说，无须额外操作。  
@@ -130,7 +153,7 @@ Diffeomorphic的daz importer强大而复杂。但这里只需要点击几个按�
 
 原因比如，mmd不支持分层运动。因此，会用多个效果相同的骨骼，来模拟分层运动。对于这种情况，我们是把对应骨骼的运动，放到一个真正的新轨道上。
 
-目前，我们仅处理：center骨骼和groove骨骼的移动  
+目前，我们仅处理：center骨骼和groove骨骼  
 
 #### IK
 **如果某个vmd动作不使用IK，去掉勾选即可**  
