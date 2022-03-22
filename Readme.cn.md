@@ -95,8 +95,8 @@ Diffeomorphic的daz importer强大而复杂。但这里只需要点击几个按�
 
 因此，Daz模型导入mmd的动作后，可以连同动作和材质一起，从Blender导出到任何其他3D软件。包括游戏引擎。  
 
-如果你不知道如何使用DTB，需要自行阅读它的文档的安装部分（英文）：
-[https://github.com/butaixianran/DazToBlender](https://github.com/butaixianran/DazToBlender)  
+如果你不知道如何使用DTB，需要自行阅读它的文档的安装部分（英文）：  
+[https://github.com/butaixianran/DazToBlender](https://github.com/butaixianran/DazToBlender)    
 
 并且浏览官方视频教程（英文）:  
 [https://www.daz3d.com/daz-to-blender-bridge](https://www.daz3d.com/daz-to-blender-bridge)  
