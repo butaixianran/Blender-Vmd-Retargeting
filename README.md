@@ -63,7 +63,7 @@ For characters imported by fbx, cc3 model works too. But for daz model, facial a
 
 ### Prepare CC3 model
 **No preparing is needed.**   
-But we only tested with Character Creator. If you want to export model from iClone, make sure it is in A-Pose, like following.  
+Just export it from Character Creator, not from iClone.  
 
 When exporting from CC, make sure you choose A-Pose.(Need CC3+)  
 ![](img/cc3_export_setting.jpg)    
