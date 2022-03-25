@@ -272,6 +272,10 @@ Mmd的腰部骨骼，是上半身和下半身的父亲，因此可以当作hip�
 
 
 # 更新Log:
+## 1.6.0
+* 支持通过官方Daz to Blender桥接工具导入的Daz人模。需要基于Blender 3.x更新的版本：  
+[https://github.com/butaixianran/DazToBlender](https://github.com/butaixianran/DazToBlender)  
+
 ## 1.5.0
 * 增加对扭曲骨骼和腰部骨骼的转换
 
