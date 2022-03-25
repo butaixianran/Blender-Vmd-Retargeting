@@ -15,6 +15,9 @@ This blender addon will import motion from mmd's .vmd file onto Daz or CC3 model
 [https://youtu.be/Xgfu8oSjUUs](https://youtu.be/Xgfu8oSjUUs)  
 [![](img/FeaturedImages01_half.jpg)](https://youtu.be/Xgfu8oSjUUs)  
 
+# Tutorial Video
+[https://youtu.be/li7yjJKbbgI](https://youtu.be/li7yjJKbbgI)  
+
 # Info
 ### Download
 [https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)
@@ -90,7 +93,7 @@ Now, your daz model is prepared.
 ### Prepare Daz model (with Official Daz to Blender Bridge(DTB))
 This is for those who know how to use DTB. If you are not familiar with Daz or Blender, just choose the "Diffeomorphic Daz Importer" way.  
 
-The good part of DTB is, morph is on body mesh's shape key without driver. Also, there is no complex shader in material, only standard BSDF shader.   
+The good part of DTB is, morph is on body mesh's shape key without driver. Also, there is no complex shader in material, only standard Principled shader.   
 
 So, you can export this Daz model with motion and material from Blender to any other 3D tools, including game engine.  
 

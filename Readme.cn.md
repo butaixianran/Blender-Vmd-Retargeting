@@ -12,6 +12,13 @@
 # 演示视频
 [https://youtu.be/Xgfu8oSjUUs](https://youtu.be/Xgfu8oSjUUs)  
 [![](img/FeaturedImages01_half.jpg)](https://youtu.be/Xgfu8oSjUUs)  
+b站：  
+[https://www.bilibili.com/video/BV1Qb4y147Q3/](https://www.bilibili.com/video/BV1Qb4y147Q3/)  
+
+# 教程视频
+[https://youtu.be/li7yjJKbbgI](https://youtu.be/li7yjJKbbgI)  
+b站：  
+[https://www.bilibili.com/video/BV1eu411q7qp/](https://www.bilibili.com/video/BV1eu411q7qp/)  
 
 # 基本信息
 ### 下载
@@ -91,12 +98,12 @@ Diffeomorphic的daz importer强大而复杂。但这里只需要点击几个按�
 
 
 ### 准备Daz模型（使用Daz官方Blender桥接插件，以下简称DTB）
-这个功能，是给能够自学使用DTB的用户使用的。DTB的好处是，morph就在身体模型的shape key上且没有driver。而且，材质也是标准BSDF材质。  
+这个功能，是给能够自学使用DTB的用户使用的。DTB的好处是，morph就在身体模型的shape key上且没有driver。而且，材质也是标准Principled材质。  
 
 因此，Daz模型导入mmd的动作后，可以连同动作和材质一起，从Blender导出到任何其他3D软件。包括游戏引擎。  
 
 如果你不知道如何使用DTB，需要自行阅读它的文档的安装部分（英文）：  
-[https://github.com/butaixianran/DazToBlender](https://github.com/butaixianran/DazToBlender)    
+[https://github.com/butaixianran/DazToBlender](https://github.com/butaixianran/DazToBlender)  
 
 并且浏览官方视频教程（英文）:  
 [https://www.daz3d.com/daz-to-blender-bridge](https://www.daz3d.com/daz-to-blender-bridge)  
@@ -126,7 +133,7 @@ Diffeomorphic的daz importer强大而复杂。但这里只需要点击几个按�
 相当简单：
 * 选择人模骨架
 * 选择vmd文件
-* 选择人模类型(CC3 or Daz)
+* 选择人模类型 (G8 by Differ Daz Importer, G8 by Official Daz Bridge or CC3)
 * 勾选要导入的部分
 * 确保你当前选择的模型是Daz或CC3，点击 "Execute", 完成.
 
