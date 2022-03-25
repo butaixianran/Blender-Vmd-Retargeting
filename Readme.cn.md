@@ -70,7 +70,7 @@ Blender版本：3.0
 如果你希望使用于通过fbx导入的Daz模型，请告诉我们原因。如果原因合理，我们就会添加对fbx的Daz的支持。  
 
 ### 准备CC3模型
-无须准备。但请直接从Character Creator导出人模。如果使用iClone，请确保人模是如下图的A-Pose。  
+无须准备。但请直接从Character Creator导出人模，而不是iClone。  
 
 从CC导出时，请选择A-Pose。（CC3+才能选）  
 ![](img/cc3_export_setting.jpg)  
