@@ -1,4 +1,4 @@
-### Notice: If you already bought it, make sure you update it to latest version. Which fixed some important bugs and anded support for Blender 3.1. Also handled twist bones, for Natsumi San's vmd motion   
+### Notice: If you already bought it, make sure you update it to latest version. Which fixed some important bugs and added support for Blender 3.1. Also handled twist bones, for Natsumi San's vmd motion   
 
 
 # Language
