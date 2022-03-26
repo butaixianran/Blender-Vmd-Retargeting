@@ -61,7 +61,7 @@ Blender版本：3.0
 # 使用方法
 ## 准备模型
 本扩展支持以下人模:
-* Daz Genesis 8，由 [diffeomorphic daz importer addon](https://diffeomorphic.blogspot.com/) 导入
+* Daz Genesis 8，由 [Diffeomorphic daz importer](https://diffeomorphic.blogspot.com/) 导入
 * Daz Genesis 8，由 [官方Daz to Blender桥接插件(blender 3.x 更新版本)](https://github.com/butaixianran/DazToBlender)导入  
 * CC3(Character Creator) 人模，由 [cc3 blender tools addon](https://github.com/soupday/cc3_blender_tools) 导入  
 
@@ -79,7 +79,7 @@ Blender版本：3.0
 
 
 ### 准备Daz模型（使用Diffeomorphic Daz Importer）
-Diffeomorphic的daz importer强大而复杂。但这里只需要点击几个按钮即可。  
+[Diffeomorphic daz importer](https://diffeomorphic.blogspot.com/)强大而复杂。但这里只需要点击几个按钮即可。  
 
 首先，你需要了解它基本使用方法，如何在Daz Studio准备一个模型用于导出给Diffeomorphic daz importer用。**中文入门教程**参见：  
 [diffeomorphic_daz_import_setup_tutorial.cn.md](diffeomorphic_daz_import_setup_tutorial.cn.md)  

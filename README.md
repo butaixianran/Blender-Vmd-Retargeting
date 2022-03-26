@@ -54,7 +54,7 @@ If you are new to blender and don't know how to install a blender addon, search:
 # How to use
 ## Prepare a character
 This addon supports:
-* Daz Genesis 8 imported by [diffeomorphic daz importer addon](https://diffeomorphic.blogspot.com/)
+* Daz Genesis 8 imported by [diffeomorphic daz importer](https://diffeomorphic.blogspot.com/)
 * Daz Genesis 8 imported by [Official Daz to Blender Bridge(updated version for blender 3.x)](https://github.com/butaixianran/DazToBlender)  
 * CC3(Character Creator) model imported by [cc3 blender tools addon](https://github.com/soupday/cc3_blender_tools)  
 
@@ -72,7 +72,7 @@ After importing into Blender, its pose should be like this:
 
 
 ### Prepare Daz model(with Diffeomorphic Daz Importer)
-Diffeomorphic daz importer is complex. But we just need click a few buttons to get it done.  
+[Diffeomorphic daz importer](https://diffeomorphic.blogspot.com/) is complex. But we just need click a few buttons to get it done.  
 
 You need to know the basic of how to setup and export a daz model for Diffeomorphic daz importer.
 Check its official tutorial for that.  
