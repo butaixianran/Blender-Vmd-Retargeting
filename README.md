@@ -32,7 +32,7 @@ This github repo is for issues and translation.
 
 ### Version
 Addon: 1.6.0  
-Blender: 3.0
+Blender: 3.0 or later
 
 # Feature
 * Import motion from vmd file without a mmd model
