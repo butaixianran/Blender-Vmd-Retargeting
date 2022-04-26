@@ -37,8 +37,8 @@ github项目池用于交流反馈和多语言翻译
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### 版本
-扩展版本：1.6.0  
-Blender版本：3.0
+扩展版本：1.6.3  
+Blender版本：3.0或以上
 
 # 功能
 * 导入vmd文件，无须mmd模型
@@ -293,6 +293,11 @@ mmd的几个眼睛闭合表情是：ウィンク, ウィンク２, まばたき,
 
 
 # 更新Log:
+## 1.6.3
+* 设置 "ぺろっ" 和 "口角上げ"的转换比例为0.5，以让笑容更合理
+* 处理"shift_jis"错误，显示一个错误提示
+* 修正使用DTB人模时无法导入摄影机的问题
+
 ## 1.6.0
 * 支持通过官方Daz to Blender桥接工具导入的Daz人模。需要基于Blender 3.x更新的版本：  
 [https://github.com/butaixianran/DazToBlender](https://github.com/butaixianran/DazToBlender)  

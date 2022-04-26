@@ -31,7 +31,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.6.0  
+Addon: 1.6.3  
 Blender: 3.0 or later
 
 # Feature
@@ -260,8 +260,34 @@ But, again, Natsumi San's vmd motion may use it. Still, as long as vmd motion do
 ## Prop motion
 This addon won't handle that.
 
+# Common Issue
+## shift_jis error
+If there is error msg with `shift_jis` in it, it means, this vmd file is not encoded with `shift_jis`.   
+
+You need to open MMD, load a TDA model, load this vmd file and Re-save it into a new vmd file. This new vmd file will be encoded with `shift_jis`. Then import this new vmd file.  
+
+## 'KinematicConstraint' object has no attribute 'enabled'
+Your blender version is too old, pls use Blender 3.0 or later.  
+
+## Eye can not be fully closed
+MMD model comes with 5 morphs can close eyes. But other character like Daz or CC3 only has one morph to close eye.  
+
+Normally, vmd motion's creator only use 1 of those 5 morphs to close eye, to avoid chaos. But, there are a few vmd motion's creator will play with all 5 morphs.    
+
+In that case, all 5 mmd morphs data is converted into 1 daz/cc3 morph, so one morph's data will cover another, which make eyes can not be fully closed.  
+
+The only solution for this, is remove all other 4 morphs' data in MMD, only keep one of them.  
+
+These 5 morphs are: ウィンク, ウィンク２, まばたき, 笑い, なごみ  
+
+or you can just remove all 5 morphs' data.  
 
 # Update Log:
+## 1.6.3
+* Set "ぺろっ" and "口角上げ"'s converting rate to 0.5, to make a better smile.
+* Handle "shift_jis" error to show a msg.
+* Fix an issue that can not import camera when using DTB character.
+
 ## 1.6.0
 * Support Daz model imported by Official Daz to Blender Bridge:
 [https://github.com/butaixianran/DazToBlender](https://github.com/butaixianran/DazToBlender)  
