@@ -28,16 +28,14 @@ b站：
 Blender市场：  
 [https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)  
 
-### Blender论坛
-[https://blenderartists.org/t/addon-retarget-mmds-vmd-motion-to-daz-or-cc3/1361902](https://blenderartists.org/t/addon-retarget-mmds-vmd-motion-to-daz-or-cc3/1361902)
-
-
 ### Github
-github项目池用于交流反馈和多语言翻译  
-[https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
+**github项目池用于交流反馈和多语言翻译，不含有扩展代码**  
+[https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)  
+
+
 
 ### 版本
-扩展版本：1.6.3  
+扩展版本：1.6.4  
 Blender版本：3.0或以上
 
 # 功能
@@ -293,6 +291,12 @@ mmd的几个眼睛闭合表情是：ウィンク, ウィンク２, まばたき,
 
 
 # 更新Log:
+## 1.6.4
+* 美化UI
+* 运行时进入Object模式，以防止用户在其他模式运行导致报错
+* 去掉调试模式按钮，添加显示扩展版本
+
+
 ## 1.6.3
 * 设置 "ぺろっ" 和 "口角上げ"的转换比例为0.5，以让笑容更合理
 * 处理"shift_jis"错误，显示一个错误提示

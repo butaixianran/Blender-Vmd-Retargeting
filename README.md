@@ -31,7 +31,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.6.3  
+Addon: 1.6.4  
 Blender: 3.0 or later
 
 # Feature
@@ -283,6 +283,11 @@ These 5 morphs are: ウィンク, ウィンク２, まばたき, 笑い, なご�
 or you can just remove all 5 morphs' data.  
 
 # Update Log:
+## 1.6.4
+* Update UI with boxes
+* Go to Object mode when executing to prevent user run it in Edit mode
+* Remove Debug mode button, add a label for addon version
+
 ## 1.6.3
 * Set "ぺろっ" and "口角上げ"'s converting rate to 0.5, to make a better smile.
 * Handle "shift_jis" error to show a msg.
