@@ -58,6 +58,8 @@ This addon supports:
 * Daz Genesis 8 imported by [Official Daz to Blender Bridge(updated version for blender 3.x)](https://github.com/butaixianran/DazToBlender)  
 * CC3(Character Creator) model imported by [cc3 blender tools addon](https://github.com/soupday/cc3_blender_tools)  
 
+![model type](img/addon_model_type.jpg)  
+
 For characters imported by fbx, cc3 model works too. But for daz model, facial and viseme motion won't work.  
 
 
@@ -158,6 +160,8 @@ For now, we only do this for: center and groove bone.
 If a vmd motion does not use IK, but you checked IK when importing, since there is no IK data, character's legs won't move. So, just uncheck IK when importing.   
 
 After unchecked IK, there will be a "Position Rate X" option shows up. Set it to 0.5 can make feet slip less.  
+![model type](img/addon_position_x_rate.jpg)  
+
 
 **IK works fine in most cases. But if leg rotates widely, then you need to know following information:**  
 

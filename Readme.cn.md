@@ -63,9 +63,9 @@ Blender版本：3.0或以上
 * Daz Genesis 8，由 [官方Daz to Blender桥接插件(blender 3.x 更新版本)](https://github.com/butaixianran/DazToBlender)导入  
 * CC3(Character Creator) 人模，由 [cc3 blender tools addon](https://github.com/soupday/cc3_blender_tools) 导入  
 
-通过fbx文件导入的人模，cc3应该也没问题。但daz的，本扩展将无法转换表情。  
+![model type](img/addon_model_type.jpg)  
 
-如果你希望使用于通过fbx导入的Daz模型，请告诉我们原因。如果原因合理，我们就会添加对fbx的Daz的支持。  
+通过fbx文件导入的人模，cc3也没问题。但daz的，本扩展将无法转换表情。  
 
 ### 准备CC3模型
 无须准备。但请直接从Character Creator导出人模，而不是iClone。  
@@ -131,9 +131,9 @@ Blender版本：3.0或以上
 相当简单：
 * 选择人模骨架
 * 选择vmd文件
-* 选择人模类型 (G8 by Differ Daz Importer, G8 by Official Daz Bridge or CC3)
+* 选择人模类型
 * 勾选要导入的部分
-* 确保你当前选择的模型是Daz或CC3，点击 "Execute", 完成.
+* 点击 "Execute", 完成.
 
 每个部分，都会导入为一个action，并包装为一个strip，放到一条新轨道上。可在NLA(Nonlinear Animation)中查看  
 
@@ -165,6 +165,7 @@ Blender版本：3.0或以上
 如果一个动作不使用IK，而你在导入时勾选了IK，那么，因为IK上没有数据，脚就不会动。因此，你导入时也需要去掉勾选IK。  
 
 去掉勾选IK后，会出现一个"位置比例X"的选项，设为0.5可以缓解无IK时，脚下有点滑步的问题。  
+![model type](img/addon_position_x_rate.jpg)  
 
 **IK大部分时候工作良好，但当腿部旋转特别大时，你需要了解以下信息：**  
 
