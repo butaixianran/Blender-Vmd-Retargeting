@@ -127,8 +127,9 @@ This new vmd file will work.
 It is pretty simple:
 * Select your character's armature
 * Select a vmd file
-* Select your model type (G8 by Differ Daz Importer, G8 by Official Daz Bridge or CC3)
+* Select your model type
 * Check which part you'd like to import
+* If this vmd motion doesn't use IK, then uncheck IK
 * **Make sure** your active armature is your Daz or CC3 model, click "Execute", done.
 
 Each part will be an action wrapped into a strip on a track, in NLA (Nonlinear Animation).  
