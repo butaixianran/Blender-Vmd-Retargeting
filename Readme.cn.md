@@ -133,6 +133,7 @@ Blender版本：3.0或以上
 * 选择vmd文件
 * 选择人模类型
 * 勾选要导入的部分
+* **如果这个动作没有使用IK，就去掉勾选IK**
 * 点击 "Execute", 完成.
 
 每个部分，都会导入为一个action，并包装为一个strip，放到一条新轨道上。可在NLA(Nonlinear Animation)中查看  
