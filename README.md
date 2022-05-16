@@ -283,6 +283,7 @@ This addon now is stable and handles most vmd motion very well. So, check follow
 
 * For CC character, make sure you export it from CC, not from iclone
 * Make sure Blender version is 3.0+
+* Make sure your addon version is 1.6.0+
 * Make sure Daz model is Genesis 8
 * In Daz, make sure using "**Export to Bender**" menu to export "`.dbz`" file before importing to blender.
 * In Blender, diffeomorphic daz importer's global setting, make sure you have set Daz lib path with "**Load Root Path**" button.
