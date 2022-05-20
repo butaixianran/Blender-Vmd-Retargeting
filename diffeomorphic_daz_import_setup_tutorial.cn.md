@@ -15,11 +15,11 @@
 ## 简述版
 1. 解压下载的zip文件
 2. 从"import_daz"目录下的"to_daz_studio"目录中，复制"Scripts"目录，到Daz内容库中
-3. 在Daz Studio中，前往Content Library->Script->Diffeomorphic，运行Set up menu，然后运行Daz root paths
+3. 在Daz Studio中，前往Content Library->Script->Diffeomorphic，运行Set up menu，然后运行Daz root paths，导出路径json文件
 4. 对Blender，安装"import_daz"这个扩展
-5. 前往扩展面板的"Global Settings"，点击左下角"Load Root Paths"
+5. 前往扩展面板的"Global Settings"，点击左下角"Load Root Paths"，导入之前导出的路径文件
 6. 在Daz中，保存场景为".duf"文件
-7. 点击文件菜单的"Export to Blender"，保存.dbz文件到.duf文件同名同目录下（**每次保存Daz模型，都要重新导出.dbz文件**）
+7. 点击文件菜单的"Export to Blender"，保存.dbz文件到.duf文件同名同目录下（**每次保存Daz模型，都要重新导出.dbz文件**）  
 8. Blender中，扩展面板点击"Import Daz"，导入刚才的.duf文件。  
 
 
@@ -37,9 +37,9 @@
 #### 配置Daz Studio
 打开Daz Studio，前往Content Library面板，展开Script目录，进入"Diffeomorphic"这个文件夹。双击："Setup Menus"脚本。   
 
-这个脚本，会在你的Daz的File菜单里，添加"Export To Blender"这个菜单项。HD那个不用管。    
+这个脚本，会在你的Daz的File菜单里，添加"Export To Blender"这个菜单项。**HD那个不要用。**    
 
-接下来，点击"Save Paths"这个脚本，要保存你的库的路径。  
+接下来，点击"Save Paths"这个脚本，保存你的库的路径的json文件。  
 
 Daz 配置完毕。  
 
@@ -50,12 +50,12 @@ Daz 配置完毕。
 
 回到工作区域，按下N，打开右侧工具面板。前往："Daz Importer"面板。点击"Global Settings"按钮，打开全局设置面板。   
 
-点击面板左下角的：Load Root Paths，设置Daz内容库的根路径。  
+点击面板左下角的：Load Root Paths，导入之前在Daz保存的路径json文件。  
 
 查看面板左上角的 Content Directories里面的路径，是不是你的Daz内容库的根路径，是的话，到此就设置完毕了。  
 
 **可选设置：**    
-面板右上角：Materials 设置中，Method一栏。如果你习惯使用eevee，这里最好选：Principled。不然皮肤颜色和眼睛透明度在eevee下会有问题。  
+面板右上角：Materials 设置中，Method一栏。如果你习惯使用eevee，这里请选：Principled。不然皮肤颜色和眼睛透明度在eevee下会有问题。  
 
 
 Blender配置完毕。  
@@ -63,7 +63,7 @@ Blender配置完毕。
 ### 基本使用
 在Daz中，保存场景为.duf文件。  
 
-前往文件菜单，点击："Export to Blender"，保存一个后缀 `.dbz` 的json文件。文件名和路径要和场景的 `.duf` 文件相同。（默认即可） （**每次保存Daz模型，都要重新导出.dbz文件**）   
+前往文件菜单，点击："Export to Blender"（**HD那个不要用**），保存一个后缀 `.dbz` 的json文件。文件名和路径要和场景的 `.duf` 文件相同。（默认即可）（**每次保存Daz模型，都要重新导出.dbz文件**）    
 
 前往Blender，工作区按N，前往这个扩展的面板。  
 
