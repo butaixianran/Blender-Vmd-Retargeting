@@ -279,16 +279,18 @@ Also try Upperarm 1.0, Forearm 0.8 to get the best result.
 For CC character, just set all arm rotation to 1.0.  
 
 ## Body motion is totally wrong
-This addon now is stable and handles most vmd motion very well. So, check following checklist to fix your issue quickly.
+This addon now is stable and handles most vmd motion very well. So, check following checklist to fix your issue quickly.  
 
-* For CC character, make sure you export it from CC, not from iclone
+* For CC character, make sure you export it from CC, with A-Pose, not from iclone
+* For CC character, make sure you change model type to "CC3" on addon panel
 * Make sure Blender version is 3.0+
 * Make sure your addon version is 1.6.0+
 * Make sure Daz model is Genesis 8
 * In Daz, make sure using "**Export to Bender**" menu to export "`.dbz`" file before importing to blender.
+* When using "**Export to Bender**", have you clicked "**HD**" menu by mistake?
 * In Blender, diffeomorphic daz importer's global setting, make sure you have set Daz lib path with "**Load Root Path**" button.
 * Does this vmd motion use IK? If not, uncheck IK when importing.
-* In Blender, Right side, Scene panel, Units section, make sure it is set to 1 Metre. (User or another addon may change this and forget to change it back)  
+* In Blender, Right side, Scene panel, Units section, make sure it is set to 1 Metre.  
 * Try another vmd motion from a different author. 
 
 If only this author's vmd motion can not be imported correctly, contact us, tell us the name of this vmd motion, we will test it.  
