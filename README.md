@@ -1,5 +1,4 @@
-### Notice: If you already bought it, make sure you update it to latest version. Which fixed some important bugs and added support for Blender 3.1. Also handled twist bones, for Natsumi San's vmd motion   
-
+### This addon now is stable and handles most vmd motion very well. So, if you can not make it work, read this document's "[Common_Issue](#Common_Issue)" part to fix your issue quickly.    
 
 # Language
 [中文](Readme.cn.md)  
@@ -266,7 +265,7 @@ But, again, Natsumi San's vmd motion may use it. Still, as long as vmd motion do
 ## Prop motion
 This addon won't handle that.
 
-# Common Issue
+# Common_Issue
 ## Leg won't bend
 This vmd motion does not use IK, so uncheck IK before importing.  
 
