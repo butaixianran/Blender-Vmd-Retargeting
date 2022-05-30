@@ -6,7 +6,7 @@
 [日本語](Readme.jp.md)
 
 # Blender Addon: Vmd Retargeting
-This blender addon will import motion from mmd's .vmd file onto Daz or CC3 models, with or without mmd model.  
+This blender addon will import motion from mmd's .vmd file onto Daz or CC models, with or without mmd model.  
 
 ![basic](img/addon_screen_basic.jpg) 
 ![full](img/addon_screen_ful.jpg)
@@ -31,7 +31,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.6.4  
+Addon: 1.7.0  
 Blender: 3.0 or later
 
 # Feature
@@ -39,7 +39,7 @@ Blender: 3.0 or later
 * Or retarget body motion from a mmd model.
 * 
 * Import body, eyeball, facial, viseme and camera motion separately
-* Ignore feet rotation when Daz/CC3 character is on high heel.
+* Ignore feet rotation when Daz/CC character is on high heel.
 * Set interpolation and easing as you wish
 * Set arm rotation rate, to prevent hands poke into chest.  
 * Set camera height offset or rotation rate if needed  
@@ -56,20 +56,21 @@ If you are new to blender and don't know how to install a blender addon, search:
 This addon supports:
 * Daz Genesis 8 imported by [diffeomorphic daz importer](https://diffeomorphic.blogspot.com/)
 * Daz Genesis 8 imported by [Official Daz to Blender Bridge(updated version for blender 3.x)](https://github.com/butaixianran/DazToBlender)  
-* CC3(Character Creator) model imported by [cc3 blender tools addon](https://github.com/soupday/cc3_blender_tools)  
+* CC(Character Creator) imported by [cc blender tools addon](https://github.com/soupday/cc_blender_tools)  
 
 ![model type](img/addon_model_type.jpg)  
 
-For characters imported by fbx, cc3 model works too. But for daz model, facial and viseme motion won't work.  
+For characters imported by fbx, cc model works too. But for daz model, facial and viseme motion won't work.  
 
 
-### Prepare CC3 model
+### Prepare CC3+ or CC4 model
 **No preparing is needed.**   
-Just export it from Character Creator, not from iClone.  
+Just export it from Character Creator, not from iClone, and Mesh only, no animation.  
 
-When exporting from CC, make sure you choose A-Pose.(Need CC3+)  
+For CC3+, when exporting, choose A-Pose  
 ![](img/cc3_export_setting.jpg)    
-After importing into Blender, its pose should be like this:    
+
+For CC3+ or CC4, After importing into Blender, its pose should be like this:    
 ![](img/cc3_def.jpg)  
 
 
@@ -117,7 +118,7 @@ Also watch Daz Official tutorial:
 
 But, there are some old or weird vmd files don't use normal bone names or file structure.  
 
-If you imported a vmd file like this onto Daz or CC3, your model gonna jump from one pose to another, like a robot dance.  
+If you imported a vmd file like this onto Daz or CC, your model gonna jump from one pose to another, like a robot dance.  
 
 For those vmd files, just open MikuMikuDance, load a TDA model, and load this vmd file on it, then re-export it as a new vmd file.  
 
@@ -130,7 +131,7 @@ It is pretty simple:
 * Select model type
 * Check which part you'd like to import
 * If this vmd motion doesn't use IK, then uncheck IK
-* **Make sure** your active armature is your Daz or CC3 model, click "Execute", done.
+* **Make sure** your active armature is your Daz or CC model, click "Execute", done.
 
 Each part will be an action wrapped into a strip on a track, in NLA (Nonlinear Animation).  
 So, it won't mess up your timeline, and you can move or delete them like clips.
@@ -166,24 +167,24 @@ After unchecked IK, there will be a "Position Rate X" option shows up. Set it to
 
 **IK works fine in most cases. But if leg rotates widely, then you need to know following information:**  
 
-CC3 and Daz model don't have IK by default. So this addon creates IK for legs when importing body motion from vmd file.  
+CC and Daz model don't have IK by default. So this addon creates IK for legs when importing body motion from vmd file.  
 
-But a problem with Daz/CC3 model is: there is no bending on their knees' rest pose. In that case, IK will come with a IK Pole Bone, to tell knee which direction to point when bending.  
+But a problem with Daz/CC model is: there is no bending on their knees' rest pose. In that case, IK will come with a IK Pole Bone, to tell knee which direction to point when bending.  
 
-So, Daz/CC3's knees are always pointing to IK Pole bones in front of them. And IK Pole Bones are following rotation of pelvis bone.  
+So, Daz/CC's knees are always pointing to IK Pole bones in front of them. And IK Pole Bones are following rotation of pelvis bone.  
 
 That works fine in most cases. But, if legs rotate too much, then IK Pole bones won't work well since they just following pelvis bone.  
 
-So, in that case, you need to retarget motion from a mmd model. Since mmd model already has the motion on it, your Daz/CC3 model can get legs' final rotation without IK bone.  
+So, in that case, you need to retarget motion from a mmd model. Since mmd model already has the motion on it, your Daz/CC model can get legs' final rotation without IK bone.  
 
 Check the section: **Pick a mmd model as Source**
 
 #### Arm rotation rate
-Daz/CC3 has different arm length with mmd model. So, if mmd model puts hands on chest, they always poke into body when on Daz/CC3 model.
+Daz/CC has different arm length with mmd model. So, if mmd model puts hands on chest, they always poke into body when on Daz/CC model.
 
 Set upperarm and forearm rotation rate to 0.8 will fix that in most cases. (Now this is default)  
 
-But if you are using CC3 model, you better set it back to 1.0.    
+But if you are using CC model, you better set it back to 1.0.    
 
 #### Pick a mmd model as Source
 If you picked a mmd model, addon will ignore body motion from vmd file and retarget body motion from your picked mmd model.  
@@ -201,14 +202,14 @@ After importing mmd model, then import your vmd motion onto this mmd model **by 
 Which is: select your mmd model, go to `File menu->Import->Vmd file`, and select a vmd file.  
 Now, your mmd model should has a motion on it.   
 
-Then select your Daz or CC3 model, use the pick tool of "Source" from this addon's panel, **pick the armature of your mmd model. Not the empty parent!**    
+Then select your Daz or CC model, use the pick tool of "Source" from this addon's panel, **pick the armature of your mmd model. Not the empty parent!**    
 ![](img/mmd_armature.jpg)  
 
-**Make sure you select your Daz or CC3 model**, then click "Execute".    
+**Make sure you select your Daz or CC model**, then click "Execute".    
 
 It will retargeting every frame of evey mapping bone's final rotation from mmd model, not just key frames, so it will be very slow.   
 
-And it doesn't need an IK bone on Daz/CC3 model.  
+And it doesn't need an IK bone on Daz/CC model.  
 
 **There is a video tutorial for this:**   
 [https://youtu.be/rttA3v_5S2I](https://youtu.be/rttA3v_5S2I)  
@@ -227,10 +228,10 @@ If your model's motion is not smooth, you can try set interpolation to "Linear".
 This setting won't affect camera motion. Camera motion is always linear.  
 
 ### Camera Rate/ Height Offset
-Daz/CC3 model has different model size with mmd model. So, camera motion need to be adjusted.  
+Daz/CC model has different model size with mmd model. So, camera motion need to be adjusted.  
 
 Default value works fine for almost every case. 
-But if your model is a CC3 character with high heel, you need to move camera up with 8cm.  
+But if your model is a CC character with high heel, you need to move camera up with 8cm.  
 
 
 ### Debug mode
@@ -245,7 +246,7 @@ There are 3 shoulder bones on a mmd model: shoulder, shoulder P, shoulder C. Thi
 
 
 ## Twist Bone
-MMD model also comes with twist bones, only a few vmd motions use them. With Daz Model, this can be converted nicely. But CC3 model's twist bones work in a different way and won't be converted well.   
+MMD model also comes with twist bones, only a few vmd motions use them. With Daz Model, this can be converted nicely. But CC model's twist bones work in a different way and won't be converted well.   
 
 So, if you are using a vmd file come with motion on twist bones, you better use Daz model.  
 
@@ -281,10 +282,10 @@ For CC character, just set all arm rotation to 1.0.
 ## Body motion is totally wrong
 This addon now is stable and handles most vmd motion very well. So, check following checklist to fix your issue quickly.  
 
-* For CC character, make sure you export it from CC, with A-Pose, not from iclone
-* For CC character, make sure you change model type to "CC3" on addon panel
+* For CC character, make sure you export it from CC, with A-Pose, not from iClone
+* For CC character, make sure you change model type to "CC3" or "CC4" on addon panel
 * Make sure Blender version is 3.0+
-* Make sure your addon version is 1.6.0+
+* Make sure your addon is latest version
 * Make sure Daz model is Genesis 8
 * In Daz, make sure using "**Export to Bender**" menu to export "`.dbz`" file before importing to blender.
 * When using "**Export to Bender**", have you clicked "**HD**" menu by mistake?
@@ -305,11 +306,11 @@ You need to open MMD, load a TDA model, load this vmd file and Re-save it into a
 Your blender version is too old, pls use Blender 3.0 or later.  
 
 ## Eye can not be fully closed
-MMD model comes with 5 morphs can close eyes. But other character like Daz or CC3 only has one morph to close eye.  
+MMD model comes with 5 morphs can close eyes. But other character like Daz or CC only has one morph to close eye.  
 
 Normally, vmd motion's creator only use 1 of those 5 morphs to close eye, to avoid chaos. But, there are a few vmd motion's creator will play with all 5 morphs.    
 
-In that case, all 5 mmd morphs data is converted into 1 daz/cc3 morph, so one morph's data will cover another, which make eyes can not be fully closed.  
+In that case, all 5 mmd morphs data is converted into 1 daz/cc morph, so one morph's data will cover another, which make eyes can not be fully closed.  
 
 The only solution for this, is remove all other 4 morphs' data in MMD, only keep one of them.  
 
@@ -318,6 +319,9 @@ These 5 morphs are: ウィンク, ウィンク２, まばたき, 笑い, なご�
 or you can just remove all 5 morphs' data.  
 
 # Update Log:
+## 1.7.0
+* Support CC4
+
 ## 1.6.4
 * Update UI with boxes
 * Go to Object mode when executing to prevent user run it in Edit mode
