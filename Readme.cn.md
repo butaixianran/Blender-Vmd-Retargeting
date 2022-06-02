@@ -217,7 +217,8 @@ Daz/CC人模的手长和mmd人模不同。因此，如果mmd人模将手放到�
 **我们为此制作了一个单独的视频教程：**  
 [https://youtu.be/rttA3v_5S2I](https://youtu.be/rttA3v_5S2I)  
 [![](img/convert_motion_from_mmd_model_to_daz_tutorial-resiez.jpg)](https://youtu.be/rttA3v_5S2I)  
-
+b站：   
+[https://www.bilibili.com/video/BV12T4y1Q777](https://www.bilibili.com/video/BV12T4y1Q777)  
 
 ### 眼球/表情/口型
 CC3人模没有口型morph，这是iclone的功能。因此，本扩展用表情morph来模拟口型。虽然可用，但不会像真正的口型morph那么好。CC4是有口型Morph的。  
