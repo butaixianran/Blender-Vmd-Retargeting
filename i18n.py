@@ -2,6 +2,7 @@ import bpy
 
 dict = {
     "en_US":{
+        (None, "You need Blender 3.0+ to use this addon"):"You need Blender 3.0+ to use this addon",
         (None, "Select Vmd File"):"Select Vmd File",
         (None, "Select Avatar Type"):"Select Avatar Type",
         (None, "Select Model Type:"):"Select Model Type:",
@@ -45,6 +46,7 @@ dict = {
         
     },
     "zh_CN":{
+        (None, "You need Blender 3.0+ to use this addon"):"请使用Blender 3.0以上版本",
         (None, "Select Vmd File"):"选择vmd文件",
         (None, "Select Avatar Type"):"选择模型类型",
         (None, "Select Model Type:"):"选择模型类型:",
@@ -87,6 +89,7 @@ dict = {
         (None, "Position rate:"):"移动比例:",
     },
     "zh_TW":{
+        (None, "You need Blender 3.0+ to use this addon"):"請使用Blender 3.0以上版本",
         (None, "Select Vmd File"):"選擇vmd文件",
         (None, "Select Avatar Type"):"選擇模型類型",
         (None, "Select Model Type:"):"選擇模型類型:",
@@ -129,6 +132,7 @@ dict = {
         (None, "Position rate:"):"移動比例:",
     },
     "ja_JP":{
+        (None, "You need Blender 3.0+ to use this addon"):"Blender 3.0以上を使用してください",
         (None, "Select Vmd File"):"Vmdファイルを選択",
         (None, "Select Avatar Type"):"アバターのタイプを選択",
         (None, "Select Model Type:"):"モデルのタイプを選択:",
