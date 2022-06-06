@@ -301,9 +301,6 @@ If there is error msg with `shift_jis` in it, it means, this vmd file is not enc
 
 You need to open MMD, load a TDA model, load this vmd file and Re-save it into a new vmd file. This new vmd file will be encoded with `shift_jis`. Then import this new vmd file.  
 
-## 'KinematicConstraint' object has no attribute 'enabled'
-Your blender version is too old, pls use Blender 3.0 or later.  
-
 ## Eye can not be fully closed
 MMD model comes with 5 morphs can close eyes. But other character like Daz or CC only has one morph to close eye.  
 
