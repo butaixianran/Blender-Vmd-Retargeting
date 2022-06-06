@@ -325,6 +325,9 @@ mmd的几个眼睛闭合表情是：ウィンク, ウィンク２, まばたき,
 
 
 # 更新Log:
+## 1.7.2
+* 添加"Object you selected is not an Armature"的中文翻译。
+
 ## 1.7.1
 * 检查Blender版本。禁止Blender 3.0以下版本使用本扩展
 

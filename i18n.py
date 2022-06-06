@@ -43,7 +43,7 @@ dict = {
         (None, "Use Vmd file's Upper body motion and Mmd model's lower body motion"):"Use Vmd file's Upper body motion and Mmd model's lower body motion",
         (None, "Set Position X's rate"):"Set Position X's rate",
         (None, "Position rate:"):"Position rate:",
-        
+        (None, "Object you selected is not an Armature"):"Object you selected is not an Armature",
     },
     "zh_CN":{
         (None, "You need Blender 3.0+ to use this addon"):"请使用Blender 3.0以上版本",
@@ -87,6 +87,7 @@ dict = {
         (None, "Use Vmd file's Upper body motion and Mmd model's lower body motion"):"使用vmd文件的上半身和mmd模型的下半身合并身体动作",
         (None, "Set Position X's rate"):"设置X轴移动的比例",
         (None, "Position rate:"):"移动比例:",
+        (None, "Object you selected is not an Armature"):"你选择的对象不是骨架",
     },
     "zh_TW":{
         (None, "You need Blender 3.0+ to use this addon"):"請使用Blender 3.0以上版本",
@@ -130,6 +131,7 @@ dict = {
         (None, "Use Vmd file's Upper body motion and Mmd model's lower body motion"):"使用vmd文件的上半身和mmd模型的下半身合併身體動作",
         (None, "Set Position X's rate"):"設置X軸移動的比例",
         (None, "Position rate:"):"移動比例:",
+        (None, "Object you selected is not an Armature"):"你選擇的對象不是骨架",
     },
     "ja_JP":{
         (None, "You need Blender 3.0+ to use this addon"):"Blender 3.0以上を使用してください",
@@ -173,6 +175,7 @@ dict = {
         (None, "Use Vmd file's Upper body motion and Mmd model's lower body motion"):"vmdファイルの上半身とmmdモデルの下半身を使用して体の動作をマージ",
         (None, "Set Position X's rate"):"X軸移動の割合を設定する",
         (None, "Position rate:"):"移動の割合:",
+        (None, "Object you selected is not an Armature"):"選択したオブジェクトはスケルトンではありません",
     },
 }
 
