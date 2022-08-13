@@ -35,7 +35,7 @@ Blender市场：
 
 
 ### 版本
-扩展版本：1.7.1  
+扩展版本：1.8.0  
 Blender版本：3.0或以上
 
 # 功能
@@ -60,7 +60,8 @@ Blender版本：3.0或以上
 ## 准备模型
 本扩展支持以下人模:
 * Daz Genesis 8，由 [Diffeomorphic daz importer](https://diffeomorphic.blogspot.com/) 导入
-* Daz Genesis 8，由 [官方Daz to Blender桥接插件(blender 3.x 更新版本)](https://github.com/butaixianran/DazToBlender)导入  
+* Daz Genesis 8，由 [Daz to Blender桥接插件Blender 3.x 更新版](https://github.com/butaixianran/DazToBlender)导入  
+* Daz Genesis 8, 由 [Daz to Blender官方桥接插件2022](https://www.daz3d.com/forums/discussion/572806/official-daztoblender-bridge-2022-what-s-new-and-how-to-use-it)导入
 * CC(Character Creator) 人模，由 [cc blender tools addon](https://github.com/soupday/cc_blender_tools) 导入  
 
 ![model type](img/addon_model_type.jpg)  
@@ -95,7 +96,7 @@ Blender版本：3.0或以上
 准备完毕。  
 
 
-### 准备Daz模型（使用Daz官方Blender桥接插件，以下简称DTB）
+### 准备Daz模型（使用Daz to Blender桥接插件Blender 3.x更新版，以下简称DTB）
 这个功能，是给能够自学使用DTB的用户使用的。DTB的好处是，morph就在身体模型的shape key上且没有driver。而且，材质也是标准Principled材质。  
 
 因此，Daz模型导入mmd的动作后，可以连同动作和材质一起，从Blender导出到任何其他3D软件。包括游戏引擎。  
@@ -113,6 +114,21 @@ Blender版本：3.0或以上
 * 进入"**choose morphs**"，点击左下角**Genesis 8 Facial Morphs** 和 **Visemes**按钮，把这些morph添加到输出列表。
 * 输出人模
 * 在Blender中，在DTB扩展面板上，点击导入，完成。
+
+
+### 准备Daz模型（使用官方Daz to Blender 2022，以下简称DTB 2022）
+官方DTB 2022已经发布了，但是包含了所有当年的老旧问题和bug，都没有修复。所以我们推荐不要使用这个官方插件。   
+
+目前，这个新的官方版本，唯一的好处是安装特别简单。但是其他方面，远不如其他两个选择好。    
+
+你需要在这个帖子中了解如何安装和使用它:  
+[https://www.daz3d.com/forums/discussion/572806/official-daztoblender-bridge-2022-what-s-new-and-how-to-use-it](https://www.daz3d.com/forums/discussion/572806/official-daztoblender-bridge-2022-what-s-new-and-how-to-use-it)  
+
+**安装DTB 2022之后:**   
+* 在Daz中, 导出人模时, 勾选 "**Export Morphs**"
+* 打开 "**choose morphs**" 对话框, 从左侧 "Pose Controls" 分类下, 添加 **Eyes**, **Mouth**, **Brow**  和 **Visemes** 表情到"**Morphs to Export**" 列表。  
+* 点击导出  
+* 在Blender中, 在DTB扩展面板, 点击导入, 完成  
 
 
 

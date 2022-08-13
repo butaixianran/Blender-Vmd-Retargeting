@@ -30,7 +30,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.7.1  
+Addon: 1.8.0  
 Blender: 3.0 or later
 
 # Feature
@@ -54,7 +54,8 @@ If you are new to blender and don't know how to install a blender addon, search:
 ## Prepare a character
 This addon supports:
 * Daz Genesis 8 imported by [diffeomorphic daz importer](https://diffeomorphic.blogspot.com/)
-* Daz Genesis 8 imported by [Official Daz to Blender Bridge(updated version for blender 3.x)](https://github.com/butaixianran/DazToBlender)  
+* Daz Genesis 8 imported by [Daz to Blender Bridge for blender 3.x](https://github.com/butaixianran/DazToBlender)  
+* Daz Genesis 8 imported by [Official Daz to Blender Bridge 2022](https://www.daz3d.com/forums/discussion/572806/official-daztoblender-bridge-2022-what-s-new-and-how-to-use-it)  
 * CC(Character Creator) imported by [cc blender tools addon](https://github.com/soupday/cc_blender_tools)  
 
 ![model type](img/addon_model_type.jpg)  
@@ -92,7 +93,7 @@ After importing, go to "**Finish**" section of Diffeomorphic daz importer's pane
 
 Now, your daz model is prepared.  
 
-### Prepare Daz model (with Official Daz to Blender Bridge(DTB))
+### Prepare Daz model (with Daz to Blender Bridge(DTB) for Blender 3.x)
 This is for those who know how to use DTB. If you are not familiar with Daz or Blender, just choose the "Diffeomorphic Daz Importer" way.  
 
 The good part of DTB is, morph is on body mesh's shape key without driver. Also, there is no complex shader in material, only standard Principled shader.   
@@ -112,25 +113,40 @@ Also watch Daz Official tutorial:
 * In Blender, on DTB's panel, click import, Done.
 
 
+### Prepare Daz model (with Official Daz to Blender Bridge(DTB) 2022)
+Official DTB 2022 is released, with many old bugs and problems in it, never fixed. So, we really recommend you do not use this addon for now.  
+
+For now, the only good part for Official DTB 2022 is, it is very easy to install. But it is not as good as the other 2 choices.    
+
+You can learn it here about how to install or use it:  
+[https://www.daz3d.com/forums/discussion/572806/official-daztoblender-bridge-2022-what-s-new-and-how-to-use-it](https://www.daz3d.com/forums/discussion/572806/official-daztoblender-bridge-2022-what-s-new-and-how-to-use-it)  
+
+**After you installed DTB 2022:**   
+* In Daz, when exporting your model, check "**Export Morphs**"
+* Go to "**choose morphs**" dialog window, From "Pose Controls" category, add **Eyes**, **Mouth**, **Brow**  and **Visemes** morphs to the "**Morphs to Export**" list.  
+* Export.  
+* In Blender, on DTB's panel, click import, Done.  
+
+
 ## Prepare a vmd file
 **No preparing is needed in most cases.**  
 
-But, there are some old or weird vmd files don't use normal bone names or file structure.  
+But, there are some very old vmd files don't use normal vmd file structure.  
 
 If you imported a vmd file like this onto Daz or CC, your model gonna jump from one pose to another, like a robot dance.  
 
 For those vmd files, just open MikuMikuDance, load a TDA model, and load this vmd file on it, then re-export it as a new vmd file.  
 
-This new vmd file will work.
+This new vmd file will work.  
 
 ## Import vmd
 It is pretty simple:
 * Select your character's armature
 * Select a vmd file
-* Select model type
+* **Select model type**
 * Check which part you'd like to import
 * If this vmd motion doesn't use IK, then uncheck IK
-* **Make sure** your active armature is your Daz or CC model, click "Execute", done.
+* **Make sure** selected object is Daz or CC model, click "Execute", done.
 
 Each part will be an action wrapped into a strip on a track, in NLA (Nonlinear Animation).  
 So, it won't mess up your timeline, and you can move or delete them like clips.
