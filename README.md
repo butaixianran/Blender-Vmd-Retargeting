@@ -294,7 +294,7 @@ Also try Upperarm 1.0, Forearm 0.8 to get the best result.
 
 For CC character, just set all arm rotation to 1.0.  
 
-## Character can not turn around, some motion is wrong
+## Character can not turn around, some motions are wrong
 * Make sure your Diff Daz Importer addon's version is the latest 1.6.1, not the old version 1.5.  
 * At Diff Daz Importer addon's panel, in "**Global Setting**" dialog window, **Rigging** section, make sure you unchecked every option there. They gonna limit your model's rotation.   
 ![](img/rigging.jpg)  
