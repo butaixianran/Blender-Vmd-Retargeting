@@ -294,6 +294,12 @@ Also try Upperarm 1.0, Forearm 0.8 to get the best result.
 
 For CC character, just set all arm rotation to 1.0.  
 
+## Character can not turn around, some motion is wrong
+* Make sure your Diff Daz Importer addon's version is the latest 1.6.1, not the old version 1.5.  
+* At Diff Daz Importer addon's panel, in "**Global Setting**" dialog window, **Rigging** section, make sure you unchecked every option there. They gonna limit your model's rotation.   
+![](img/rigging.jpg)  
+
+
 ## Body motion is totally wrong
 This addon now is stable and handles most vmd motion very well. So, check following checklist to fix your issue quickly.  
 
@@ -331,6 +337,9 @@ These 5 morphs are: ウィンク, ウィンク２, まばたき, 笑い, なご�
 or you can just remove all 5 morphs' data.  
 
 # Update Log:
+## 1.8.0
+* Support the new Daz to Blender Bridge 2022, check document for more.
+
 ## 1.7.1
 * Check Blender version
 
