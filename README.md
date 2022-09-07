@@ -94,17 +94,14 @@ After importing, go to "**Finish**" section of Diffeomorphic daz importer's pane
 Now, your daz model is prepared.  
 
 ### Prepare Daz model (with Daz to Blender Bridge(DTB) for Blender 3.x)
-This is for those who know how to use DTB. If you are not familiar with Daz or Blender, just choose the "Diffeomorphic Daz Importer" way.  
+This is for those who know how to use DTB. If you are not familiar with Daz or Blender, just choose the "**Diffeomorphic Daz Importer**" way.  
 
-The good part of DTB is, morph is on body mesh's shape key without driver. Also, there is no complex shader in material, only standard Principled shader.   
-
-So, you can export this Daz model with motion and material from Blender to any other 3D tools, including game engine.  
-
-If you don't know how to use DTB, you need to read the installation part of its doument:  
+This one, is not the Official DTB 2022. It is a version updated by me, which works on Blender 3.x, fixed most issues in the Official DTB, and added a lot of useful options.  
 [https://github.com/butaixianran/DazToBlender](https://github.com/butaixianran/DazToBlender)  
 
-Also watch Daz Official tutorial:  
-[https://www.daz3d.com/daz-to-blender-bridge](https://www.daz3d.com/daz-to-blender-bridge)  
+The best part of this one is, morph is on body mesh's shape key without driver. Also, there is no complex shader in materials, only standard Principled shader.   
+
+**So, with this one, you can export Daz model with motion and materials from Blender to any other 3D tools, including game engine.**  
 
 **After you installed DTB:**   
 * In Daz, when exporting your model, check "**Include Morphs**"

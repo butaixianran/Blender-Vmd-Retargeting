@@ -97,15 +97,14 @@ Blender版本：3.0或以上
 
 
 ### 准备Daz模型（使用Daz to Blender桥接插件Blender 3.x更新版，以下简称DTB）
-这个功能，是给能够自学使用DTB的用户使用的。DTB的好处是，morph就在身体模型的shape key上且没有driver。而且，材质也是标准Principled材质。  
+这个功能，是给能够自学使用DTB的用户使用的。
 
-因此，Daz模型导入mmd的动作后，可以连同动作和材质一起，从Blender导出到任何其他3D软件。包括游戏引擎。  
-
-如果你不知道如何使用DTB，需要自行阅读它的文档的安装部分（英文）：  
+这个版本的DTB，不是Daz官方的DTB 2022。而是我本人修改的版本，适用于Blender 3.x，修复了官方的大量bug，添加很多方便的功能和选项。
 [https://github.com/butaixianran/DazToBlender](https://github.com/butaixianran/DazToBlender)  
 
-并且浏览官方视频教程（英文）:  
-[https://www.daz3d.com/daz-to-blender-bridge](https://www.daz3d.com/daz-to-blender-bridge)  
+这个DTB版本的最大好处是，morph就在身体模型的shape key上且没有driver。而且，材质也是标准Principled材质。  
+
+因此，Daz模型导入mmd的动作后，可以连同动作和材质一起，从Blender导出到任何其他3D软件。包括游戏引擎。  
 
 建议对Daz和Blender不够熟悉的用户选择Diffeomorphic Daz Importer。  
 
@@ -119,7 +118,9 @@ Blender版本：3.0或以上
 ### 准备Daz模型（使用官方Daz to Blender 2022，以下简称DTB 2022）
 官方DTB 2022已经发布了，但是包含了所有当年的老旧问题和bug，都没有修复。所以我们推荐不要使用这个官方插件。   
 
-目前，这个新的官方版本，唯一的好处是安装特别简单。但是其他方面，远不如其他两个选择好。    
+这个DTB 2022，和几年前的老版本相比，只是重写了Daz端，把脚本语言的代码，换成了C++代码。Blender一侧，几乎没有改动。大量问题隐藏其中，估计很久都不会修复。  
+
+目前，这个新的官方版本，唯一的好处是安装特别简单。但是其他方面，远不如其他两个选择好。因此，只适合新手和浅层使用。    
 
 你需要在这个帖子中了解如何安装和使用它:  
 [https://www.daz3d.com/forums/discussion/572806/official-daztoblender-bridge-2022-what-s-new-and-how-to-use-it](https://www.daz3d.com/forums/discussion/572806/official-daztoblender-bridge-2022-what-s-new-and-how-to-use-it)  
