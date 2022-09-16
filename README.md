@@ -30,7 +30,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.8.0  
+Addon: 1.9.0  
 Blender: 3.0 or later
 
 # Feature
@@ -262,7 +262,7 @@ MMD model also comes with twist bones, only a few vmd motions use them. With Daz
 
 So, if you are using a vmd file come with motion on twist bones, you better use Daz model.  
 
-So far as I know, only Natsumi San's vmd motion uses twist bones.   
+So far as I know, there are only 2 vmd motion creators use twist bones. They are: Natsumi San and Fairy Tale.   
 
 
 ## Waist Bone
@@ -334,6 +334,9 @@ These 5 morphs are: ウィンク, ウィンク２, まばたき, 笑い, なご�
 or you can just remove all 5 morphs' data.  
 
 # Update Log:
+## 1.9.0
+* Support IK親 bones. IK親 means IK Parent bones, aka IKP bone. Now, Fairy Tale's vmd motion works. For example, vmd motion: "AOA - like a cat".
+
 ## 1.8.0
 * Support the new Daz to Blender Bridge 2022, check document for more.
 
