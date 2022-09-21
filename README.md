@@ -280,9 +280,38 @@ This addon won't handle that.
 
 # Common_Issue
 ## Leg won't bend
-This vmd motion does not use IK, so uncheck IK before importing.  
+This vmd motion does not use IK.  
 
-If feet are slipping after uncheck IK, set Position Rate X to 0.5.  
+#### Solution 1
+So, uncheck IK before importing.  
+
+If feet are slipping after unchecked IK, set Position Rate X to 0.5.  
+
+#### Solution 2
+Another solution is, use a tool "**mmd MotionSupporter**"(Japanese language Only), convert FK into IK.  
+* The good part of this is: after converting, there is almost no slipping on legs. 
+* The bad part is: It need about 5 minutes to convert a vmd motion.
+
+**MotionSupporter's How To**  
+* Download: [https://bowlroll.net/file/233713](https://bowlroll.net/file/233713)  
+* Unzip and run, select "**足FKtoIK**" Section:  
+![](img/motionSupporter_FKtoIK.jpg)  
+
+* Line 1, select or drag vmd file into it.
+* Line 2, select or drag mmd mode file into it.
+
+>**Try not use a TDA model, YYB Miku model is much better.** With TDA model, after converting, new vmd motion could make your model's legs keep shaking.  
+>
+>Download YYB Miku model：[https://bowlroll.net/file/284016](https://bowlroll.net/file/284016)  
+
+* Line 3, location for converted vmd file.
+
+* Line 4, **Check options as screenshot**, otherwise, converted vmd motion, gonna make your model's legs keep shaking.  
+
+>"足IKブレ固定" must be 0. It gonna set a distance range. In this range, legs gonna be treated as no movement. So, if this value>0, it gonna drop a lot of keyframes, which makes your model's legs keep shaking.  
+
+* Click the big button at bottom, to start converting.
+* After converting, import this new vmd file with VMD Retargeting addon, Done.  
 
 ## Arm rotation angle is different
 Try arm rotation rate 1.0. Default is 0.8, to prevent poking.  
