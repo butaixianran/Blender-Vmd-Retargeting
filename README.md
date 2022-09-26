@@ -283,7 +283,7 @@ This addon won't handle that.
 This vmd motion does not use IK.  
 
 #### Solution 1
-So, uncheck IK before importing.  
+At addon panel, set IK to Off before importing.  
 
 If feet are slipping after unchecked IK, set Position Rate X to 0.5.  
 
@@ -337,7 +337,7 @@ This addon now is stable and handles most vmd motion very well. So, check follow
 * In Daz, make sure using "**Export to Bender**" menu to export "`.dbz`" file before importing to blender.
 * When using "**Export to Bender**", have you clicked "**HD**" menu by mistake?
 * In Blender, diffeomorphic daz importer's global setting, make sure you have set Daz lib path with "**Load Root Path**" button.
-* Does this vmd motion use IK? If not, uncheck IK when importing.
+* Does this vmd motion use IK? If not, set IK to Off before importing.
 * In Blender, Right side, Scene panel, Units section, make sure it is set to 1 Metre.  
 * Try another vmd motion from a different author. 
 
@@ -363,6 +363,12 @@ These 5 morphs are: ウィンク, ウィンク２, まばたき, 笑い, なご�
 or you can just remove all 5 morphs' data.  
 
 # Update Log:
+## 1.11.0
+* Add an option to turn IK on or off automatically
+
+## 1.10.0
+* Add url button to document and feedback issue list
+
 ## 1.9.0
 * Support IK親 bones. IK親 means IK Parent bones, aka IKP bone. Now, Fairy Tale's vmd motion works. For example, vmd motion: "AOA - like a cat".
 

@@ -44,6 +44,9 @@ dict = {
         (None, "Set Position X's rate"):"Set Position X's rate",
         (None, "Position rate:"):"Position rate:",
         (None, "Object you selected is not an Armature"):"Object you selected is not an Armature",
+        (None, "https://github.com/butaixianran/Blender-Vmd-Retargeting"):"https://github.com/butaixianran/Blender-Vmd-Retargeting",
+        (None, "Document"):"Document",
+        (None, "Feedback"):"Feedback",
     },
     "zh_CN":{
         (None, "You need Blender 3.0+ to use this addon"):"请使用Blender 3.0以上版本",
@@ -88,6 +91,9 @@ dict = {
         (None, "Set Position X's rate"):"设置X轴移动的比例",
         (None, "Position rate:"):"移动比例:",
         (None, "Object you selected is not an Armature"):"你选择的对象不是骨架",
+        (None, "https://github.com/butaixianran/Blender-Vmd-Retargeting"):"https://github.com/butaixianran/Blender-Vmd-Retargeting/blob/main/Readme.cn.md",
+        (None, "Document"):"文档",
+        (None, "Feedback"):"反馈",
     },
     "zh_TW":{
         (None, "You need Blender 3.0+ to use this addon"):"請使用Blender 3.0以上版本",
@@ -132,6 +138,9 @@ dict = {
         (None, "Set Position X's rate"):"設置X軸移動的比例",
         (None, "Position rate:"):"移動比例:",
         (None, "Object you selected is not an Armature"):"你選擇的對象不是骨架",
+        (None, "https://github.com/butaixianran/Blender-Vmd-Retargeting"):"https://github.com/butaixianran/Blender-Vmd-Retargeting/blob/main/Readme.cn.md",
+        (None, "Document"):"文檔",
+        (None, "Feedback"):"回饋",
     },
     "ja_JP":{
         (None, "You need Blender 3.0+ to use this addon"):"Blender 3.0以上を使用してください",
@@ -176,6 +185,9 @@ dict = {
         (None, "Set Position X's rate"):"X軸移動の割合を設定する",
         (None, "Position rate:"):"移動の割合:",
         (None, "Object you selected is not an Armature"):"選択したオブジェクトはスケルトンではありません",
+        (None, "https://github.com/butaixianran/Blender-Vmd-Retargeting"):"https://github.com/butaixianran/Blender-Vmd-Retargeting",
+        (None, "Document"):"ドキュメント",
+        (None, "Feedback"):"フィードバック",
     },
 }
 
