@@ -169,14 +169,7 @@ For example, mmd doesn't have motion layers, so they use mutiple bones which doe
 
 For now, we only do this for: center and groove bone.  
 
-#### IK
-**If a vmd motion does not use IK, just uncheck it**.   
-If a vmd motion does not use IK, but you checked IK when importing, since there is no IK data, character's legs won't move. So, just uncheck IK when importing.   
-
-After unchecked IK, there will be a "Position Rate X" option shows up. Set it to 0.5 can make feet slip less.  
-![model type](img/addon_position_x_rate.jpg)  
-
-
+#### IK and IK Pole Bone
 **IK works fine in most cases. But if leg rotates widely, then you need to know following information:**  
 
 CC and Daz model don't have IK by default. So this addon creates IK for legs when importing body motion from vmd file.  
