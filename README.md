@@ -30,8 +30,8 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.9.0  
-Blender: 3.0 or later
+Addon: 1.12.0  
+Blender: 3.0 or later  
 
 # Feature
 * Import motion from vmd file without a mmd model
@@ -356,6 +356,9 @@ These 5 morphs are: ウィンク, ウィンク２, まばたき, 笑い, なご�
 or you can just remove all 5 morphs' data.  
 
 # Update Log:
+## 1.12.0
+* Read interpolation from vmd file.(Bone rotation only)
+
 ## 1.11.0
 * Add an option to turn IK on or off automatically
 

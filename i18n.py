@@ -47,6 +47,7 @@ dict = {
         (None, "https://github.com/butaixianran/Blender-Vmd-Retargeting"):"https://github.com/butaixianran/Blender-Vmd-Retargeting",
         (None, "Document"):"Document",
         (None, "Feedback"):"Feedback",
+        (None, "Use Vmd's Interpolation"):"Use Vmd's Interpolation",
     },
     "zh_CN":{
         (None, "You need Blender 3.0+ to use this addon"):"请使用Blender 3.0以上版本",
@@ -94,6 +95,7 @@ dict = {
         (None, "https://github.com/butaixianran/Blender-Vmd-Retargeting"):"https://github.com/butaixianran/Blender-Vmd-Retargeting/blob/main/Readme.cn.md",
         (None, "Document"):"文档",
         (None, "Feedback"):"反馈",
+        (None, "Use Vmd's Interpolation"):"使用Vmd的补间曲线",
     },
     "zh_TW":{
         (None, "You need Blender 3.0+ to use this addon"):"請使用Blender 3.0以上版本",
@@ -141,6 +143,7 @@ dict = {
         (None, "https://github.com/butaixianran/Blender-Vmd-Retargeting"):"https://github.com/butaixianran/Blender-Vmd-Retargeting/blob/main/Readme.cn.md",
         (None, "Document"):"文檔",
         (None, "Feedback"):"回饋",
+        (None, "Use Vmd's Interpolation"):"使用Vmd的補間曲線",
     },
     "ja_JP":{
         (None, "You need Blender 3.0+ to use this addon"):"Blender 3.0以上を使用してください",
@@ -188,6 +191,7 @@ dict = {
         (None, "https://github.com/butaixianran/Blender-Vmd-Retargeting"):"https://github.com/butaixianran/Blender-Vmd-Retargeting",
         (None, "Document"):"ドキュメント",
         (None, "Feedback"):"フィードバック",
+        (None, "Use Vmd's Interpolation"):"Vmdの補間曲線を使う",
     },
 }
 
