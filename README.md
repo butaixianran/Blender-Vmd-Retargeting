@@ -30,7 +30,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.12.0  
+Addon: 1.13.0  
 Blender: 3.0 or later  
 
 # Feature
@@ -356,8 +356,12 @@ These 5 morphs are: ウィンク, ウィンク２, まばたき, 笑い, なご�
 or you can just remove all 5 morphs' data.  
 
 # Update Log:
+## 1.13.0
+* Add Euler setting for forearm's rotation
+* Fix a bug when loading IK states from vmd file.
+
 ## 1.12.0
-* Read interpolation from vmd file.(Bone rotation only)
+* Read interpolation from vmd file(Bone rotation only)
 
 ## 1.11.0
 * Add an option to turn IK on or off automatically
