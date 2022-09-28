@@ -189,7 +189,23 @@ Daz/CC has different arm length with mmd model. So, if mmd model puts hands on c
 
 Set upperarm and forearm rotation rate to 0.8 will fix that in most cases. (Now this is default)  
 
-But if you are using CC model, you better set it back to 1.0.    
+But if you are using CC model, you better set it back to 1.0.   
+
+### Arm rotation Euler plus
+Works on forearms only. Use this with **Arm rotation rate** together to deal with hand poking issue.  
+
+When Arm rotation rate is 1.0, following degrees can prevent poking issue.
+>Forearm left: -20, 0, 12  
+>Forearm right: -20, 0, -12  
+
+If Arm rotation rate is less than 1.0, decrease values of this setting. After adjusting this setting, most poking issues can be handled.  
+
+Default value:   
+>Arm rotation rate: 0.9   
+>Forearm left: -5, 0, 3   
+>Forearm right: -5, 0, -3   
+
+
 
 #### Pick a mmd model as Source
 If you picked a mmd model, addon will ignore body motion from vmd file and retarget body motion from your picked mmd model.  
