@@ -2,7 +2,6 @@
 
 # Language
 [中文](Readme.cn.md)  
-[日本語](Readme.jp.md)
 
 # Blender Addon: Vmd Retargeting
 This blender addon will import motion from mmd's .vmd file onto Daz or CC models, with or without mmd model.  
@@ -182,7 +181,7 @@ That works fine in most cases. But, if legs rotate too much, then IK Pole bones 
 
 So, in that case, you need to retarget motion from a mmd model. Since mmd model already has the motion on it, your Daz/CC model can get legs' final rotation without IK bone.  
 
-Check the section: **Pick a mmd model as Source**
+Check the section: "[Pick_A_MMD_Model_As_Source](#Pick_A_MMD_Model_As_Source)"   
 
 #### Arm rotation rate
 Daz/CC has different arm length with mmd model. So, if mmd model puts hands on chest, they always poke into body when on Daz/CC model.
@@ -193,21 +192,18 @@ But if you are using CC model, you better set it back to 1.0.
 
 ### Arm rotation Euler plus
 Works on forearms only. Use this with **Arm rotation rate** together to deal with hand poking issue.  
-
-When Arm rotation rate is 1.0, following degrees can prevent poking issue.
->Forearm left: -20, 0, 12  
->Forearm right: -20, 0, -12  
-
-If Arm rotation rate is less than 1.0, decrease values of this setting. After adjusting this setting, most poking issues can be handled.  
-
 Default value:   
 >Arm rotation rate: 0.9   
 >Forearm left: -5, 0, 3   
 >Forearm right: -5, 0, -3   
 
+If forearm pokes into body with default value, try following values:  
+>Forearm rotation rate: 0.8   
+>Forearm left: -10, 0, 6   
+>Forearm right: -10, 0, -6   
 
 
-#### Pick a mmd model as Source
+#### Pick_A_MMD_Model_As_Source
 If you picked a mmd model, addon will ignore body motion from vmd file and retarget body motion from your picked mmd model.  
 
 Eyeball and morph motion are still loaded from vmd file.  
@@ -288,6 +284,9 @@ But, again, Natsumi San's vmd motion may use it. Still, as long as vmd motion do
 This addon won't handle that.
 
 # Common_Issue
+We made a video for some common issues, check it out:  
+[https://youtu.be/qBivoDgFpc4](https://youtu.be/qBivoDgFpc4)    
+
 ## Leg won't bend
 This vmd motion does not use IK.  
 
