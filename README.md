@@ -1,4 +1,3 @@
-### This addon now is stable and handles most vmd motion very well. So, if you can not make it work, read this document's "[Common_Issue](#Common_Issue)" part to fix your issue quickly.    
 
 # Language
 [中文](Readme.cn.md)  
@@ -29,7 +28,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.13.0  
+Addon: 1.14.0  
 Blender: 3.0 or later  
 
 # Feature
@@ -169,6 +168,8 @@ For example, mmd doesn't have motion layers, so they use mutiple bones which doe
 For now, we only do this for: center and groove bone.  
 
 #### IK and IK Pole Bone
+(From ver1.14.0 IK Pole bone is replaced by rotation limit, so there is no IK issue any more.)  
+
 **IK works fine in most cases. But if leg rotates widely, then you need to know following information:**  
 
 CC and Daz model don't have IK by default. So this addon creates IK for legs when importing body motion from vmd file.  
@@ -371,6 +372,10 @@ These 5 morphs are: ウィンク, ウィンク２, まばたき, 笑い, なご�
 or you can just remove all 5 morphs' data.  
 
 # Update Log:
+## 1.14.0
+* Use rotation limit to replace IK Pole Bone
+* Change Daz model's arm rest difference degree from 10 to 8
+
 ## 1.13.0
 * Add Euler setting for forearm's rotation
 * Fix a bug when loading IK states from vmd file.
