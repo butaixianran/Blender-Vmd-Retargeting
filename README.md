@@ -1,3 +1,4 @@
+#### This addon handle most vmd motion very well. If you can not make it work, view "[Common_Issue](#Common_Issue)" part for solution.   
 
 # Language
 [中文](Readme.cn.md)  
