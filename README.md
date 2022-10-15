@@ -13,7 +13,13 @@ This blender addon will import motion from mmd's .vmd file onto Daz or CC models
 [![](img/FeaturedImages01_half.jpg)](https://youtu.be/Xgfu8oSjUUs)  
 
 # Tutorial Video
+## How to use this addon
 [https://youtu.be/li7yjJKbbgI](https://youtu.be/li7yjJKbbgI)  
+
+## Blender tutorial
+Daz Hair and cloth physics in Blender: [https://youtu.be/1RzwmTgcfys](https://youtu.be/1RzwmTgcfys)  
+Export mmd motion to Daz Studio: [https://youtu.be/FEA9hVouKFg](https://youtu.be/FEA9hVouKFg)  
+
 
 # Info
 ### Download
