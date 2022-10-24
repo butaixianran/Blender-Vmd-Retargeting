@@ -20,7 +20,7 @@
 * [Blender mmd tools](https://github.com/UuuNyaa/blender_mmd_tools)  
 * [Diffeomorphic daz importer](http://diffeomorphic.blogspot.com/p/daz-importer-version-16.html)  
 
-前往Diffeomorphic daz importer Blender扩展的全局设置，右上角，材质设置区域，**设置为使用Single reused Principled Shader**。人模设置是用iray shader，那样是无法顺利转换的。  
+前往Diffeomorphic daz importer Blender扩展的全局设置，右上角，材质设置区域，**设置为使用Single reused Principled Shader**。原本的默认设置是用iray shader，那样是无法顺利转换的。  
 
 如果你使用eevee，前往渲染设置面板，勾选 **Screen Space Reflection**(屏幕空间反射) 和 **Refraction**（屏幕空间折射）。  
 
