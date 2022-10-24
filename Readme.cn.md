@@ -16,9 +16,22 @@ b站：
 [https://www.bilibili.com/video/BV1Qb4y147Q3/](https://www.bilibili.com/video/BV1Qb4y147Q3/)  
 
 # 教程视频
+## 本扩展教程
 [https://youtu.be/li7yjJKbbgI](https://youtu.be/li7yjJKbbgI)  
 b站：  
 [https://www.bilibili.com/video/BV1eu411q7qp/](https://www.bilibili.com/video/BV1eu411q7qp/)  
+
+## Blender教程
+Blender中设置Daz头发和衣服的物理: [https://youtu.be/1RzwmTgcfys](https://youtu.be/1RzwmTgcfys)  
+b站：[https://www.bilibili.com/video/BV1Yi4y1m77r](https://www.bilibili.com/video/BV1Yi4y1m77r)  
+  
+  
+导出MMD动作到Daz Studio: [https://youtu.be/FEA9hVouKFg](https://youtu.be/FEA9hVouKFg)  
+b站: 
+
+## Daz人模一键转为MMD人模功能
+参见专门的使用说明：[Daz to MMD](daz_to_mmd.cn.md)   
+
 
 # 基本信息
 ### 下载
@@ -35,7 +48,7 @@ Blender市场：
 
 
 ### 版本
-扩展版本：1.14.1  
+扩展版本：1.18.0  
 Blender版本：3.0或以上  
 
 # 功能
@@ -378,6 +391,13 @@ mmd的几个眼睛闭合表情是：ウィンク, ウィンク２, まばたき,
 
 
 # 更新Log:
+## 1.18.0
+* 修改算法，使用当前Pose为Rest Pose，以彻底解决手臂穿模问题。现在的算法和blender mmd tools完全一样。
+* 允许IK骨骼和大腿旋转共用，以在没有IK Pole骨骼的情况下，控制膝盖方向。这一点也和blender mmd tools做法相同。
+* 添加检查新版本按钮，点击后，如果有新版本会提示。
+* 添加Rig功能区，其中添加 Daz to MMD功能，用于把Daz人模一键转换为MMD人模。
+* 在人物穿高跟鞋的时候，添加IK的垂直高度修正。
+
 ## 1.14.1
 * 为DTB 2022导入的人模，设置小腿骨骼的IK僵直为0
 

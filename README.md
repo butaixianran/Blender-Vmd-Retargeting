@@ -1,5 +1,6 @@
 #### This addon handles most vmd motion very well. If you can not make it work, view "[Common_Issue](#Common_Issue)" part for solution.   
 
+
 # Language
 [中文](Readme.cn.md)  
 
@@ -21,6 +22,9 @@ This blender addon will import motion from mmd's .vmd file onto Daz or CC models
 Daz Hair and cloth physics in Blender: [https://youtu.be/1RzwmTgcfys](https://youtu.be/1RzwmTgcfys)  
 Export mmd motion to Daz Studio: [https://youtu.be/FEA9hVouKFg](https://youtu.be/FEA9hVouKFg)  
 
+## Conver Daz Model to MMD
+Check its own readme page: [Daz to MMD](daz_to_mmd.md)   
+
 
 # Info
 ### Download
@@ -35,7 +39,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.14.1  
+Addon: 1.18.0  
 Blender: 3.0 or later  
 
 # Feature
@@ -259,11 +263,6 @@ Default value works fine for almost every case.
 But if your model is a CC character with high heel, you need to move camera up with 8cm.  
 
 
-### Debug mode
-Debug mode will print down everything in console log. It gonna slow down the retargeting a lot.  
-
-So only check it when importing a vmd file with a single pose.
-
 
 # Limits
 ## Shoulder Rotation
@@ -379,6 +378,13 @@ These 5 morphs are: ウィンク, ウィンク２, まばたき, 笑い, なご�
 or you can just remove all 5 morphs' data.  
 
 # Update Log:
+## 1.18.0
+* Modify converting method, to use Current pose as Rest Pose. Which can fix poking issue of forearms. Now addon converts vmd motion in the same way as blender mmd tools.
+* Allow using thigh rotation with IK together, to handle knees since there is no IK Pole bone anymore. Blender mmd tools handle knees in the same way.
+* Add button to check new version. 
+* Add Rig section and Daz to MMD button, to convert Daz model into MMD model with 1 click.  
+* Add IK height offset when character is in high heel.  
+
 ## 1.14.1
 * Set shin bone's IK stiffness to 0 for DTB 2022
 
