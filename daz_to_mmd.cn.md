@@ -8,7 +8,11 @@
 
 # 下载和安装
 本功能现在是Vmd Retargeting扩展的一部分。  
-[https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)  
+微博专栏下载：（需要微博手机App支付）  
+[https://weibo.com/a/hot/7618111255681025_1.html](https://weibo.com/a/hot/7618111255681025_1.html)  
+
+Blender市场：
+[https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)   
 
 
 # 使用方法
@@ -20,7 +24,7 @@
 * [Blender mmd tools](https://github.com/UuuNyaa/blender_mmd_tools)  
 * [Diffeomorphic daz importer](http://diffeomorphic.blogspot.com/p/daz-importer-version-16.html)  
 
-前往Diffeomorphic daz importer Blender扩展的全局设置，右上角，材质设置区域，**设置为使用Single reused Principled Shader**。原本的默认设置是用iray shader，那样是无法顺利转换的。  
+前往Diffeomorphic daz importer Blender扩展的全局设置，右上角，材质设置区域，**设置为使用Single reused Principled Shader**。原本的设置是用iray shader，那样是无法顺利转换的。  
 
 如果你使用eevee，前往渲染设置面板，勾选 **Screen Space Reflection**(屏幕空间反射) 和 **Refraction**（屏幕空间折射）。  
 

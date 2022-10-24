@@ -22,7 +22,7 @@ You need to install following blender addons to make this work.
 * [Blender mmd tools](https://github.com/UuuNyaa/blender_mmd_tools)
 * [Diffeomorphic daz importer](http://diffeomorphic.blogspot.com/p/daz-importer-version-16.html)
 
-In Diffeomorphic daz importer Blender addon's global setting, right-up corner, **set material setting to use Single reused Principled Shader**. Default seting is iray shader, which won't work in this case.  
+In Diffeomorphic daz importer Blender addon's global setting, right-up corner, **set material setting to use Single reused Principled Shader**. Default setting is iray shader, which won't work in this case.  
 
 If you use eevee, go to render panel, check **Screen Space Reflection** and check **Refraction**.  
 
@@ -45,7 +45,7 @@ After importing, select character's **body mesh**, go to diff daz import addon's
 Check "All" at left-up corner, then click OK.  
 
 ### Convert
-**select Armature**. go to **Vmd Retargeting** addon's panel. At bottom, Rig section, Click "**Daz to MMD**" and wait. After it's done, now this is a MMD model.  
+**Select Armature**, go to **Vmd Retargeting** addon's panel. At bottom, Rig section, Click "**Daz to MMD**" and wait. After it's done, now this is a MMD model.  
 
 Then go to menu: `File->export->.pmx`. At option area, set scale to 11. Done.  
 
@@ -88,7 +88,7 @@ Use **Daz for Blender** addon to import your character.
 **Uncheck "Use Driver" and "Custom Shape" before importing**.  
 
 ### Convert
-**select Armature**. go to **Vmd Retargeting** addon's panel. At bottom, Rig section, Click "**Daz to MMD**" and wait. After it's done, now this is a MMD model.  
+**Select Armature**, go to **Vmd Retargeting** addon's panel. At bottom, Rig section, Click "**Daz to MMD**" and wait. After it's done, now this is a MMD model.  
 
 Then go to menu: `File->export->.pmx`. At option area, set scale to 11. Done.
 
