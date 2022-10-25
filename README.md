@@ -22,6 +22,7 @@ This blender addon will import motion from mmd's .vmd file onto Daz or CC models
 Daz Hair and cloth physics in Blender: [https://youtu.be/1RzwmTgcfys](https://youtu.be/1RzwmTgcfys)  
 Export mmd motion to Daz Studio: [https://youtu.be/FEA9hVouKFg](https://youtu.be/FEA9hVouKFg)  
 
+# Bonus
 ## Conver Daz Model to MMD
 Check its own readme page: [Daz to MMD](daz_to_mmd.md)   
 
@@ -51,6 +52,8 @@ Blender: 3.0 or later
 * Set interpolation and easing as you wish
 * Set arm rotation rate, to prevent hands poke into chest.  
 * Set camera height offset or rotation rate if needed  
+* 
+* (**Bonus**) [Convert Daz model to MMD](daz_to_mmd.md)
 
 # Install
 * Install the .zip file you get from online shop.  
@@ -383,7 +386,6 @@ or you can just remove all 5 morphs' data.
 * Allow using thigh rotation with IK together, to handle knees since there is no IK Pole bone anymore. Blender mmd tools handle knees in the same way.
 * Add button to check new version. 
 * Add Rig section and Daz to MMD button, to convert Daz model into MMD model with 1 click.  
-* Add IK height offset when character is in high heel.  
 
 ## 1.14.1
 * Set shin bone's IK stiffness to 0 for DTB 2022

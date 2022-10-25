@@ -29,7 +29,8 @@ b站：[https://www.bilibili.com/video/BV1Yi4y1m77r](https://www.bilibili.com/vi
 导出MMD动作到Daz Studio: [https://youtu.be/FEA9hVouKFg](https://youtu.be/FEA9hVouKFg)  
 b站: 
 
-## Daz人模一键转为MMD人模功能
+# 赠品
+## Daz人模一键转为MMD人模
 参见专门的使用说明：[Daz to MMD](daz_to_mmd.cn.md)   
 
 
@@ -60,6 +61,8 @@ Blender版本：3.0或以上
 * 设置补间曲线和平滑出入
 * 设置手臂旋转比例，以解决手臂穿入身体的问题  
 * 设置相机偏移和旋转比例，以解决模型尺寸差异
+* 
+* (**赠品**)[Daz人模转为MMD人模](daz_to_mmd.cn.md)   
 
 # 安装
 * 打开blender，安装你获得的.zip文件
@@ -396,7 +399,6 @@ mmd的几个眼睛闭合表情是：ウィンク, ウィンク２, まばたき,
 * 允许IK骨骼和大腿旋转共用，以在没有IK Pole骨骼的情况下，控制膝盖方向。这一点也和blender mmd tools做法相同。
 * 添加检查新版本按钮，点击后，如果有新版本会提示。
 * 添加Rig功能区，其中添加 Daz to MMD功能，用于把Daz人模一键转换为MMD人模。
-* 在人物穿高跟鞋的时候，添加IK的垂直高度修正。
 
 ## 1.14.1
 * 为DTB 2022导入的人模，设置小腿骨骼的IK僵直为0
