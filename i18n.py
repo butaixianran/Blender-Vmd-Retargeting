@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 import bpy
 
 dict = {
@@ -51,6 +52,9 @@ dict = {
         (None, "Arm Rotation Euler Plus:"):"Arm Rotation Euler Plus:",
         (None, "Forearm Left"):"Forearm Left",
         (None, "Forearm Right"):"Forearm Right",
+        (None, "Found new version"):"Found new version",
+        (None, "Use Thigh Rotation with IK"):"Use Thigh Rotation with IK",
+        (None, "Thigh Rotation Rate"):"Thigh Rotation Rate",
     },
     "zh_CN":{
         (None, "You need Blender 3.0+ to use this addon"):"请使用Blender 3.0以上版本",
@@ -102,6 +106,9 @@ dict = {
         (None, "Arm Rotation Euler Plus:"):"手臂旋转欧拉角增量:",
         (None, "Forearm Left"):"左前臂",
         (None, "Forearm Right"):"右前臂",
+        (None, "Found new version"):"找到新版本",
+        (None, "Use Thigh Rotation with IK"):"大腿旋转和IK并用",
+        (None, "Thigh Rotation Rate"):"大腿旋转比例",
     },
     "zh_TW":{
         (None, "You need Blender 3.0+ to use this addon"):"請使用Blender 3.0以上版本",
@@ -153,6 +160,9 @@ dict = {
         (None, "Arm Rotation Euler Plus:"):"手臂旋轉歐拉角增量:",
         (None, "Forearm Left"):"左前臂",
         (None, "Forearm Right"):"右前臂",
+        (None, "Found new version"):"找到新版本",
+        (None, "Use Thigh Rotation with IK"):"大腿旋轉和IK並用",
+        (None, "Thigh Rotation Rate"):"大腿旋轉比例",
     },
     "ja_JP":{
         (None, "You need Blender 3.0+ to use this addon"):"Blender 3.0以上を使用してください",
@@ -204,6 +214,10 @@ dict = {
         (None, "Arm Rotation Euler Plus:"):"腕の回転オーラル角の増分:",
         (None, "Forearm Left"):"左ひじ",
         (None, "Forearm Right"):"右ひじ",
+        (None, "Found new version"):"新しいバージョンが見つかりました",
+        (None, "Use Thigh Rotation with IK"):"足回転とIK併用",
+        (None, "Thigh Rotation Rate"):"足回転の割合",
+        
     },
 }
 
