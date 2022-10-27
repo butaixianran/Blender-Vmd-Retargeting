@@ -40,7 +40,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.18.2  
+Addon: 1.18.3    
 Blender: 3.0 or later  
 
 # Feature
@@ -381,6 +381,10 @@ These 5 morphs are: ウィンク, ウィンク２, まばたき, 笑い, なご�
 or you can just remove all 5 morphs' data.  
 
 # Update Log:
+## 1.18.3
+* Fix hand rest pose
+* Add "Reuse generated texture" option to "Daz to MMD"
+
 ## 1.18.2
 * Remove IK limits for DTB 2022
 * Fix toe issue for "Daz to MMD" when shoes are separated 2 meshes(left and right shoe).
