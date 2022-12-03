@@ -40,7 +40,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.18.3    
+Addon: 1.19.0    
 Blender: 3.0 or later  
 
 # Feature
@@ -92,18 +92,36 @@ For CC3+ or CC4, After importing into Blender, its pose should be like this:
 You need to know the basic of how to setup and export a daz model for Diffeomorphic daz importer.
 Check its official tutorial for that.  
 
-And when importing model to blender, you need 3 things:
+When importing model to blender, you need 3 things:
 * Merge all armatures into body's armature
-* Face Unit morph and Viseme morph
+* Facial morph and Viseme morph
 * Make all bones poseable.  
 
 **The easiest way for these, is importing a character by click "Easy Import Daz" button.**  
-By default, it already checked Merge Rigs for you.  
+
+#### For Genesis 8
+Click "Easy Import Daz" button, by default, it already checked Merge Rigs for you.  
 So, you just need to check "Face Units" and "Visemes", then import.  
 
 After importing, go to "**Finish**" section of Diffeomorphic daz importer's panel. Click "**Make All Bones Poseable**"
 
 Now, your daz model is prepared.  
+
+#### For Genesis 9
+You need diff daz importer **version 1.6.2+** to import a Daz Genesis 9 character.   
+
+If you already has diff daz importer ver1.6.1 in your Blender, you have to remove it and re-open Blender, before installing version 1.6.2. Then re-config the Global setting after installing version 1.6.2. A lot of files and settings are changed.    
+
+Click "Easy Import Daz" button. By default, it already checked "Merge Rigs" and "Make All Bones Poseable" for you.  
+So, you just need to check "FACS", then import.  
+
+Now, your daz model is prepared.  
+
+**Be noticed, Genesis 9's twist bones are no longer in arms. Which makes MMD's twist bones can not map into Genesis 9's arm. So, any vmd motion uses twist bones, can not be converted to Genesis 9.**  
+
+
+
+
 
 ### Prepare Daz model (with Daz to Blender Bridge(DTB) for Blender 3.x)
 This is for those who know how to use DTB. If you are not familiar with Daz or Blender, just choose the "**Diffeomorphic Daz Importer**" way.  
@@ -297,6 +315,15 @@ This addon won't handle that.
 We made a video for some common issues, check it out:  
 [https://youtu.be/qBivoDgFpc4](https://youtu.be/qBivoDgFpc4)    
 
+## Daz Genesis 9
+You need diff daz importer **version 1.6.2+** to import a Daz Genesis 9 character.  
+
+If you already has diff daz importer ver 1.6.1 in your Blender, you have to remove it and re-open Blender, before installing version 1.6.2. Then re-config the Global setting after installing version 1.6.2. A lot of files and settings are changed.  
+
+Be noticed, Genesis 9's twist bones are no longer in arms. Which makes MMD's twist bones can not map into Genesis 9's arm. So, any vmd motion uses twist bones, can not be converted to Genesis 9.  
+
+Also, Genesis 9 can not be converted to MMD model.  
+
 ## Leg won't bend
 This vmd motion does not use IK.  
 
@@ -381,6 +408,9 @@ These 5 morphs are: ウィンク, ウィンク２, まばたき, 笑い, なご�
 or you can just remove all 5 morphs' data.  
 
 # Update Log:
+## 1.19.0
+* Support Genesis 9 for diff daz importer
+
 ## 1.18.3
 * Fix hand rest pose
 * Add "Reuse generated texture" option to "Daz to MMD"

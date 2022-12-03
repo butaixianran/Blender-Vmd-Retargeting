@@ -49,7 +49,7 @@ Blender市场：
 
 
 ### 版本
-扩展版本：1.18.3   
+扩展版本：1.19.0   
 Blender版本：3.0或以上  
 
 # 功能
@@ -105,11 +105,23 @@ Blender版本：3.0或以上
 * 让所有骨骼可以调整（Make all bone poseable）  
 
 **最简单的实现方法是，点击："Easy Import Daz"按钮**  
-默认，它已经帮你勾选了"Merge Rigs"。所以，你只需勾选："Face Units" 和 "Visemes"，然后点击导入即可。  
+
+#### 对于Genesis 8
+点击"Easy Import Daz"按钮。默认，它已经帮你勾选了"Merge Rigs"。所以，你只需勾选："Face Units" 和 "Visemes"，然后点击导入即可。  
 
 导入后，前往Diffeomorphic daz importer扩展的： "**Finish**" 部分，点击"**Make All Bones Poseable**"  
   
 准备完毕。  
+
+
+#### 对于Genesis 9
+你需要安装diff daz importer **1.6.2以上版本**，才能导入Genesis 9。   
+
+如果你的Blender中已经安装了1.6.1版本，你必须先删除1.6.1版本，重新打开Blender，再安装1.6.2版本。安装之后，你要重新设置Global Setting中的所有选项。新版本中，很多文件和设置都发生了变化。   
+
+然后，点击"Easy Import Daz"按钮。默认，它已经帮你勾选了"Merge Rigs"和"Make All Bones Poseable"。所以，你只需勾选："FACS"，然后点击导入即可。  
+
+**注意：Genesis 9改变了 扭曲骨骼的结构，扭曲骨骼不在手臂中。使得MMD的扭曲骨骼，无法映射到手臂中。所以，任何使用了扭曲骨骼的mmd动作，都将无法转换到Genesis 9。**  
 
 
 ### 准备Daz模型（使用Daz to Blender桥接插件Blender 3.x更新版，以下简称DTB）
@@ -310,6 +322,13 @@ Mmd的腰部骨骼，是上半身和下半身的父亲，因此可以当作hip�
 [https://youtu.be/qBivoDgFpc4](https://youtu.be/qBivoDgFpc4)    
 b站：  [https://www.bilibili.com/video/BV1y14y187Ck/](https://www.bilibili.com/video/BV1y14y187Ck/)  
 
+## Daz Genesis 9
+你需要安装diff daz importer **1.6.2以上版本**，才能导入Genesis 9。   
+
+如果你的Blender中已经安装了1.6.1版本，你必须先删除1.6.1版本，重新打开Blender，再安装1.6.2版本。安装之后，你要重新设置Global Setting中的所有选项。新版本中，很多文件和设置都发生了变化。   
+
+**注意：Genesis 9改变了扭曲骨骼的结构，扭曲骨骼不在手臂中。使得MMD的扭曲骨骼，无法映射到手臂中。所以，任何使用了扭曲骨骼的mmd动作，都将无法转换到Genesis 9。**  
+
 ## 动作导入后脚不弯曲
 原因是，该动作没有使用IK。
 
@@ -394,6 +413,9 @@ mmd的几个眼睛闭合表情是：ウィンク, ウィンク２, まばたき,
 
 
 # 更新Log:
+## 1.19.0
+* 支持Genesis 9(仅diff daz importer)
+
 ## 1.18.3
 * 修正手掌默认姿势，手掌现在也不穿模了
 * 添加 "重用已经生成的贴图" 选项到"Daz to MMD"功能
