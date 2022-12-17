@@ -49,7 +49,7 @@ Blender市场：
 
 
 ### 版本
-扩展版本：1.19.0   
+扩展版本：1.19.1   
 Blender版本：3.0或以上  
 
 # 功能
@@ -78,16 +78,16 @@ Blender版本：3.0或以上
 * Daz Genesis 8，由 [Diffeomorphic daz importer](https://diffeomorphic.blogspot.com/) 导入
 * Daz Genesis 8，由 [Daz to Blender桥接插件Blender 3.x 更新版](https://github.com/butaixianran/DazToBlender)导入  
 * Daz Genesis 8, 由 [Daz to Blender官方桥接插件2022](https://www.daz3d.com/forums/discussion/572806/official-daztoblender-bridge-2022-what-s-new-and-how-to-use-it)导入
-* CC(Character Creator) 人模，由 [cc blender tools addon](https://github.com/soupday/cc_blender_tools) 导入  
+* CC4(Character Creator) 人模，由 [cc blender tools addon](https://github.com/soupday/cc_blender_tools) 导入  
 
 ![model type](img/addon_model_type.jpg)  
 
 通过fbx文件导入的人模，cc也没问题。但daz的，本扩展将无法转换表情。  
 
-### 准备CC3+或CC4模型
+### 准备CC4模型
 无须准备。但请直接从Character Creator导出人模，而不是iClone。请只导出Mesh，不带动画。  
 
-从CC导出时，CC3+请选择A-Pose。  
+从CC导出时，请选择A-Pose。  
 ![](img/cc3_export_setting.jpg)  
 导入Blender后姿势需要如下图：  
 ![](img/cc3_def.jpg)  
@@ -272,9 +272,6 @@ Daz/CC人模的手长和mmd人模不同。因此，如果mmd人模将手放到�
 b站：   
 [https://www.bilibili.com/video/BV12T4y1Q777](https://www.bilibili.com/video/BV12T4y1Q777)  
 
-### 眼球/表情/口型
-CC3人模没有口型morph，这是iclone的功能。因此，本扩展用表情morph来模拟口型。虽然可用，但不会像真正的口型morph那么好。CC4是有口型Morph的。  
-
 
 ### 补间曲线和平滑
 你可以从这里找到示例图： [https://easings.net/](https://easings.net/)  
@@ -413,6 +410,9 @@ mmd的几个眼睛闭合表情是：ウィンク, ウィンク２, まばたき,
 
 
 # 更新Log:
+## 1.19.1
+* 为cc3人模的膝盖增加一点弯曲，不然ik不能完全起作用
+
 ## 1.19.0
 * 支持Genesis 9(仅diff daz importer)
 

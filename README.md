@@ -40,7 +40,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.19.0    
+Addon: 1.19.1    
 Blender: 3.0 or later  
 
 # Feature
@@ -68,21 +68,21 @@ This addon supports:
 * Daz Genesis 8 imported by [diffeomorphic daz importer](https://diffeomorphic.blogspot.com/)
 * Daz Genesis 8 imported by [Daz to Blender Bridge for blender 3.x](https://github.com/butaixianran/DazToBlender)  
 * Daz Genesis 8 imported by [Official Daz to Blender Bridge 2022](https://www.daz3d.com/forums/discussion/572806/official-daztoblender-bridge-2022-what-s-new-and-how-to-use-it)  
-* CC(Character Creator) imported by [cc blender tools addon](https://github.com/soupday/cc_blender_tools)  
+* CC4(Character Creator) imported by [cc blender tools addon](https://github.com/soupday/cc_blender_tools)  
 
 ![model type](img/addon_model_type.jpg)  
 
-For characters imported by fbx, cc model works too. But for daz model, facial and viseme motion won't work.  
+For characters imported by fbx, cc4 model works too. But for daz model, facial and viseme motion won't work.  
 
 
-### Prepare CC3+ or CC4 model
+### Prepare CC4 model
 **No preparing is needed.**   
 Just export it from Character Creator, not from iClone, and Mesh only, no animation.  
 
-For CC3+, when exporting, choose A-Pose  
+For CC4, when exporting, choose A-Pose  
 ![](img/cc3_export_setting.jpg)    
 
-For CC3+ or CC4, After importing into Blender, its pose should be like this:    
+For CC4, After importing into Blender, its pose should be like this:    
 ![](img/cc3_def.jpg)  
 
 
@@ -265,9 +265,6 @@ And it doesn't need an IK bone on Daz/CC model.
 [https://youtu.be/rttA3v_5S2I](https://youtu.be/rttA3v_5S2I)  
 [![](img/convert_motion_from_mmd_model_to_daz_tutorial-resiez.jpg)](https://youtu.be/rttA3v_5S2I)  
 
-### Eyeball/Facial/Viseme
-CC3 doesn't come with viseme morphs, it's a feature for iClone. So, this addon uses facial expression morphs to simulate viseme. It is ok, but won't as good as real viseme morphs, and it won't move teeth.  
-
 ### Interpolation/Easing:
 You can find examples from [https://easings.net/](https://easings.net/)  
 
@@ -408,6 +405,9 @@ These 5 morphs are: ウィンク, ウィンク２, まばたき, 笑い, なご�
 or you can just remove all 5 morphs' data.  
 
 # Update Log:
+## 1.19.1
+* add bending to knee for cc3 model, to fix ik issue.
+
 ## 1.19.0
 * Support Genesis 9 for diff daz importer
 
