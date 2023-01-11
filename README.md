@@ -283,6 +283,35 @@ But if your model is a CC character with high heel, you need to move camera up w
 
 
 # Limits
+## Mother_Bone
+On a mmd model, there is a bone called "全ての親", which means mother bone in English. A vmd motion should never uses this bone. It is designed for final user adjusts model's position after loading a vmd motion. In Blender, it is just like moving the whole object, not a bone.  
+
+Since no vmd motion should use it, this mother bone is not handled in this addon.  
+
+But, there is a few vmd motion creators ignore this rule. They just uses mother bone as another hip bone. Which makes it into an issue in mmd world.   
+
+So, in mmd world, there is a free tool, to convert mother bone's motion into body bones, called "Motion Supporter" tool. If you have a vmd motion uses mother bone, you need to use this tool, do the conversion, then uses the converted motion with this addon.  
+
+**MotionSupporter's How To**  
+* Download: [https://bowlroll.net/file/233713](https://bowlroll.net/file/233713)  
+* Unzip and run, select "**全親移植**" Section:  
+![](img/motionSupporter_motherBone.jpg)  
+
+* Line 1, select or drag vmd file into it.
+* Line 2, select or drag mmd model file into it.
+
+>**If a TDA model does not work well, uses a YYB Miku model. This tool's developer uses YYB Miku Model for testing.**   
+>
+>Download YYB Miku model：[https://bowlroll.net/file/284016](https://bowlroll.net/file/284016)  
+
+* Line 3, location for converted vmd file.
+
+* Line 4, **Do not check anything**.    
+
+* Click the big button at bottom, to start converting.
+* After converting, import this new vmd file with VMD Retargeting addon, Done.  
+
+
 ## Shoulder Rotation
 There are 3 shoulder bones on a mmd model: shoulder, shoulder P, shoulder C. This addon ignored shoulder P and shoulder C.  
 
@@ -340,7 +369,7 @@ Another solution is, use a tool "**mmd MotionSupporter**"(Japanese language Only
 ![](img/motionSupporter_FKtoIK.jpg)  
 
 * Line 1, select or drag vmd file into it.
-* Line 2, select or drag mmd mode file into it.
+* Line 2, select or drag mmd model file into it.
 
 >**Try not use a TDA model, YYB Miku model is much better.** With TDA model, after converting, new vmd motion could make your model's legs keep shaking.  
 >
