@@ -40,7 +40,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.19.1    
+Addon: 1.20.0    
 Blender: 3.0 or later  
 
 # Feature
@@ -434,6 +434,9 @@ These 5 morphs are: ウィンク, ウィンク２, まばたき, 笑い, なご�
 or you can just remove all 5 morphs' data.  
 
 # Update Log:
+## 1.20.0
+* Add ik parent bones and foot ik bones to have a full mmd style ik system. If you get problem on feet, check "High Heel", will bring back the old way.  
+
 ## 1.19.1
 * add bending to knee for cc3 model, to fix ik issue.
 
