@@ -8,8 +8,8 @@
 
 # 下载和安装
 本功能现在是Vmd Retargeting扩展的一部分。  
-微博专栏下载：（需要微博手机App支付）  
-[https://weibo.com/a/hot/7618111255681025_1.html](https://weibo.com/a/hot/7618111255681025_1.html)  
+微博专栏（需微博手机app访问和购买）：   
+[https://m.weibo.cn/c/wbox?id=wqh75bb2ni&appName=%E6%96%87%E7%AB%A0%E4%B8%93%E6%A0%8F&appIcon=&topNavMode=0&cid=7618111255681025&click_from=share](https://m.weibo.cn/c/wbox?id=wqh75bb2ni&appName=%E6%96%87%E7%AB%A0%E4%B8%93%E6%A0%8F&appIcon=&topNavMode=0&cid=7618111255681025&click_from=share)  
 
 Blender市场：  
 [https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)   
@@ -95,7 +95,7 @@ G8不需要做这些事情。
 ## Push 变形
 当使用Daz人模来跳舞的时候，衣服和身体可能会互相穿模。所以，本扩展会给所有可穿戴模型（衣服鞋子头发），添加一个Push变形。  
 
-这个Pushe变形，能稍微把衣服放大一点点，从而解决穿模。这个变形可以在mmd中作为表情使用。  
+这个Push变形，能稍微把衣服放大一点点，从而解决穿模。这个变形可以在mmd中作为表情使用。  
 
 该变形使用"Diffeomorphic daz importer"的功能创建。  
 
@@ -104,7 +104,7 @@ Daz的alpha贴图使用灰色作为自然过渡。但MMD只能处理二值alpha�
 
 你可以转换Daz的alpha贴图为二值黑白图片。但是也只能在单层头发模型上有合理效果。对于多层的头发模型，还是无法良好呈现。  
 
-我也不是phtoshop和建模高手。如果你是资深建模师，你可能有办法解决这个问题。如果你找到了解决办法，欢迎来和我们分享。  
+我也不是photoshop和建模高手。如果你是资深建模师，你可能有办法解决这个问题。如果你找到了解决办法，欢迎来和我们分享。  
 
 ## 旋转问题
 Daz人模整个骨架设计，和mmd有太多不同。所以很多舞蹈动作中，多多少少会有一点穿模。所以，你需要用mmd的关键帧倍乘功能，来调整前臂的旋转。  
