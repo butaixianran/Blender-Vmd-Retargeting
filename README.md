@@ -199,41 +199,27 @@ For example, mmd doesn't have motion layers, so they use mutiple bones which doe
 
 For now, we only do this for: center and groove bone.  
 
-#### IK and IK Pole Bone
-(From ver1.14.0 IK Pole bone is replaced by rotation limit, so there is no IK issue any more.)  
-
-**IK works fine in most cases. But if leg rotates widely, then you need to know following information:**  
-
-CC and Daz model don't have IK by default. So this addon creates IK for legs when importing body motion from vmd file.  
-
-But a problem with Daz/CC model is: there is no bending on their knees' rest pose. In that case, IK will come with a IK Pole Bone, to tell knee which direction to point when bending.  
-
-So, Daz/CC's knees are always pointing to IK Pole bones in front of them. And IK Pole Bones are following rotation of pelvis bone.  
-
-That works fine in most cases. But, if legs rotate too much, then IK Pole bones won't work well since they just following pelvis bone.  
-
-So, in that case, you need to retarget motion from a mmd model. Since mmd model already has the motion on it, your Daz/CC model can get legs' final rotation without IK bone.  
-
-Check the section: "[Pick_A_MMD_Model_As_Source](#Pick_A_MMD_Model_As_Source)"   
 
 #### Arm rotation rate
 Daz/CC has different arm length with mmd model. So, if mmd model puts hands on chest, they always poke into body when on Daz/CC model.
 
-Set upperarm and forearm rotation rate to 0.8 will fix that in most cases. (Now this is default)  
+Set upperarm and forearm rotation rate to 0.8 will fix that in most cases.  
 
 But if you are using CC model, you better set it back to 1.0.   
 
 ### Arm rotation Euler plus
 Works on forearms only. Use this with **Arm rotation rate** together to deal with hand poking issue.  
 Default value:   
->Arm rotation rate: 0.9   
+>Upperarm rotation rate: 0.9   
+>Forearm rotation rate: 1.0   
 >Forearm left: -5, 0, 3   
 >Forearm right: -5, 0, -3   
 
 If forearm pokes into body with default value, try following values:  
+>Upperarm rotation rate: 0.8   
 >Forearm rotation rate: 0.8   
->Forearm left: -10, 0, 6   
->Forearm right: -10, 0, -6   
+>Forearm left: -15, 0, 9   
+>Forearm right: -15, 0, -9   
 
 
 #### Pick_A_MMD_Model_As_Source
