@@ -29,7 +29,7 @@ b站：[https://www.bilibili.com/video/BV1Yi4y1m77r](https://www.bilibili.com/vi
 导出MMD动作到Daz Studio: [https://youtu.be/FEA9hVouKFg](https://youtu.be/FEA9hVouKFg)  
 b站: [https://www.bilibili.com/video/BV1dg411h7Ri/](https://www.bilibili.com/video/BV1dg411h7Ri/)  
 
-当导入动作到Daz Studio时，Daz需要进行的设置[视频教程中未提到]： [https://github.com/butaixianran/Blender-Vmd-Retargeting/issues/24](https://github.com/butaixianran/Blender-Vmd-Retargeting/issues/24)  
+[DazStudio导入mmd动作的设置](#DazStudio导入mmd动作的设置)[视频教程中未提到]  
 
 # 赠品
 ## Daz人模一键转为MMD人模
@@ -430,7 +430,7 @@ mmd的几个眼睛闭合表情是：ウィンク, ウィンク２, まばたき,
 在Daz Studio中, Genesis 8上，每个骨骼都有**隐藏并上锁**的x, y, z旋转轴属性。如下图。  
 ![locked_xyz_rotation_properties](img/locked_xyz_rotation_properties.jpg)  
 
-从Blender导出的daz动作预设，需要用刀这些隐藏属性。所以，Daz中，你需要在每个骨骼上，"显示并解锁这些x,y,z旋转属性，然后再导入动作预设。如下图。  
+从Blender导出的daz动作预设，需要用到这些隐藏属性。所以，Daz中，你需要在每个骨骼上，**显示并解锁这些x,y,z旋转属性**，然后再导入动作预设。如下图。  
 ![unlocked_xyz_rotation_properties](img/unlocked_xyz_rotation_properties.jpg)  
 
 要显示这些属性，前往参数面板的选项菜单->"Preferences"->"Show Hidden Properties", 勾选。如下图。  
