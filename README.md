@@ -21,8 +21,7 @@ This blender addon will import motion from mmd's .vmd file onto Daz or CC models
 ## Blender tutorial
 Daz Hair and cloth physics in Blender: [https://youtu.be/1RzwmTgcfys](https://youtu.be/1RzwmTgcfys)  
 Export mmd motion to Daz Studio: [https://youtu.be/FEA9hVouKFg](https://youtu.be/FEA9hVouKFg)  
-Daz Studio Setting for importing motion preset[Not Mentioned In Above Video]:   
-[https://github.com/butaixianran/Blender-Vmd-Retargeting/issues/24](https://github.com/butaixianran/Blender-Vmd-Retargeting/issues/24)  
+Daz Studio Setting for importing motion preset[Not Mentioned In Above Video]: [https://github.com/butaixianran/Blender-Vmd-Retargeting/issues/24](https://github.com/butaixianran/Blender-Vmd-Retargeting/issues/24)  
 
 # Bonus
 ## Conver Daz Model to MMD
