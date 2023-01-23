@@ -372,14 +372,11 @@ Another solution is, use a tool "**mmd MotionSupporter**"(Japanese language Only
 * After converting, import this new vmd file with VMD Retargeting addon, Done.  
 
 ## Arm rotation angle is different
-Try arm rotation rate 1.0. Default is 0.8, to prevent poking.  
-
-Also try Upperarm 1.0, Forearm 0.8 to get the best result.  
+Try arm rotation rate 1.0. Default is 0.9, to prevent poking.  
 
 For CC character, just set all arm rotation to 1.0.  
 
 ## Character can not turn around, some motions are wrong
-* Make sure your Diff Daz Importer addon's version is the latest 1.6.1, not the old version 1.5.  
 * At Diff Daz Importer addon's panel, in "**Global Setting**" dialog window, **Rigging** section, make sure you unchecked every option there. They gonna limit your model's rotation.   
 ![](img/rigging.jpg)  
 
@@ -419,6 +416,31 @@ The only solution for this, is remove all other 4 morphs' data in MMD, only keep
 These 5 morphs are: ウィンク, ウィンク２, まばたき, 笑い, なごみ  
 
 or you can just remove all 5 morphs' data.  
+
+## Daz Studio Setting for importing motion
+We created an video tutorial for exporting motion and importing into Daz Studio.  
+[https://youtu.be/FEA9hVouKFg](https://youtu.be/FEA9hVouKFg)  
+
+But, there is one important setting hasn't been mentioned in that video.  
+
+In Daz Studio, Genesis 8 has **hidden and locked** x, y, z rotation properties on every bone. As following picture shows.  
+![locked_xyz_rotation_properties](img/locked_xyz_rotation_properties.jpg)  
+
+The exported daz pose preset from blender need to use those properties. So, you need to **make them visible then unlock those x,y,z rotation properties on every bone** in Daz Studio, before you load that pose preset. As following picture shows.  
+![unlocked_xyz_rotation_properties](img/unlocked_xyz_rotation_properties.jpg)  
+
+To unhide those properties, go to parameter pan's option menu->"Preferences"->"Show Hidden Properties", check it. As following picture shows.  
+![show_hidden_property](img/show_hidden_property.jpg)
+
+Then, unlock all **x, y, z rotation properties** on every bone. Only rotation properties. 
+![unlocked_xyz_rotation_properties](img/unlocked_xyz_rotation_properties.jpg)  
+
+**Tip:**  
+It is insane to do this on every Daz Character. So, what I did is, I load a Default G8 character, unlock those rotation channels, and save it as a character preset. Then, I always use this preset, as my Default G8 model. All my new character is created based on this character preset. So, I only need to unlock those things once.  
+
+This is a pure Daz tip, and not just for importing mmd motion. To import any motion, for example, a bvh file, you need to unlock those xyz rotation properties.  
+
+
 
 # Update Log:
 ## 1.20.0

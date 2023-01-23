@@ -375,14 +375,11 @@ b站：  [https://www.bilibili.com/video/BV1y14y187Ck/](https://www.bilibili.com
 * 本扩展中，直接导入这个新vmd文件即可。
 
 ## 动作导入后手臂旋转不一致
-如果只有手臂不一致，请先把手臂旋转比例改为1.0看看效果。默认是0.8，是为了防止穿模。  
-
-如果接受轻微穿模，可以改为上臂1.0，前臂0.8。  
+如果只有手臂不一致，请把手臂旋转比例改为1.0看看效果。默认是0.9，是为了防止穿模。  
 
 如果是CC人模，手臂旋转比例直接使用1.0即可。  
 
 ## 动作导入后，人物不会转身，部分动作不正常
-* 请检查，Diff Daz Importer扩展，是否使用最新的1.6.1版本？而不是错误的安装了1.5版本。  
 * Diff Daz Importer扩展面板上，"**Global Setting**"中，**Rigging** 部分，是否勾选了很多选项？如果是，请去掉勾选这些选项，他们是限制人物动作幅度的。人物被限制了，当然就无法大幅运动。  
 ![](img/rigging.jpg)  
 
@@ -422,6 +419,30 @@ b站：  [https://www.bilibili.com/video/BV1y14y187Ck/](https://www.bilibili.com
 这个问题非常少见，但万一碰到，唯一的解决办法，是去mmd里，把多个眼睛闭合数据中的其他几个清理掉，只留下一个。  
 
 mmd的几个眼睛闭合表情是：ウィンク, ウィンク２, まばたき, 笑い, なごみ   
+
+
+## DazStudio导入mmd动作的设置
+关于把mmd动作导入Daz Studio，我们创建了一个视频教程  
+[https://youtu.be/FEA9hVouKFg](https://youtu.be/FEA9hVouKFg)  
+
+但是，有个Daz Studio的关键设置，视频中没有提到。  
+
+在Daz Studio中, Genesis 8上，每个骨骼都有**隐藏并上锁**的x, y, z旋转轴属性。如下图。  
+![locked_xyz_rotation_properties](img/locked_xyz_rotation_properties.jpg)  
+
+从Blender导出的daz动作预设，需要用刀这些隐藏属性。所以，Daz中，你需要在每个骨骼上，"显示并解锁这些x,y,z旋转属性，然后再导入动作预设。如下图。  
+![unlocked_xyz_rotation_properties](img/unlocked_xyz_rotation_properties.jpg)  
+
+要显示这些属性，前往参数面板的选项菜单->"Preferences"->"Show Hidden Properties", 勾选。如下图。  
+![show_hidden_property](img/show_hidden_property.jpg)
+
+然后，对每个骨骼**解锁x, y, z旋转属性**。只解锁旋转。如下图。  
+![unlocked_xyz_rotation_properties](img/unlocked_xyz_rotation_properties.jpg)  
+
+**技巧:**  
+给每个Daz人物都这么全部解锁一遍就太要命了。所以，我的做法是，加载一个默认G8人模，解锁这些旋转属性。然后另存为人模预设。以后，我就把这个人模预设，当作默认G8人模。我所有新人物，都基于这个预设创建。所以，这个解锁工作，我只需要做一次。  
+
+这是个纯粹的Daz技巧，不光是用于导入mmd动作。Daz Studio导入任何外部动作，比如bvh，都需要解锁这些隐藏属性。   
 
 
 # 更新Log:
