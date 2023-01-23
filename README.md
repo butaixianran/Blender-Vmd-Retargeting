@@ -418,7 +418,7 @@ These 5 morphs are: ウィンク, ウィンク２, まばたき, 笑い, なご�
 or you can just remove all 5 morphs' data.  
 
 ## Daz Studio Setting for importing motion
-We created an video tutorial for exporting motion and importing into Daz Studio.  
+We created a video tutorial for exporting motion and importing into Daz Studio.  
 [https://youtu.be/FEA9hVouKFg](https://youtu.be/FEA9hVouKFg)  
 
 But, there is one important setting hasn't been mentioned in that video.  
