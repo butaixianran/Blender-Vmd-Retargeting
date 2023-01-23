@@ -29,8 +29,7 @@ b站：[https://www.bilibili.com/video/BV1Yi4y1m77r](https://www.bilibili.com/vi
 导出MMD动作到Daz Studio: [https://youtu.be/FEA9hVouKFg](https://youtu.be/FEA9hVouKFg)  
 b站: [https://www.bilibili.com/video/BV1dg411h7Ri/](https://www.bilibili.com/video/BV1dg411h7Ri/)  
 
-当导入动作到Daz Studio时，Daz需要进行的设置[视频教程中未提到]：  
-[https://github.com/butaixianran/Blender-Vmd-Retargeting/issues/24](https://github.com/butaixianran/Blender-Vmd-Retargeting/issues/24)  
+当导入动作到Daz Studio时，Daz需要进行的设置[视频教程中未提到]： [https://github.com/butaixianran/Blender-Vmd-Retargeting/issues/24](https://github.com/butaixianran/Blender-Vmd-Retargeting/issues/24)  
 
 # 赠品
 ## Daz人模一键转为MMD人模
