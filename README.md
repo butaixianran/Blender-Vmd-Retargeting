@@ -42,7 +42,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.20.0    
+Addon: 1.20.2     
 Blender: 3.0 or later  
 
 # Feature
@@ -444,6 +444,9 @@ This is a pure Daz tip, and not just for importing mmd motion. To import any mot
 
 
 # Update Log:
+## 1.20.2
+* Ignore ik bones when IK is not used in vmd file
+
 ## 1.20.0
 * Add ik parent bones and foot ik bones to have a full mmd style ik system. If you get problem on feet, check "High Heel", will bring back the old way.  
 
