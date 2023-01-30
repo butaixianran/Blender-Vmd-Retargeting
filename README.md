@@ -437,9 +437,18 @@ Then, unlock all **x, y, z rotation properties** on every bone. Only rotation pr
 ![unlocked_xyz_rotation_properties](img/unlocked_xyz_rotation_properties.jpg)  
 
 **Tip:**  
-It is insane to do this on every Daz Character. So, what I did is, I load a Default G8 character, unlock those rotation channels, and save it as a character preset. Then, I always use this preset, as my Default G8 model. All my new character is created based on this character preset. So, I only need to unlock those things once.  
+This is a Daz's bad design for G3 and G8. If you need to import any pose data into Daz, you need to unlock those hidden properties.  
 
-This is a pure Daz tip, and not just for importing mmd motion. To import any motion, for example, a bvh file, you need to unlock those xyz rotation properties.  
+It is insane to do this on every Daz Character. So, people already created a Daz script to unlock them.  
+
+Download following daz script:    
+[https://www.dropbox.com/s/pjojvrnymcdi388/](https://www.dropbox.com/s/pjojvrnymcdi388/)  
+
+In Daz Studio, select you G8 character, then run this script, done. Now you can import pose preset.   
+
+If one day, above download link fails, you can get new link from its release video:  
+[https://www.youtube.com/watch?v=wHiKCx8nj5k](https://www.youtube.com/watch?v=wHiKCx8nj5k)  
+
 
 
 

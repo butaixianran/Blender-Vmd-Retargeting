@@ -440,9 +440,20 @@ mmd的几个眼睛闭合表情是：ウィンク, ウィンク２, まばたき,
 ![unlocked_xyz_rotation_properties](img/unlocked_xyz_rotation_properties.jpg)  
 
 **技巧:**  
-给每个Daz人物都这么全部解锁一遍就太要命了。所以，我的做法是，加载一个默认G8人模，解锁这些旋转属性。然后另存为人模预设。以后，我就把这个人模预设，当作默认G8人模。我所有新人物，都基于这个预设创建。所以，这个解锁工作，我只需要做一次。  
+这是Daz G3, G8的持续多年的恶心设计，不光是导入mmd动作，只要导入外部数据，就要解锁这些隐藏属性。给每个Daz人物都这么全部解锁一遍就太要命了。所以，已经有人写了Daz脚本来自动做这件事。  
 
-这是个纯粹的Daz技巧，不光是用于导入mmd动作。Daz Studio导入任何外部动作，比如bvh，都需要解锁这些隐藏属性。   
+下载下面的Daz脚本:  
+[https://www.dropbox.com/s/pjojvrnymcdi388/](https://www.dropbox.com/s/pjojvrnymcdi388/)  
+
+在Daz中，选择你的G8人模，然后双击运行这个脚本即可解锁。之后就能导入动作了。  
+
+如果某一天，这个脚本地址失效，你可以去下面原本的脚本发布视频，获取新地址：  
+[https://www.youtube.com/watch?v=wHiKCx8nj5k](https://www.youtube.com/watch?v=wHiKCx8nj5k)  
+
+
+
+
+  
 
 
 # 更新Log:
