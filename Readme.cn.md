@@ -47,7 +47,7 @@ Blender市场(推荐)：
 Blender市场购买、下载、更新、反馈，都是最方便的，推荐。  
 
 微博专栏下载(废弃，不建议使用)：  
-[https://weibo.com/a/hot/7618111255681025_1.html](https://weibo.com/a/hot/7618111255681025_1.html)  
+[微博专栏](https://m.weibo.cn/c/wbox?id=wqh75bb2ni&appName=%E6%96%87%E7%AB%A0%E4%B8%93%E6%A0%8F&appIcon=&topNavMode=0&cid=7618111255681025&click_from=share)  
 需要微博手机APP，购买付费专栏后，里面有一篇文章叫下载篇，内含网盘下载地址。   
 
 (如果爱发电没有问题，微博专栏购买渠道将在一个月之后撤下。已经购买的用户不受影响)  
