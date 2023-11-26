@@ -94,6 +94,20 @@ Blender版本：3.0或以上
 
 通过fbx文件导入的人模，cc也没问题。但daz的，本扩展将无法转换表情。  
 
+
+### 关于Blender 4.x
+"**diffeomorphic daz importer**"这个扩展，要用于Blender 4.x，必须下载他的最新开发版本。dropbox上的稳定版是老版本，只适合Blender 3.x，无法用于Blender 4.x.   
+[https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home](https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home)   
+
+![](img/download_diff_daz_importer_source_code.jpg)  
+
+解压下载的文件，目录名字应该类似"Diffeomorphic-import_daz-xxxxxxxxxx"。   
+![](img/diff_daz_importer_rename.jpg)  
+
+重命名这个文件夹为"import_daz"，打包成新的zip文件。然后把这个新的zip文件，作为Blenderk扩展安装。这样，你就有了最新版的**diffeomorphic daz importer**，可以用于Blender 4.x。  
+
+
+
 ### 准备CC4模型
 无须准备。但请直接从Character Creator导出人模，而不是iClone。请只导出Mesh，不带动画。  
 

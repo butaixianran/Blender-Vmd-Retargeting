@@ -67,7 +67,7 @@ If you are new to blender and don't know how to install a blender addon, search:
 # How to use
 ## Prepare a character
 This addon supports:
-* Daz Genesis 8 imported by [diffeomorphic daz importer](https://diffeomorphic.blogspot.com/)
+* Daz Genesis 8 imported by [diffeomorphic daz importer](https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home)
 * Daz Genesis 8 imported by [Daz to Blender Bridge for blender 3.x](https://github.com/butaixianran/DazToBlender)  
 * Daz Genesis 8 imported by [Official Daz to Blender Bridge 2022](https://www.daz3d.com/forums/discussion/572806/official-daztoblender-bridge-2022-what-s-new-and-how-to-use-it)  
 * CC4(Character Creator) imported by [cc blender tools addon](https://github.com/soupday/cc_blender_tools)  
@@ -76,6 +76,19 @@ This addon supports:
 
 For characters imported by fbx, cc4 model works too. But for daz model, facial and viseme motion won't work.  
 
+### For Blender 4.x
+To make addon "**diffeomorphic daz importer**" work with Blend 4.x, you need download its latest version from its source code. The old version on dropbox won't work for Blender 4.x.   
+[https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home](https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home)  
+
+![](img/download_diff_daz_importer_source_code.jpg)  
+
+Then unzip the downloaded file, its folder name should be something like "Diffeomorphic-import_daz-xxxxxxxxxx".   
+![](img/diff_daz_importer_rename.jpg)  
+
+
+Rename this folder to "import_daz", zip it into a new `.zip` file. Install this new zip file as Blender addon.  
+
+Now, you have the latest **diffeomorphic daz importer** which works for Blender 4.x.  
 
 ### Prepare CC4 model
 **No preparing is needed.**   
@@ -444,7 +457,7 @@ It is insane to do this on every Daz Character. So, people already created a Daz
 Download following daz script:    
 [https://www.dropbox.com/s/pjojvrnymcdi388/](https://www.dropbox.com/s/pjojvrnymcdi388/)  
 
-In Daz Studio, select you G8 character, then run this script, done. Now you can import pose preset.   
+In Daz Studio, select your G8 character, then run this script, done. Now you can import pose preset.   
 
 If one day, above download link fails, you can get new link from its release video:  
 [https://www.youtube.com/watch?v=wHiKCx8nj5k](https://www.youtube.com/watch?v=wHiKCx8nj5k)  

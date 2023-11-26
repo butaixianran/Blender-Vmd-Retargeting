@@ -4,12 +4,23 @@
 
 ## 下载
 官网：  
-[https://diffeomorphic.blogspot.com/p/daz-importer-version-16.html](https://diffeomorphic.blogspot.com/p/daz-importer-version-16.html)  
+[https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home](hhttps://bitbucket.org/Diffeomorphic/import_daz/wiki/Home)  
 
 直接下载地址页面：  
-[https://www.dropbox.com/s/ufps8ip4xqxyqy3/import_daz_mhx_rts_v1_6_1.zip](https://www.dropbox.com/s/ufps8ip4xqxyqy3/import_daz_mhx_rts_v1_6_1.zip)  
+[https://www.dropbox.com/s/7mj32wh3bnn4rwe/import_daz_mhx_rts_v1_7_1.zip](https://www.dropbox.com/s/7mj32wh3bnn4rwe/import_daz_mhx_rts_v1_7_1.zip)  
 
 打开后，点击页面左上角的"下载"按钮，把整个分享目录下载下来。   
+
+### Blender 4.x
+这个扩展，要用于Blender 4.x，必须下载他的最新开发版本。dropbox上的稳定版是老版本，只适合Blender 3.x，无法用于Blender 4.x.   
+[https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home](https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home)   
+
+![](img/download_diff_daz_importer_source_code.jpg)  
+
+解压下载的文件，目录名字应该类似"Diffeomorphic-import_daz-xxxxxxxxxx"。   
+![](img/diff_daz_importer_rename.jpg)  
+
+重命名这个文件夹为"import_daz"，打包成新的zip文件。然后把这个新的zip文件，作为Blenderk扩展安装。这样，你就有了最新版的**diffeomorphic daz importer**，可以用于Blender 4.x。  
 
 # 安装及使用
 ## 简述版
