@@ -77,7 +77,7 @@ This addon supports:
 For characters imported by fbx, cc4 model works too. But for daz model, facial and viseme motion won't work.  
 
 ### For Blender 4.x
-To make addon "**diffeomorphic daz importer**" work with Blend 4.x, you need download its latest version from its source code. The old version on dropbox won't work for Blender 4.x.   
+To make addon "**diffeomorphic daz importer**" work with Blend 4.x, you need download its latest Development version. The stable version on dropbox only works for Blender 3.x.   
 [https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home](https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home)  
 
 ![](img/download_diff_daz_importer_source_code.jpg)  

@@ -12,7 +12,7 @@
 打开后，点击页面左上角的"下载"按钮，把整个分享目录下载下来。   
 
 ### Blender 4.x
-这个扩展，要用于Blender 4.x，必须下载他的最新开发版本。dropbox上的稳定版是老版本，只适合Blender 3.x，无法用于Blender 4.x.   
+这个扩展，要用于Blender 4.x，必须下载他的最新开发版本。dropbox上的稳定版只适合Blender 3.x.   
 [https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home](https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home)   
 
 ![](img/download_diff_daz_importer_source_code.jpg)  
