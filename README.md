@@ -115,7 +115,11 @@ When importing model to blender, you need 3 things:
 **The easiest way for these, is importing a character by click "Easy Import Daz" button.**  
 
 #### For Genesis 8
-Click "Easy Import Daz" button, by default, it already checked Merge Rigs for you.  
+**Click "Easy Import Daz" button, not the "Import Daz" button**  
+**Click "Easy Import Daz" button, not the "Import Daz" button**  
+**Click "Easy Import Daz" button, not the "Import Daz" button**  
+
+by default, it already checked Merge Rigs for you.  
 So, you just need to check "Face Units" and "Visemes", then import.  
 
 After importing, go to "**Finish**" section of Diffeomorphic daz importer's panel. Click "**Make All Bones Poseable**"
