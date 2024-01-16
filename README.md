@@ -119,10 +119,8 @@ When importing model to blender, you need 3 things:
 **Click "Easy Import Daz" button, not the "Import Daz" button**  
 **Click "Easy Import Daz" button, not the "Import Daz" button**  
 
-by default, it already checked Merge Rigs for you.  
-So, you just need to check "Face Units" and "Visemes", then import.  
-
-After importing, go to "**Finish**" section of Diffeomorphic daz importer's panel. Click "**Make All Bones Poseable**"
+by default, it already checked "**Merge Rigs**" and "**Make All Bones poseable**" for you. If not, check them.  
+Then, you just need to check "**Face Units**" and "**Visemes**", then import.  
 
 Now, your daz model is prepared.  
 
