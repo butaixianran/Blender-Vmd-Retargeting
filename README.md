@@ -112,7 +112,7 @@ When importing model to blender, you need 3 things:
 * Facial morph and Viseme morph
 * Make all bones poseable.  
 
-**The easiest way for these, is importing a character by click "Easy Import Daz" button.**  
+**The easiest way for these, is importing a character by clicking "Easy Import Daz" button.**  
 
 #### For Genesis 8
 **Click "Easy Import Daz" button, not the "Import Daz" button**  
