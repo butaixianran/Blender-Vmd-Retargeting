@@ -131,10 +131,14 @@ Blender版本：3.0或以上
 **最简单的实现方法是，点击："Easy Import Daz"按钮**  
 
 #### 对于Genesis 8
-点击"Easy Import Daz"按钮。默认，它已经帮你勾选了"Merge Rigs"。所以，你只需勾选："Face Units" 和 "Visemes"，然后点击导入即可。  
+点击"Easy Import Daz"按钮，不是"Import Daz"按钮。  
+点击"Easy Import Daz"按钮，不是"Import Daz"按钮。  
+点击"Easy Import Daz"按钮，不是"Import Daz"按钮。  
 
-导入后，前往Diffeomorphic daz importer扩展的： "**Finish**" 部分，点击"**Make All Bones Poseable**"  
-  
+默认，它已经帮你勾选了"**Merge Rigs**"和"**Make All Bones Poseable**"。如果没有，就自己勾上。
+
+然后，你只需勾选："**Face Units**" 和 "**Visemes**"，点击导入即可。  
+
 准备完毕。  
 
 
