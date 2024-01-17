@@ -59,7 +59,7 @@ Blender市场购买、下载、更新、反馈，都是最方便的，推荐。
 
 
 ### 版本
-扩展版本：1.20.2     
+扩展版本：1.21.0     
 Blender版本：3.0或以上  
 
 # 功能
@@ -131,9 +131,8 @@ Blender版本：3.0或以上
 **最简单的实现方法是，点击："Easy Import Daz"按钮**  
 
 #### 对于Genesis 8
-点击"Easy Import Daz"按钮，不是"Import Daz"按钮。  
-点击"Easy Import Daz"按钮，不是"Import Daz"按钮。  
-点击"Easy Import Daz"按钮，不是"Import Daz"按钮。  
+**点击"Easy Import Daz"按钮，不是"Import Daz"按钮。**  
+**点击"Easy Import Daz"按钮，不是"Import Daz"按钮。**  
 
 默认，它已经帮你勾选了"**Merge Rigs**"和"**Make All Bones Poseable**"。如果没有，就自己勾上。
 
@@ -145,24 +144,24 @@ Blender版本：3.0或以上
 #### 对于Genesis 9
 你需要安装diff daz importer **1.6.2以上版本**，才能导入Genesis 9。   
 
-如果你的Blender中已经安装了1.6.1版本，你必须先删除1.6.1版本，重新打开Blender，再安装1.6.2版本。安装之后，你要重新设置Global Setting中的所有选项。新版本中，很多文件和设置都发生了变化。   
+如果你的Blender中已经安装了1.6.1版本，你必须先删除1.6.1版本，重新打开Blender，再安装1.6.2版本。安装之后，你要重新设置Global Setting中的所有选项。因为新版本中，很多文件和设置都发生了变化。   
 
-然后，点击"Easy Import Daz"按钮。默认，它已经帮你勾选了"Merge Rigs"和"Make All Bones Poseable"。所以，你只需勾选："FACS"，然后点击导入即可。  
+然后，点击"Easy Import Daz"按钮。默认，它已经帮你勾选了"Merge Rigs"和"Make All Bones Poseable"。所以，你只需勾选："**FACS**"，然后点击导入即可。  
 
-**注意：Genesis 9改变了 扭曲骨骼的结构，扭曲骨骼不在手臂中。使得MMD的扭曲骨骼，无法映射到手臂中。所以，任何使用了扭曲骨骼的mmd动作，都将无法转换到Genesis 9。**  
+**注意：Genesis 9改变了 扭曲骨骼的结构，扭曲骨骼现在不在手臂中。使得MMD的扭曲骨骼，无法映射到手臂中。所以，任何使用了扭曲骨骼的mmd动作，都将无法转换到Genesis 9。你可以尝试使用一个MMD人模作为动作源的方式转换。但不保证效果。**  
 
 
-### 准备Daz模型（使用Daz to Blender桥接插件Blender 3.x更新版，以下简称DTB）
-这个功能，是给能够自学使用DTB的用户使用的。
+### 准备Daz模型（使用Daz to Blender桥接插件Blender 3.x更新版，以下简称DFB）
+这个功能，是给能够自学使用DFB的用户使用的。
 
-这个版本的DTB，不是Daz官方的DTB 2022。而是我本人修改的版本，适用于Blender 3.x，修复了官方的大量bug，添加很多方便的功能和选项。
+这个版本的DFB，不是Daz官方的DTB 2022。而是本人基于官方版本，继续修改的版本，修复了官方的大量bug，添加很多方便的功能和选项。
 [https://github.com/butaixianran/DazToBlender](https://github.com/butaixianran/DazToBlender)  
 
-这个DTB版本的最大好处是，morph就在身体模型的shape key上且没有driver。而且，材质也是标准Principled材质。  
+这个DFB版本的最大好处是，morph就在身体模型的shape key上且没有driver。而且，材质也是标准Principled材质。  
 
 因此，Daz模型导入mmd的动作后，可以连同动作和材质一起，从Blender导出到任何其他3D软件。包括游戏引擎。  
 
-建议对Daz和Blender不够熟悉的用户选择Diffeomorphic Daz Importer。  
+建议对Daz和Blender不够熟悉的用户选择Diffeomorphic Daz Importer。这个是给非常熟悉Daz和Blender的人士使用的。  
 
 **在安装DTB之后:**   
 * Daz中，导出人模时，勾选"**Include Morphs**"来导出morph
@@ -176,7 +175,7 @@ Blender版本：3.0或以上
 
 这个DTB 2022，和几年前的老版本相比，只是重写了Daz端，把脚本语言的代码，换成了C++代码。Blender一侧，几乎没有改动。大量问题隐藏其中，估计很久都不会修复。  
 
-目前，这个新的官方版本，唯一的好处是安装特别简单。但是其他方面，远不如其他两个选择好。因此，只适合新手和浅层使用。    
+目前，这个新的官方版本，唯一的好处是安装特别简单。但是其他方面，远不如Diffeomorphic Daz Importer好。因此，只适合新手和浅层使用。    
 
 你需要在这个帖子中了解如何安装和使用它:  
 [https://www.daz3d.com/forums/discussion/572806/official-daztoblender-bridge-2022-what-s-new-and-how-to-use-it](https://www.daz3d.com/forums/discussion/572806/official-daztoblender-bridge-2022-what-s-new-and-how-to-use-it)  
@@ -192,7 +191,7 @@ Blender版本：3.0或以上
 ## 准备一个vmd文件
 无须额外操作。  
 
-万一碰到某个vmd文件导入后，人物像跳机器舞一样，从一个动作跳到另一个动作。说明这个vmd文件，没有遵守vmd文件格式规范。要么是非常老旧的vmd文件，要么是什么软件生成的vmd文件。
+万一碰到某个vmd文件导入后，人物像跳机器舞一样，从一个动作跳到另一个动作。说明这个vmd文件，没有遵守vmd文件格式规范。要么是非常老旧的vmd文件，要么是什么第三方软件生成的vmd文件。
 
 对于这种罕见情况，只需在MMD中，读取一个TDA模型，加载这个vmd动作，再另存为一个新vmd文件。这个新vmd文件，将变成规范的vmd格式，本扩展即可读取。
 
@@ -246,7 +245,13 @@ Daz/CC人模的手长和mmd人模不同。因此，如果mmd人模将手放到�
 >左前臂：-5, 0, 3   
 >右前臂：-5, 0, -3   
 
-如果默认值穿模，下面的数值，大部分时候都能解决前手臂穿模：  
+如果默认值穿模，尝试下面的数值：
+>上臂旋转比例：1.0   
+>前臂旋转比例: 1.0   
+>左前臂：0, 0, 0   
+>右前臂：0, 0, 0   
+
+或者：  
 >上臂旋转比例：0.8   
 >前臂旋转比例：0.8   
 >左前臂：-15, 0, 9   
@@ -276,7 +281,9 @@ Daz/CC人模的手长和mmd人模不同。因此，如果mmd人模将手放到�
 
 这样就会转换映射过的骨骼上的每一帧，而不只是关键帧，所以速度会非常慢。  
 
-这种方式，不需要给Daz/CC添加Ik骨骼  
+这种方式，扩展不会给Daz/CC添加Ik骨骼。  
+
+注意，这种方式下，扩展面板的选项 手臂旋转比例和手臂欧拉角增加量 将不起作用。  
 
 **我们为此制作了一个单独的视频教程：**  
 [https://youtu.be/rttA3v_5S2I](https://youtu.be/rttA3v_5S2I)  
@@ -489,6 +496,9 @@ mmd的几个眼睛闭合表情是：ウィンク, ウィンク２, まばたき,
 
 
 # 更新Log:
+## 1.21.0
+* 更新使用MMD模型作为数据源时，上半身的计算方式，用世界空间，而不是本地空间计算。这样，就能更好的处理MMD的分层骨骼，比如 肩P或扭曲骨骼。代价是，手臂旋转比例和旋转角度增量，在这个模式下将不起作用。  
+
 ## 1.20.2
 * 在vmd文件没有使用IK的时候，忽略IK骨骼
 

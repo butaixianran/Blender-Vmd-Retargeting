@@ -42,7 +42,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.20.2     
+Addon: 1.21.0     
 Blender: 3.0 or later  
 
 # Feature
@@ -115,7 +115,6 @@ When importing model to blender, you need 3 things:
 **The easiest way for these, is importing a character by clicking "Easy Import Daz" button.**  
 
 #### For Genesis 8
-**Click "Easy Import Daz" button, not the "Import Daz" button**  
 **Click "Easy Import Daz" button, not the "Import Daz" button**  
 **Click "Easy Import Daz" button, not the "Import Daz" button**  
 
@@ -232,7 +231,13 @@ Default value:
 >Forearm left: -5, 0, 3   
 >Forearm right: -5, 0, -3   
 
-If forearm pokes into body with default value, try following values:  
+If forearm pokes into body with default value, try those values:
+>Upperarm rotation rate: 1.0   
+>Forearm rotation rate: 1.0   
+>Forearm left: 0, 0, 0   
+>Forearm right: 0, 0, 0   
+
+Or following values:  
 >Upperarm rotation rate: 0.8   
 >Forearm rotation rate: 0.8   
 >Forearm left: -15, 0, 9   
@@ -242,7 +247,7 @@ If forearm pokes into body with default value, try following values:
 #### Pick_A_MMD_Model_As_Source
 If you picked a mmd model, addon will ignore body motion from vmd file and retarget body motion from your picked mmd model.  
 
-Eyeball and morph motion are still loaded from vmd file.  
+**Eyeball and morph motion are still loaded from vmd file.**    
 
 You need blender mmd tools to import a mmd model into blender:  
 [https://github.com/UuuNyaa/blender_mmd_tools](https://github.com/UuuNyaa/blender_mmd_tools)  
@@ -250,7 +255,7 @@ You need blender mmd tools to import a mmd model into blender:
 **When importing a mmd model, uncheck rename bones!** We use its japanese bone name to map bones.    
 ![](img/uncheck_rename_bones.jpg)  
 
-After importing mmd model, then import your vmd motion onto this mmd model **by using mmd tools, not this addon!**   
+After importing mmd model, also import your vmd motion onto this mmd model **by using mmd tools, not this addon!**   
 
 Which is: select your mmd model, go to `File menu->Import->Vmd file`, and select a vmd file.  
 Now, your mmd model should has a motion on it.   
@@ -262,7 +267,9 @@ Then select your Daz or CC model, use the pick tool of "Source" from this addon'
 
 It will retargeting every frame of evey mapping bone's final rotation from mmd model, not just key frames, so it will be very slow.   
 
-And it doesn't need an IK bone on Daz/CC model.  
+In this way, addon won't create IK bones on Daz/CC model.  
+
+**Also, Arm Rotation rate and Arm rotation Euler plus won't work when using a MMD model as motion source.**
 
 **There is a video tutorial for this:**   
 [https://youtu.be/rttA3v_5S2I](https://youtu.be/rttA3v_5S2I)  
@@ -468,6 +475,9 @@ If one day, above download link fails, you can get new link from its release vid
 
 
 # Update Log:
+## 1.21.0
+* When using a MMD model as motion source, upper body now is retargeted from MMD's final bone rotation in world space, not local space. Which means, it can handle layered MMD bones(Like shoulder P and twist bones) better. But addon's Arm rotation rate and euler plus won't work in this way any more.  
+
 ## 1.20.2
 * Ignore ik bones when IK is not used in vmd file
 
