@@ -42,7 +42,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.21.0     
+Addon: 1.22.0     
 Blender: 3.0 or later  
 
 # Feature
@@ -475,6 +475,9 @@ If one day, above download link fails, you can get new link from its release vid
 
 
 # Update Log:
+## 1.22.0
+* Re-map waist bone, now it is treated as a layer of hip bone, like center and groove bone. Also, when importing motion from vmd file directly, it gonna be on a different track on NLA.  
+
 ## 1.21.0
 * When using a MMD model as motion source, upper body now is retargeted from MMD's final bone rotation in world space, not local space. Which means, it can handle layered MMD bones(Like shoulder P and twist bones) better. But addon's Arm rotation rate and euler plus won't work in this way any more.  
 
