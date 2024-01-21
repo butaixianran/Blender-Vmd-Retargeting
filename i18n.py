@@ -55,6 +55,7 @@ dict = {
         (None, "Found new version"):"Found new version",
         (None, "Use Thigh Rotation with IK"):"Use Thigh Rotation with IK",
         (None, "Thigh Rotation Rate"):"Thigh Rotation Rate",
+        (None, "Clear Animation"):"Clear Animation",
     },
     "zh_CN":{
         (None, "You need Blender 3.0+ to use this addon"):"请使用Blender 3.0以上版本",
@@ -109,6 +110,7 @@ dict = {
         (None, "Found new version"):"找到新版本",
         (None, "Use Thigh Rotation with IK"):"大腿旋转和IK并用",
         (None, "Thigh Rotation Rate"):"大腿旋转比例",
+        (None, "Clear Animation"):"清除动画",
     },
     "zh_TW":{
         (None, "You need Blender 3.0+ to use this addon"):"請使用Blender 3.0以上版本",
@@ -163,6 +165,7 @@ dict = {
         (None, "Found new version"):"找到新版本",
         (None, "Use Thigh Rotation with IK"):"大腿旋轉和IK並用",
         (None, "Thigh Rotation Rate"):"大腿旋轉比例",
+        (None, "Clear Animation"):"清除動畫",
     },
     "ja_JP":{
         (None, "You need Blender 3.0+ to use this addon"):"Blender 3.0以上を使用してください",
@@ -217,6 +220,7 @@ dict = {
         (None, "Found new version"):"新しいバージョンが見つかりました",
         (None, "Use Thigh Rotation with IK"):"足回転とIK併用",
         (None, "Thigh Rotation Rate"):"足回転の割合",
+        (None, "Clear Animation"):"アニメーションをクリア",
         
     },
 }
