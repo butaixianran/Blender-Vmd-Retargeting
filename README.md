@@ -1,4 +1,4 @@
-#### This addon handles most vmd motion very well. If you can not make it work, view "[Common_Issue](#Common_Issue)" part for solution.   
+#### This addon handles most vmd motion very well. If you can not make it work, view "[Common Issue](#Common-Issue)" part for solution.   
 
 
 # Language
@@ -28,6 +28,8 @@ Export mmd motion to Daz Studio: [https://youtu.be/FEA9hVouKFg](https://youtu.be
 ## Conver Daz Model to MMD
 Check its own readme page: [Daz to MMD](daz_to_mmd.md)   
 
+## Proxy Mesh For Realtime Physics
+Check section: [Proxy Mesh For Realtime Physics](#Proxy-Mesh-For-Realtime-Physics)  
 
 # Info
 ### Download
@@ -335,7 +337,11 @@ So far as I know, there are only 2 vmd motion creators use twist bones. They are
 ## Prop motion
 This addon won't handle that.
 
-# Proxy Mesh For Physics
+# Proxy Mesh For Realtime Physics
+## Video tutorial
+Youtube:  
+[https://youtu.be/lGAWgWxJjFc](https://youtu.be/lGAWgWxJjFc)  
+
 ## Create Proxy Mesh
 On **this addon's Tool Panel**, there are 2 buttons: **Create and Clear Proxy Mesh**. They are useful for physics.  
 
@@ -397,7 +403,7 @@ Full step as following:
 Now you can bake your cloth's physics.  
 
 
-# Common_Issue
+# Common Issue
 We made a video for some common issues, check it out:  
 [https://youtu.be/qBivoDgFpc4](https://youtu.be/qBivoDgFpc4)    
 

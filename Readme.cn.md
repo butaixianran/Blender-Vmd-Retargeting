@@ -35,6 +35,9 @@ b站: [https://www.bilibili.com/video/BV1dg411h7Ri/](https://www.bilibili.com/vi
 ## Daz人模一键转为MMD人模
 参见专门的使用说明：[Daz to MMD](daz_to_mmd.cn.md)   
 
+## 为实时模拟物理布料创建代理模型
+参见章节： [为实时模拟物理布料创建代理模型](#为实时模拟物理布料创建代理模型)
+
 
 # 基本信息
 ### 下载
@@ -363,7 +366,14 @@ Mmd的腰部骨骼，是上半身和下半身的父亲，因此可以当作hip�
 本扩展不会处理。  
 
 
-# 为物理计算创建代理模型
+# 为实时模拟物理布料创建代理模型
+## 视频教程
+Youtube:  
+[https://youtu.be/lGAWgWxJjFc](https://youtu.be/lGAWgWxJjFc)  
+
+Bilibili:  
+[https://www.bilibili.com/video/BV1uV411Q73a/](https://www.bilibili.com/video/BV1uV411Q73a/)  
+
 ## 创建代理模型
 在本扩展的"Tool"面板上，有2个新按钮：**创建和清除代理模型**。这些可以用于快速计算物理。  
 
