@@ -42,7 +42,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.23.0     
+Addon: 1.24.0     
 Blender: 3.0 or later  
 
 # Feature
@@ -291,7 +291,6 @@ Default value works fine for almost every case.
 But if your model is a CC character with high heel, you need to move camera up with 8cm.  
 
 
-
 # Limits
 ## Mother_Bone
 On a mmd model, there is a bone called "全ての親", which means mother bone in English. A vmd motion should never uses this bone. It is designed for final user adjusts model's position after loading a vmd motion. In Blender, it is just like moving the whole object, not a bone.  
@@ -333,19 +332,70 @@ So, if you are using a vmd file come with motion on twist bones, you better use 
 
 So far as I know, there are only 2 vmd motion creators use twist bones. They are: Natsumi San and Fairy Tale.   
 
-
-## Waist Bone
-Mmd's Waist Bone, is the parent of upper body and lower body. Which makes it can turn the whole body together, like a hip bone.   
-
-There is No other Character model treat Waist Bone that way. So, we convert Waist Bone's data into lower spine bone.
-
-Since most vmd motion never uses Waist Bone, it won't be a problem.  
-
-But, again, Natsumi San's vmd motion may use it. Still, as long as vmd motion does not use Waist Bone as hip bone to rotate the whole body, it gonna be fine.     
-
-
 ## Prop motion
 This addon won't handle that.
+
+# Proxy Mesh For Physics
+## Create Proxy Mesh
+On **this addon's Tool Panel**, there are 2 buttons: **Create and Clear Proxy Mesh**. They are useful for physics.  
+
+Daz or CC model and their clothes have too many faces for collision. So, cloth physics gonna be very very slow.  
+
+To make it faster, normally, you need do following manually:  
+* copy body and clothes mesh
+* add and apply decimate to those copied meshes
+
+Then add cloth and collision to those decimated meshes. So you can have physics on those decimated meshes, which is much faster.  
+
+Those decimated meshes for physics, are proxy meshes.  
+
+With this addon, select a mesh, then "**Create Proxy Mesh**" button can create a decimated copy for this mesh.    
+So, you just add cloth or collision to this proxy mesh and hide the original mesh, your cloth physics gonna be very fast.  
+
+Following are full steps for this:  
+
+**For body mesh:**  
+* Select character's body mesh
+* Click "**Create Proxy Mesh**" button
+* Go to blender's physics panel, add "**Collision**" to this new proxy mesh.  
+* In Collision's setting, modify "**thickness outer**" to 0.002
+* Hide this proxy mesh, unhide original body mesh. (For both render and view window)
+* Done.
+
+
+**For cloth mesh which need physics:**  
+* Set body's collision as above
+* Select this cloth mesh
+* Make sure it has a vertex group for pin.  
+If you are using Daz's dforce clothes imported with Diff daz importer, this cloth will have a vertex group called "**dForce Pin**". So you don't need to create a vertex group by yourself.  
+
+* Click "**Create Proxy Mesh**" button
+* Go to blender's physics panel, add "**Cloth**" to this new proxy mesh.  
+* In Cloth's setting, "**Shape**" section, "**Pin Group**" option, select your vertex group for pin. For Daz's dforce cloth, it gonna be "**dForce Pin**".
+* Modify "**Simulation end**" frame at Cache section to your project's end frame.
+* Click Bake
+
+## Clear Proxy Meshes
+Click this button on addon's Tool panel, will remove all created proxy meshes.  
+
+## Arms poke into clothes
+A common issue of physics is arms poke into dress or skirt then drag that dress or skirt away from lower body and broke it.  
+
+You can not solve this without a proxy mesh. But with a proxy body mesh created by this addon, you can just remove both arms from the proxy body mesh, then hide it and render your image with original body mesh.  
+
+Full step as following:
+* Hide original body mesh, show and select body's proxy mesh.
+* Go to edit mode
+* Click on empty area to unselect all.
+* Turn on view window's X-Ray mode.
+* Select both arms' vertices
+* Press "x", from pop-up menu, select "**vertices**" to remove arms. 
+* Go back to object mode.
+* Tunr off view window's X-Ray mode.
+* Hide this body proxy mesh, show original body mesh.  
+
+Now you can bake your cloth's physics.  
+
 
 # Common_Issue
 We made a video for some common issues, check it out:  
@@ -475,6 +525,9 @@ If one day, above download link fails, you can get new link from its release vid
 
 
 # Update Log:
+## 1.24.0
+* Add Important new feature: Create and Clear Proxy Mesh
+
 ## 1.23.0
 * Add "Clear Animation" Button
 
