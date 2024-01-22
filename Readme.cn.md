@@ -35,7 +35,7 @@ b站: [https://www.bilibili.com/video/BV1dg411h7Ri/](https://www.bilibili.com/vi
 ## Daz人模一键转为MMD人模
 参见专门的使用说明：[Daz to MMD](daz_to_mmd.cn.md)   
 
-## 为实时模拟物理布料创建代理模型
+## 为实时模拟物理创建代理
 参见章节： [为实时模拟物理布料创建代理模型](#为实时模拟物理布料创建代理模型)
 
 
