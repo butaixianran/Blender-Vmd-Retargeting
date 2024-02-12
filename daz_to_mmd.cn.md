@@ -22,12 +22,11 @@ Blender市场：
 ### 准备扩展
 你需要安装如下Blender扩展
 * [Blender mmd tools](https://github.com/UuuNyaa/blender_mmd_tools)  
-* [Diffeomorphic daz importer](http://diffeomorphic.blogspot.com/p/daz-importer-version-16.html)  
+* [Diffeomorphic daz importer](https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home)  
 
 前往Diffeomorphic daz importer Blender扩展的全局设置，右上角，材质设置区域，**设置为使用Single reused Principled Shader**。原本的设置是用iray shader，那样是无法顺利转换的。  
 
 如果你使用eevee，前往渲染设置面板，勾选 **Screen Space Reflection**(屏幕空间反射) 和 **Refraction**（屏幕空间折射）。  
-
 
 ### 准备人模
 #### Daz一侧
@@ -45,7 +44,7 @@ Blender市场：
 导入后，选择人模的**身体模型**，不是骨架。前往diff daz import扩展面板:  
 `Advanced Setup` -> `Morphs` -> `Convert Morphs To Shapekeys`.  
 
-打开的窗口，左上角，点击All，然后点击确定。  
+打开的窗口，左上角，点击All，底部，勾选"Labels As Names"，然后点击确定。  
 
 
 ### 转换

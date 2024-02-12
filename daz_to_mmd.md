@@ -42,7 +42,7 @@ By default, diff daz import use facial bones for facial motion, but MMD need sha
 After importing, select character's **body mesh**, go to diff daz import addon's panel:  
 `Advanced Setup` -> `Morphs` -> `Convert Morphs To Shapekeys`.  
 
-Check "All" at left-up corner, then click OK.  
+Check "All" at left-up corner, check "Labels As Names" checkbox at bottom, then click OK.  
 
 ### Convert
 **Select Armature**, go to **Vmd Retargeting** addon's panel. At bottom, Rig section, Click "**Daz to MMD**" and wait. After it's done, now this is a MMD model.  
