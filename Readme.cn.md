@@ -306,7 +306,7 @@ b站：
 
 如果你希望Daz/CC人模上的动作，和mmd模型上完全一样流畅，你有2个选择:  
 * 在本扩展上，选择一个mmd人模作为数据源。这样，就会转换每一帧，而不只是关键帧。
-* 或者，你可以下载 [MikuMikuMoving](https://sites.google.com/site/mikumikumovingeng/)。加载一个mmd人模和vmd动作到MikuMikuMoving，然后导出为新的vmd动作。导出的时候，勾选上"**Integrate layer**"。这样，就会导出每一帧，而不仅仅是关键帧。然后，把这个新的vmd文件，用于本扩展。  
+* 或者，你可以下载 [MikuMikuMoving](https://sites.google.com/site/mikumikumovingeng/)。加载一个mmd人模和vmd动作到MikuMikuMoving，然后导出为新的vmd动作。导出的时候，勾选上"**Integrate layer**"。这样，就会导出每一帧，而不仅仅是关键帧。然后，把这个新的vmd文件，用于本扩展。(只把新vmd文件用于身体动作。表情口型还是用原始vmd文件)  
 
 
 ### 摄像机位置比例和高度偏移
