@@ -300,9 +300,14 @@ b站：
 
 ![](img/easing.jpg)  
 
-如果你的动作不流畅，你可以设置补间曲线为"Linear"。有些情况下，"Linear"实际上很平滑。  
-
 这个设置不会影响摄像机。摄像机运动永远是线性的。  
+
+默认选项下，本扩展会把vmd的每个关键帧曲线，转换为最接近的Blender内置的关键帧曲线。大部分情况都有合理的效果，但并不是所有情况。
+
+如果你希望Daz/CC人模上的动作，和mmd模型上完全一样流畅，你有2个选择:  
+* 在本扩展上，选择一个mmd人模作为数据源。这样，就会转换每一帧，而不只是关键帧。
+* 或者，你可以下载 [MikuMikuMoving](https://sites.google.com/site/mikumikumovingeng/)。加载一个mmd人模和vmd动作到MikuMikuMoving，然后导出为新的vmd动作。导出的时候，勾选上"**Integrate layer**"。这样，就会导出每一帧，而不仅仅是关键帧。然后，把这个新的vmd文件，用于本扩展。  
+
 
 ### 摄像机位置比例和高度偏移
 Daz/CC人模和mmd模型的尺寸不同。因此，摄像机需要调整   
@@ -552,8 +557,7 @@ mmd的几个眼睛闭合表情是：ウィンク, ウィンク２, まばたき,
 然后，对每个骨骼**解锁x, y, z旋转属性**。只解锁旋转。如下图。  
 ![unlocked_xyz_rotation_properties](img/unlocked_xyz_rotation_properties.jpg)  
 
-**技巧:**  
-这是Daz G3, G8的持续多年的恶心设计，不光是导入mmd动作，只要导入外部数据，就要解锁这些隐藏属性。给每个Daz人物都这么全部解锁一遍就太要命了。所以，已经有人写了Daz脚本来自动做这件事。  
+这是Daz G3, G8的持续多年的恶心设计，只要导入外部数据，就要解锁这些隐藏属性。给每个Daz人物都这么全部解锁一遍就太要命了。所以，已经有人写了Daz脚本来自动做这件事。  
 
 下载下面的Daz脚本:  
 [https://www.dropbox.com/s/pjojvrnymcdi388/](https://www.dropbox.com/s/pjojvrnymcdi388/)  

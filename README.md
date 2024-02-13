@@ -184,6 +184,7 @@ For those vmd files, just open MikuMikuDance, load a TDA model, and load this vm
 
 This new vmd file will work.  
 
+
 ## Import vmd
 It is pretty simple:
 * Select your character's armature
@@ -249,7 +250,7 @@ Or following values:
 #### Pick_A_MMD_Model_As_Source
 If you picked a mmd model, addon will ignore body motion from vmd file and retarget body motion from your picked mmd model.  
 
-**Eyeball and morph motion are still loaded from vmd file.**    
+**Eyeball and morph motion are still loaded from vmd file. So you need to pick the same vmd file on addon, if you want to import eyeball and morph motion.**    
 
 You need blender mmd tools to import a mmd model into blender:  
 [https://github.com/UuuNyaa/blender_mmd_tools](https://github.com/UuuNyaa/blender_mmd_tools)  
@@ -271,7 +272,9 @@ It will retargeting every frame of evey mapping bone's final rotation from mmd m
 
 In this way, addon won't create IK bones on Daz/CC model.  
 
-**Also, Arm Rotation rate and Arm rotation Euler plus won't work when using a MMD model as motion source.**
+**Also, Arm Rotation rate and Arm rotation Euler plus won't work when using a MMD model as motion source.**  
+
+
 
 **There is a video tutorial for this:**   
 [https://youtu.be/rttA3v_5S2I](https://youtu.be/rttA3v_5S2I)  
@@ -282,16 +285,20 @@ You can find examples from [https://easings.net/](https://easings.net/)
 
 ![](img/easing.jpg)  
 
-If your model's motion is not smooth, you can try set interpolation to "Linear". In some cases, linear is pretty smooth.  
-
 This setting won't affect camera motion. Camera motion is always linear.  
+
+With default options, this addon will convert each vmd keyframe's interpolation into a blender's most similar build-in interpolation. This works fine for most cases but not all cases. 
+
+If you want your motion on Daz/CC is the exactly as smooth as on a mmd model, there are 2 choices:  
+* You can pick a mmd model as source on this addon, so it will convert every frame, not just keyframes
+* Or, you can download [MikuMikuMoving](https://sites.google.com/site/mikumikumovingeng/), load mmd model and vmd motion into MikuMikuMoving, then export motion into a new vmd motion file. And when exporting, check "**Integrate layer**". So it will save every frame, not just keyframe. Then use that new vmd file with this addon. 
+
 
 ### Camera Rate/ Height Offset
 Daz/CC model has different model size with mmd model. So, camera motion need to be adjusted.  
 
 Default value works fine for almost every case. 
 But if your model is a CC character with high heel, you need to move camera up with 8cm.  
-
 
 # Limits
 ## Mother_Bone
@@ -514,7 +521,6 @@ To unhide those properties, go to parameter pan's option menu->"Preferences"->"S
 Then, unlock all **x, y, z rotation properties** on every bone. Only rotation properties. 
 ![unlocked_xyz_rotation_properties](img/unlocked_xyz_rotation_properties.jpg)  
 
-**Tip:**  
 This is a Daz's bad design for G3 and G8. If you need to import any pose data into Daz, you need to unlock those hidden properties.  
 
 It is insane to do this on every Daz Character. So, people already created a Daz script to unlock them.  
