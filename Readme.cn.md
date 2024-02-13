@@ -62,7 +62,7 @@ Blender市场购买、下载、更新、反馈，都是最方便的，推荐。
 
 
 ### 版本
-扩展版本：1.24.1     
+扩展版本：1.24.2     
 Blender版本：3.0或以上  
 
 # 功能
@@ -306,7 +306,7 @@ b站：
 
 如果你希望Daz/CC人模上的动作，和mmd模型上完全一样流畅，你有2个选择:  
 * 在本扩展上，选择一个mmd人模作为数据源。这样，就会转换每一帧，而不只是关键帧。
-* 或者，你可以下载 [MikuMikuMoving](https://sites.google.com/site/mikumikumovingeng/)。加载一个mmd人模和vmd动作到MikuMikuMoving，然后导出为新的vmd动作。导出的时候，勾选上"**Integrate layer**"。这样，就会导出每一帧，而不仅仅是关键帧。然后，把这个新的vmd文件，用于本扩展。(只把新vmd文件用于身体动作。表情口型还是用原始vmd文件)  
+* 或者，你可以下载 [MikuMikuMoving](https://sites.google.com/site/mikumikumovingeng/)。加载一个mmd人模和vmd动作到MikuMikuMoving，然后导出为新的vmd动作。导出的时候，勾选上"**Integrate layer**"。这样，就会导出每一帧，而不仅仅是关键帧。然后，把这个新的vmd文件，用于本扩展。**(只把新vmd文件用于身体动作。表情口型还是用原始vmd文件)**  
 
 
 ### 摄像机位置比例和高度偏移
@@ -574,6 +574,9 @@ mmd的几个眼睛闭合表情是：ウィンク, ウィンク２, まばたき,
 
 
 # 更新Log:
+## 1.24.2
+* 在使用 MMD人模作为动作源的时候，关闭Daz/CC人模上的IK
+
 ## 1.24.1
 * 在把Daz人模转换为MMD人模时，修正头部骨骼映射关系
 

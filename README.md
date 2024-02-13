@@ -44,7 +44,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.24.1     
+Addon: 1.24.2     
 Blender: 3.0 or later  
 
 # Feature
@@ -291,7 +291,7 @@ With default options, this addon will convert each vmd keyframe's interpolation 
 
 If you want your motion on Daz/CC is the exactly as smooth as on a mmd model, there are 2 choices:  
 * You can pick a mmd model as source on this addon, so it will convert every frame, not just keyframes
-* Or, you can download [MikuMikuMoving](https://sites.google.com/site/mikumikumovingeng/), load mmd model and vmd motion into MikuMikuMoving, then export motion into a new vmd motion file. And when exporting, check "**Integrate layer**". So it will save every frame, not just keyframe. Then use that new vmd file with this addon. (Only use the new vmd file for body motion. For facial morph, still use the original vmd file)
+* Or, you can download [MikuMikuMoving](https://sites.google.com/site/mikumikumovingeng/), load mmd model and vmd motion into MikuMikuMoving, then export motion into a new vmd motion file. And when exporting, check "**Integrate layer**". So it will save every frame, not just keyframe. Then use that new vmd file with this addon. **(Only use the new vmd file for body motion. For facial morph, still use the original vmd file)**
 
 
 ### Camera Rate/ Height Offset
@@ -537,6 +537,9 @@ If one day, above download link fails, you can get new link from its release vid
 
 
 # Update Log:
+## 1.24.2
+* Turn off IK on Daz/CC model when using a mmd model as motion source.
+
 ## 1.24.1
 * Fix head bone map when converting Daz model to MMD model.
 
