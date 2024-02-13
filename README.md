@@ -44,7 +44,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.24.0     
+Addon: 1.24.1     
 Blender: 3.0 or later  
 
 # Feature
@@ -537,6 +537,9 @@ If one day, above download link fails, you can get new link from its release vid
 
 
 # Update Log:
+## 1.24.1
+* Fix head bone map when converting Daz model to MMD model.
+
 ## 1.24.0
 * Add Important new feature: Create and Clear Proxy Mesh
 
