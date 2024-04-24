@@ -124,7 +124,12 @@ Blender版本：3.0或以上
 [Diffeomorphic daz importer](https://diffeomorphic.blogspot.com/)强大而复杂。但这里只需要点击几个按钮即可。  
 
 首先，你需要了解它基本使用方法，如何在Daz Studio准备一个模型用于导出给Diffeomorphic daz importer用。**中文入门教程**参见：  
-[diffeomorphic_daz_import_setup_tutorial.cn.md](diffeomorphic_daz_import_setup_tutorial.cn.md)  
+[diffeomorphic_daz_import_setup_tutorial.cn.md](diffeomorphic_daz_import_setup_tutorial.cn.md)   
+
+接着，进入Diff daz import扩展的全局设置(Global Setting)。在中间"Rigging"区域，有4个勾选框：  
+"Location Locks, Location Limits, Rotation Locks, Rotation Limits"  
+确保这几个**没有勾选**。  
+![](img/rigging.jpg)  
 
 然后，当要导入模型到blender时，你需要3个东西:
 * 合并所有骨架到人模身体骨架
@@ -498,7 +503,7 @@ b站：  [https://www.bilibili.com/video/BV1y14y187Ck/](https://www.bilibili.com
 如果是CC人模，手臂旋转比例直接使用1.0即可。  
 
 ## 动作导入后，人物不会转身，部分动作不正常
-* Diff Daz Importer扩展面板上，"**Global Setting**"中，**Rigging** 部分，是否勾选了很多选项？如果是，请去掉勾选这些选项，他们是限制人物动作幅度的。人物被限制了，当然就无法大幅运动。  
+* Diff Daz Importer扩展面板上，"**Global Setting**"中，**Rigging** 部分，是否勾选了很多选项？如果是，请去掉勾选这些选项，他们是限制人物动作幅度的。人物被限制了，当然就无法大幅运动，甚至抽搐。  
 ![](img/rigging.jpg)  
 
 

@@ -107,7 +107,12 @@ For CC4, After importing into Blender, its pose should be like this:
 [Diffeomorphic daz importer](https://diffeomorphic.blogspot.com/) is complex. But we just need click a few buttons to get it done.  
 
 You need to know the basic of how to setup and export a daz model for Diffeomorphic daz importer.
-Check its official tutorial for that.  
+Check its official tutorial for that.    
+
+Then, go to Diff Daz importer's **Global Setting**. At the "Rigging" Section, there are following check boxes:   
+"Location Locks, Location Limits, Rotation Locks, Rotation Limits"    
+Make sure they are **unchecked**.   
+![](img/rigging.jpg)   
 
 When importing model to blender, you need 3 things:
 * Merge all armatures into body's armature
