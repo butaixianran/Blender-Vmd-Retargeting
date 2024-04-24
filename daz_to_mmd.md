@@ -40,6 +40,7 @@ When exporting, **Do not** choose "Export to Blender **HD**", use the one withou
 Go to Diff daz import addon's **Global Setting**. At the "Rigging" Section, there are following check boxes:  
 "Location Locks, Location Limits, Rotation Locks, Rotation Limits"    
 Make sure they are **unchecked**.   
+![](img/rigging.jpg)  
 
 Then, use diff daz import addon's "**Easy Import Daz**" to import your character.  
 

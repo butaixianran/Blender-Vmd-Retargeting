@@ -43,6 +43,7 @@ Blender市场（推荐）：
 首先，进入diff daz import扩展的全局设置(Global Setting)。在中间"Rigging"区域，有4个勾选框：  
 "Location Locks, Location Limits, Rotation Locks, Rotation Limits"  
 这些默认应该是没有勾选的。如果你的设置中是勾选的，要去掉勾选。不然手脚运动都会被限制住。  
+![](img/rigging.jpg)  
 
 然后，使用diff daz import扩展的"**Easy Import Daz**"按钮导入人模。  
 
