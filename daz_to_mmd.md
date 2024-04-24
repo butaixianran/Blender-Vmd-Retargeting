@@ -9,6 +9,10 @@ This function will convert a daz character into a MMD character with one click. 
 # Supported model type
 * G8 and G8.1. 
 
+# Supported blender version
+* For now, blender 3.x only
+* For Blender 4.x, we need to wait Blender MMD addon supports blender 4.x.
+
 # Download and Install
 This is a part of Vmd Retargeting blender addon.   
 [https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)  

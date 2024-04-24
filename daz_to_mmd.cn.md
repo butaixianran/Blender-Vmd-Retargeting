@@ -6,10 +6,15 @@
 # 支持的模型类型
 * G8和G8.1.  
 
+# 支持的Blender版本
+* 暂时只支持Blender 3.x。
+* Blender 4.x暂不支持，等待Blender MMD扩展支持Blender 4.x。
+
 # 下载和安装
 本功能现在是Vmd Retargeting扩展的一部分。  
-微博专栏（需微博手机app访问和购买）：   
-[https://m.weibo.cn/c/wbox?id=wqh75bb2ni&appName=%E6%96%87%E7%AB%A0%E4%B8%93%E6%A0%8F&appIcon=&topNavMode=0&cid=7618111255681025&click_from=share](https://m.weibo.cn/c/wbox?id=wqh75bb2ni&appName=%E6%96%87%E7%AB%A0%E4%B8%93%E6%A0%8F&appIcon=&topNavMode=0&cid=7618111255681025&click_from=share)  
+爱发电下载(推荐)：  
+[https://afdian.net/item/44e30d86d2c311ed9a2c5254001e7c00](https://afdian.net/item/44e30d86d2c311ed9a2c5254001e7c00)  
+购买后会有站内信，内有网盘下载地址。 
 
 Blender市场：  
 [https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)   
