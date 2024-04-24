@@ -37,7 +37,11 @@ Load a G8 model. Use Diffeomorphic daz importer's script to export.
 When exporting, **Do not** choose "Export to Blender **HD**", use the one without HD in it.   
 
 #### Blender Side
-Use diff daz import addon's "**Easy Import Daz**" to import your character.  
+Go to Diff daz import addon's **Global Setting**. At the "Rigging" Section, there are following check boxes:  
+"Location Locks, Location Limits, Rotation Locks, Rotation Limits"    
+Make sure they are **unchecked**.   
+
+Then, use diff daz import addon's "**Easy Import Daz**" to import your character.  
 
 When importing, check "**Merge Rigs**", "**Face Units**", "**Visemes**".   
 

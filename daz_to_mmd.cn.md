@@ -12,11 +12,11 @@
 
 # 下载和安装
 本功能现在是Vmd Retargeting扩展的一部分。  
-爱发电下载(推荐)：  
+爱发电下载：  
 [https://afdian.net/item/44e30d86d2c311ed9a2c5254001e7c00](https://afdian.net/item/44e30d86d2c311ed9a2c5254001e7c00)  
 购买后会有站内信，内有网盘下载地址。 
 
-Blender市场：  
+Blender市场（推荐）：  
 [https://blendermarket.com/products/vmd-retargeting](https://blendermarket.com/products/vmd-retargeting)   
 
 
@@ -40,7 +40,11 @@ Blender市场：
 导出的时候，**不要**选择"Export to Blender **HD**"，用没有HD的那个菜单导出。     
 
 #### Blender一侧
-使用diff daz import扩展的"**Easy Import Daz**"按钮导入人模。  
+首先，进入diff daz import扩展的全局设置(Global Setting)。在中间"Rigging"区域，有4个勾选框：  
+"Location Locks, Location Limits, Rotation Locks, Rotation Limits"  
+这些默认应该是没有勾选的。如果你的设置中是勾选的，要去掉勾选。不然手脚运动都会被限制住。  
+
+然后，使用diff daz import扩展的"**Easy Import Daz**"按钮导入人模。  
 
 导入时，勾选："**Merge Rigs**", "**Face Units**", "**Visemes**".  
 
