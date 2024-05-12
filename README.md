@@ -25,7 +25,7 @@ Export mmd motion to Daz Studio: [https://youtu.be/FEA9hVouKFg](https://youtu.be
 [Daz Studio Setting for Importing Motion](#daz-studio-setting-for-importing-motion)[Not Mentioned In Above Video]
 
 # Bonus
-## Conver Daz Model to MMD
+## Convert Daz Model to MMD
 Check its own readme page: [Daz to MMD](daz_to_mmd.md)   
 
 ## Create Proxy Mesh For Realtime Physics
