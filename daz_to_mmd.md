@@ -24,7 +24,7 @@ There are 2 ways, pick one.
 ### Prepare Addon
 You need to install following blender addons to make this work.
 * [Blender mmd tools](https://github.com/UuuNyaa/blender_mmd_tools)
-* [Diffeomorphic daz importer](http://diffeomorphic.blogspot.com/p/daz-importer-version-16.html)
+* [Diffeomorphic daz importer](https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home)
 
 In Diffeomorphic daz importer Blender addon's global setting, right-up corner, **set material setting to use Single reused Principled Shader**. Default setting is iray shader, which won't work in this case.  
 
