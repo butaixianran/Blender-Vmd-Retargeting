@@ -4,23 +4,9 @@
 
 ## 下载
 官网：  
-[https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home](hhttps://bitbucket.org/Diffeomorphic/import_daz/wiki/Home)  
+[https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home](https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home)  
 
-直接下载地址页面：  
-[https://www.dropbox.com/s/7mj32wh3bnn4rwe/import_daz_mhx_rts_v1_7_1.zip](https://www.dropbox.com/s/7mj32wh3bnn4rwe/import_daz_mhx_rts_v1_7_1.zip)  
-
-打开后，点击页面左上角的"下载"按钮，把整个分享目录下载下来。   
-
-### Blender 4.x
-这个扩展，要用于Blender 4.x，必须下载他的最新开发版本。dropbox上的稳定版只适合Blender 3.x.   
-[https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home](https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home)   
-
-![](img/download_diff_daz_importer_source_code.jpg)  
-
-解压下载的文件，目录名字应该类似"Diffeomorphic-import_daz-xxxxxxxxxx"。   
-![](img/diff_daz_importer_rename.jpg)  
-
-重命名这个文件夹为"import_daz"，打包成新的zip文件。然后把这个新的zip文件，作为Blenderk扩展安装。这样，你就有了最新版的**diffeomorphic daz importer**，可以用于Blender 4.x。  
+点击"Stable version"的链接，前往网盘。打开后，点击页面右上角的"下载"按钮，把文件下载下来。   
 
 # 安装及使用
 ## 简述版
@@ -31,7 +17,7 @@
 5. 前往扩展面板的"Global Settings"，点击左下角"Load Root Paths"，导入之前导出的路径文件
 6. 在Daz中，保存场景为".duf"文件
 7. 点击文件菜单的"Export to Blender"，保存.dbz文件到.duf文件同名同目录下（**每次保存Daz模型，都要重新导出.dbz文件**）  
-8. Blender中，扩展面板点击"Import Daz"，导入刚才的.duf文件。  
+8. Blender中，扩展面板点击"Easy Import Daz"，导入刚才的.duf文件。  
 
 
 ## 详细版
@@ -59,7 +45,7 @@ Daz 配置完毕。
 在里面搜索："Daz"  
 勾选：`Imprt-Export: Daz(.duf, .dsf) importer`
 
-回到工作区域，按下N，打开右侧工具面板。前往："Daz Importer"面板。点击"Global Settings"按钮，打开全局设置面板。   
+回到工作区域，按下N，打开右侧工具面板。前往："Daz Setup"面板。点击"Global Settings"按钮，打开全局设置面板。   
 
 点击面板左下角的：Load Root Paths，导入之前在Daz保存的路径json文件。  
 
@@ -78,7 +64,7 @@ Blender配置完毕。
 
 前往Blender，工作区按N，前往这个扩展的面板。  
 
-点击"Import Daz"按钮，选择刚才保存的".duf"文件即可。  
+点击"Easy Import Daz"按钮，选择刚才保存的".duf"文件即可。  
 
 
 # 进阶选项
