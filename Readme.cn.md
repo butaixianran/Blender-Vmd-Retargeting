@@ -62,7 +62,7 @@ Blender市场购买、下载、更新、反馈，都是最方便的，推荐。
 
 
 ### 版本
-扩展版本：1.24.2     
+扩展版本：1.25.0     
 Blender版本：3.0或以上  
 
 # 功能
@@ -98,21 +98,23 @@ Blender版本：3.0或以上
 通过fbx文件导入的人模，cc也没问题。但daz的，本扩展将无法转换表情。  
 
 
-### 关于Blender 4.x
-"**diffeomorphic daz importer**"这个扩展，要用于Blender 4.x，必须下载他的最新开发版本。dropbox上的稳定版只适合Blender 3.x.   
+### 关于Blender 5.x
+请使用5.0.0以上版本的Diffeomorphic import_daz
 [https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home](https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home)   
 
 ![](img/download_diff_daz_importer_source_code.jpg)  
 
-解压下载的文件，目录名字应该类似"Diffeomorphic-import_daz-xxxxxxxxxx"。   
+如果目录名字类似"Diffeomorphic-import_daz-xxxxxxxxxx"，解压下载的文件，重命名这个文件夹为"import_daz"，打包成新的zip文件。然后把这个新的zip文件，作为Blenderk扩展安装。
 ![](img/diff_daz_importer_rename.jpg)  
-
-重命名这个文件夹为"import_daz"，打包成新的zip文件。然后把这个新的zip文件，作为Blenderk扩展安装。这样，你就有了最新版的**diffeomorphic daz importer**，可以用于Blender 4.x。  
-
 
 
 ### 准备CC4模型
-无须准备。但请直接从Character Creator导出人模，而不是iClone。请只导出Mesh，不带动画。  
+请直接从Character Creator导出人模，而不是iClone。请只导出Mesh，不带动画。  
+
+使用扩展 [cc_blender_tools](https://github.com/soupday/cc_blender_tools) 导入模型到Blender。  
+
+导入之前，在扩展面板的"Import"选项中，**取消勾选** 眼球、下巴、头部的Shapekey Driver。    
+![](img/cc_blender_tools_import_option.jpg) 
 
 从CC导出时，请选择A-Pose。  
 ![](img/cc3_export_setting.jpg)  
@@ -121,74 +123,62 @@ Blender版本：3.0或以上
 
 
 ### 准备Daz模型（使用Diffeomorphic Daz Importer）
-[Diffeomorphic daz importer](https://diffeomorphic.blogspot.com/)强大而复杂。但这里只需要点击几个按钮即可。  
+[Diffeomorphic import_daz](https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home)强大而复杂。但这里只需要点击几个按钮即可。  
 
-首先，你需要了解它基本使用方法，如何在Daz Studio准备一个模型用于导出给Diffeomorphic daz importer用。**中文入门教程**参见：  
+首先，你需要了解它基本使用方法，如何在Daz Studio准备一个模型用于导出给Diffeomorphic import_daz用。**中文入门教程**参见：  
 [diffeomorphic_daz_import_setup_tutorial.cn.md](diffeomorphic_daz_import_setup_tutorial.cn.md)   
 
-接着，进入Diff daz import扩展的全局设置(Global Setting)。在中间"Rigging"区域，有4个勾选框：  
+接着，进入Diff import_daz 扩展的全局设置(Global Setting)。在中间"Rigging"区域，有4个勾选框：  
 "Location Locks, Location Limits, Rotation Locks, Rotation Limits"  
 确保这几个**没有勾选**。  
 ![](img/rigging.jpg)  
 
 然后，当要导入模型到blender时，你需要3个东西:
 * 合并所有骨架到人模身体骨架
-* Face Unit 和 Viseme 的Morph变形
+* 面部表情的Morph变形
 * 让所有骨骼可以调整（Make all bone poseable）  
 
-**最简单的实现方法是，点击："Easy Import Daz"按钮**  
+**最简单的实现方法是，点击："Easy Import Daz"按钮**   
+它已经帮你勾选了"**Merge Rigs**"和"**Make All Bones Poseable**"。如果没有，就自己勾上。  
 
 #### 对于Genesis 8
-**点击"Easy Import Daz"按钮，不是"Import Daz"按钮。**  
-**点击"Easy Import Daz"按钮，不是"Import Daz"按钮。**  
-
-默认，它已经帮你勾选了"**Merge Rigs**"和"**Make All Bones Poseable**"。如果没有，就自己勾上。
-
-然后，你只需勾选："**Face Units**" 和 "**Visemes**"，点击导入即可。  
-
-准备完毕。  
-
+勾选："**Face Units**" 和 "**Visemes**"，点击导入。  
 
 #### 对于Genesis 9
-你需要安装diff daz importer **1.6.2以上版本**，才能导入Genesis 9。   
-
-如果你的Blender中已经安装了1.6.1版本，你必须先删除1.6.1版本，重新打开Blender，再安装1.6.2版本。安装之后，你要重新设置Global Setting中的所有选项。因为新版本中，很多文件和设置都发生了变化。   
-
-然后，点击"Easy Import Daz"按钮。默认，它已经帮你勾选了"Merge Rigs"和"Make All Bones Poseable"。所以，你只需勾选："**FACS**"，然后点击导入即可。  
+勾选："**FACS**"，点击导入。  
 
 **注意：Genesis 9改变了 扭曲骨骼的结构，扭曲骨骼现在不在手臂中。使得MMD的扭曲骨骼，无法映射到手臂中。所以，任何使用了扭曲骨骼的mmd动作，都将无法转换到Genesis 9。你可以尝试使用一个MMD人模作为动作源的方式转换。但不保证效果。**  
 
 
-### 准备Daz模型（使用Daz to Blender桥接插件Blender 3.x更新版，以下简称DFB）
-这个功能，是给能够自学使用DFB的用户使用的。
+### 准备Daz模型（使用Daz to Blender桥接插件Blender，以下简称DFB）
+这个功能，是给非常熟悉Daz和Blender，且能够自学DFB的用户使用的。强烈建议对Daz和Blender不够熟悉的用户，选择Diffeomorphic import_daz。
 
-这个版本的DFB，不是Daz官方的DTB 2022。而是本人基于官方版本，继续修改的版本，修复了官方的大量bug，添加很多方便的功能和选项。
+这个版本的DFB，不是Daz官方的DTB 2022。而是本人基于官方版本，继续修改的版本，修复了官方的大量bug，添加很多方便的功能和选项。只支持Blender 3.x-4.x，不支持Blender 5
 [https://github.com/butaixianran/DazToBlender](https://github.com/butaixianran/DazToBlender)  
 
 这个DFB版本的最大好处是，morph就在身体模型的shape key上且没有driver。而且，材质也是标准Principled材质。  
 
 因此，Daz模型导入mmd的动作后，可以连同动作和材质一起，从Blender导出到任何其他3D软件。包括游戏引擎。  
 
-建议对Daz和Blender不够熟悉的用户选择Diffeomorphic Daz Importer。这个是给非常熟悉Daz和Blender的人士使用的。  
 
 **在安装DTB之后:**   
 * Daz中，导出人模时，勾选"**Include Morphs**"来导出morph
 * 进入"**choose morphs**"，点击左下角**Genesis 8 Facial Morphs** 和 **Visemes**按钮，把这些morph添加到输出列表。
 * 输出人模
-* 在Blender中，在DTB扩展面板上，点击导入，完成。
+* 在Blender中，在DFB扩展面板上，点击导入，完成。
 
 
 ### 准备Daz模型（使用官方Daz to Blender 2022，以下简称DTB 2022）
-官方DTB 2022已经发布了，但是包含了所有当年的老旧问题和bug，都没有修复。所以我们推荐不要使用这个官方插件。   
+官方重新开发的DTB已经发布了，但是包含了所有当年的老旧问题和bug，都没有修复。所以不推荐这个官方插件。   
 
-这个DTB 2022，和几年前的老版本相比，只是重写了Daz端，把脚本语言的代码，换成了C++代码。Blender一侧，几乎没有改动。大量问题隐藏其中，估计很久都不会修复。  
+这个DTB，和几年前的老版本相比，只是重写了Daz端，把脚本语言，换成了C++。Blender一侧，没有什么改动。大量问题隐藏其中，可能永远都不会修复。顺便一提，那个写出了超多bug老版本的人，去了EA。  
 
-目前，这个新的官方版本，唯一的好处是安装特别简单。但是其他方面，远不如Diffeomorphic Daz Importer好。因此，只适合新手和浅层使用。    
+目前，这个新的官方版本，唯一的好处是安装特别简单。但是其他方面，远不如Diffeomorphic import_daz。    
 
 你需要在这个帖子中了解如何安装和使用它:  
 [https://www.daz3d.com/forums/discussion/572806/official-daztoblender-bridge-2022-what-s-new-and-how-to-use-it](https://www.daz3d.com/forums/discussion/572806/official-daztoblender-bridge-2022-what-s-new-and-how-to-use-it)  
 
-**安装DTB 2022之后:**   
+**安装DTB之后:**   
 * 在Daz中, 导出人模时, 勾选 "**Export Morphs**"
 * 打开 "**choose morphs**" 对话框, 从左侧 "Pose Controls" 分类下, 添加 **Eyes**, **Mouth**, **Brow**  和 **Visemes** 表情到"**Morphs to Export**" 列表。  
 * 点击导出  
@@ -199,9 +189,9 @@ Blender版本：3.0或以上
 ## 准备一个vmd文件
 无须额外操作。  
 
-万一碰到某个vmd文件导入后，人物像跳机器舞一样，从一个动作跳到另一个动作。说明这个vmd文件，没有遵守vmd文件格式规范。要么是非常老旧的vmd文件，要么是什么第三方软件生成的vmd文件。
+万一碰到某个vmd文件导入后，人物像跳机器舞一样，从一个动作跳到另一个动作。说明这个vmd文件，没有遵守vmd文件格式规范。要么是非常老旧的vmd文件，要么是第三方软件生成的vmd文件。
 
-对于这种罕见情况，只需在MMD中，读取一个TDA模型，加载这个vmd动作，再另存为一个新vmd文件。这个新vmd文件，将变成规范的vmd格式，本扩展即可读取。
+对于这种罕见情况，只需在MMD中，读取一个**TDA模型**，加载这个vmd动作，再另存为一个新vmd文件。这个新vmd文件，将变成规范的vmd格式，本扩展即可读取。
 
 ## 导入vmd动作
 相当简单：
@@ -210,7 +200,7 @@ Blender版本：3.0或以上
 * 选择人模类型
 * 勾选要导入的部分
 * 如果这个动作没有使用IK，就去掉勾选IK
-* 点击 "Execute", 完成.
+* 点击 "执行", 完成.
 
 每个部分，都会导入为一个action，并包装为一个strip，放到一条新轨道上。可在NLA(Nonlinear Animation)中查看  
 
@@ -238,7 +228,7 @@ Blender版本：3.0或以上
 目前，我们仅处理：center骨骼和groove骨骼  
 
 #### 手臂旋转比例
-Daz/CC人模的手长和mmd人模不同。因此，如果mmd人模将手放到胸口，在Daz/CC人模上手必然就会穿入身体。  
+Daz/CC人模的手长和mmd人模不同。因此，如果mmd人模将手放到胸口，在Daz/CC人模，手必然就会穿入身体。  
 
 把上下手臂旋转比例都设为0.8一般能够解决这个问题。  
 
@@ -270,12 +260,12 @@ Daz/CC人模的手长和mmd人模不同。因此，如果mmd人模将手放到�
 #### 选择一个mmd模型作为数据源
 如果你选择了一个mmd模型作为数据源，本扩展在导入身体运动时，就会忽视你选择的vmd文件，而从你指定的mmd模型上转换身体运动。  
 
-眼球和表情口型，还是会从vmd文件读取。  
+眼球和表情口型，还是会从你选择的vmd文件读取。  
 
 你需要blender mmd tools来导入一个mmd模型到blender：  
 [https://github.com/UuuNyaa/blender_mmd_tools](https://github.com/UuuNyaa/blender_mmd_tools)  
 
-**导入mmd模型时，取消勾选骨骼重命名！** 我们使用原日文骨骼名称来映射骨骼。    
+**导入mmd模型时，取消勾选骨骼重命名！** 我们使用日文骨骼名称来映射骨骼。    
 ![](img/uncheck_rename_bones.jpg)  
 
 **然后，用mmd tools导入vmd动作到你的mmd模型，而不是用本扩展。** 方法如下：  
@@ -285,7 +275,7 @@ Daz/CC人模的手长和mmd人模不同。因此，如果mmd人模将手放到�
 * **注意，不要选择它的空父亲对象**    
 ![](img/mmd_armature.jpg)  
 
-最后，确保当前选择的骨架是Daz或CC模型，点击"Execute"。  
+最后，确保当前选择的骨架是Daz或CC模型，点击"执行"。  
 
 这样就会转换映射过的骨骼上的每一帧，而不只是关键帧，所以速度会非常慢。  
 
@@ -307,7 +297,7 @@ b站：
 
 这个设置不会影响摄像机。摄像机运动永远是线性的。  
 
-默认选项下，本扩展会把vmd的每个关键帧曲线，转换为最接近的Blender内置的关键帧曲线。大部分情况都有合理的效果，但并不是所有情况。
+默认选项下，本扩展会把vmd的每个关键帧曲线，转换为最接近的Blender内置关键帧曲线。大部分情况都有合理的效果。
 
 如果你希望Daz/CC人模上的动作，和mmd模型上完全一样流畅，你有2个选择:  
 * 在本扩展上，选择一个mmd人模作为数据源。这样，就会转换每一帧，而不只是关键帧。
@@ -319,6 +309,8 @@ Daz/CC人模和mmd模型的尺寸不同。因此，摄像机需要调整
 
 默认值大部分时候工作的很好。  
 但如果你的CC人模穿了高跟鞋，你可能需要往上移动摄像机高度8厘米。  
+
+当然，你也可以直接使用 Blender mmd tools导入一个vmd摄影机动画。
 
 
 # 局限性
@@ -355,9 +347,9 @@ mmd模型上，有个叫"全ての親"的骨骼。任何vmd动作，都不应该
 mmd模型有3个肩膀骨骼：肩, 肩P, 肩C。本扩展无视了肩P和肩C。  
 
 ## 扭曲骨骼(Twist Bone)
-mmd模型也带有扭曲骨骼，只有很少的vmd动作会使用。对于Daz人模，这种骨骼可以比较好的转换。但对于CC人模，由于CC扭曲骨骼机制不一样，难以很好的转换。  
+mmd模型也带有扭曲骨骼，只有很少的vmd动作会使用。对于Daz G8/8.1人模，这种骨骼可以比较好的转换。但对于CC和Daz G9人模，由于扭曲骨骼机制完全不一样，难以转换。  
 
-因此，如果你使用的vmd动作，使用了扭曲骨骼，那么你最好使用Daz 模型。  
+因此，如果你使用的vmd动作，使用了扭曲骨骼，那么你最好使用Daz G8/8.1模型。  
 
 目前为止，我知道的仅有的2个使用扭曲骨骼的作者是：Natsumi San 和 Fairy Tale。  
 
@@ -579,6 +571,10 @@ mmd的几个眼睛闭合表情是：ウィンク, ウィンク２, まばたき,
 
 
 # 更新Log:
+## 1.25.0
+* 尝试支持Blender 5
+* 隐藏"清除动画"按钮。因为在Blender 5下还存在问题。
+
 ## 1.24.2
 * 在使用 MMD人模作为动作源的时候，关闭Daz/CC人模上的IK
 

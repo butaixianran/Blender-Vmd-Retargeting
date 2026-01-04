@@ -44,7 +44,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.24.2     
+Addon: 1.25.0     
 Blender: 3.0 or later  
 
 # Feature
@@ -78,78 +78,73 @@ This addon supports:
 
 For characters imported by fbx, cc4 model works too. But for daz model, facial and viseme motion won't work.  
 
-### For Blender 4.x
-To make addon "**diffeomorphic daz importer**" work with Blend 4.x, you need download its latest Development version. The stable version on dropbox only works for Blender 3.x.   
+### For Blender 5.x
+You need download version 5.0.0+ of "**diffeomorphic import_daz**" to work with Blender 5.x.   
 [https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home](https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home)  
 
 ![](img/download_diff_daz_importer_source_code.jpg)  
 
-Then unzip the downloaded file, its folder name should be something like "Diffeomorphic-import_daz-xxxxxxxxxx".   
-![](img/diff_daz_importer_rename.jpg)  
-
-
-Rename this folder to "import_daz", zip it into a new `.zip` file. Install this new zip file as Blender addon.  
-
-Now, you have the latest **diffeomorphic daz importer** which works for Blender 4.x.  
+If its file name is something like "Diffeomorphic-import_daz-xxxxxxxxxx". Then unzip the downloaded file, rename the folder into "import_daz", zip it into a new `.zip` file. Install this new zip file as Blender addon.   
+![](img/diff_daz_importer_rename.jpg)   
 
 ### Prepare CC4 model
-**No preparing is needed.**   
-Just export it from Character Creator, not from iClone, and Mesh only, no animation.  
+**Export you Character from Character Creator**, not from iClone, and **Mesh only, no animation**.  
+
+Use Blender addon [cc_blender_tools](https://github.com/soupday/cc_blender_tools) to import it into Blender.  
+
+Before import, go to "Import options" at addon panel, **uncheck** shape key drivers for Eyes, Jaw and Head.    
+![](img/cc_blender_tools_import_option.jpg)  
+
 
 For CC4, when exporting, choose A-Pose  
 ![](img/cc3_export_setting.jpg)    
 
-For CC4, After importing into Blender, its pose should be like this:    
+After importing to Blender, its pose should be like this:    
 ![](img/cc3_def.jpg)  
 
 
-### Prepare Daz model(with Diffeomorphic Daz Importer)
-[Diffeomorphic daz importer](https://diffeomorphic.blogspot.com/) is complex. But we just need click a few buttons to get it done.  
+### Prepare Daz model(with Diffeomorphic import_daz)
+[Diffeomorphic import_daz](https://bitbucket.org/Diffeomorphic/import_daz/wiki/Home) is complex. But we just need click a few buttons to get it done.  
 
-You need to know the basic of how to setup and export a daz model for Diffeomorphic daz importer.
+You need to know the basic of how to setup and export a daz model for Diffeomorphic import_daz.
 Check its official tutorial for that.    
 
-Then, go to Diff Daz importer's **Global Setting**. At the "Rigging" Section, there are following check boxes:   
+Then, go to its **Global Setting**. At the "Rigging" Section, there are following check boxes:   
 "Location Locks, Location Limits, Rotation Locks, Rotation Limits"    
 Make sure they are **unchecked**.   
 ![](img/rigging.jpg)   
 
 When importing model to blender, you need 3 things:
 * Merge all armatures into body's armature
-* Facial morph and Viseme morph
+* Morphs: **For G8/8.1, it will be Facial and Viseme; For G9, it will be FACS**.
 * Make all bones poseable.  
 
-**The easiest way for these, is importing a character by clicking "Easy Import Daz" button.**  
+**The easiest way to do this, is clicking "Easy Import Daz" button.**  
 
 #### For Genesis 8
-**Click "Easy Import Daz" button, not the "Import Daz" button**  
-**Click "Easy Import Daz" button, not the "Import Daz" button**  
+**Click "Easy Import Daz" button**  
 
 by default, it already checked "**Merge Rigs**" and "**Make All Bones poseable**" for you. If not, check them.  
-Then, you just need to check "**Face Units**" and "**Visemes**", then import.  
+You just need to check "**Face Units**" and "**Visemes**", then import.  
 
-Now, your daz model is prepared.  
+Done.  
 
 #### For Genesis 9
-You need diff daz importer **version 1.6.2+** to import a Daz Genesis 9 character.   
+**Click "Easy Import Daz" button**  
 
-If you already has diff daz importer ver1.6.1 in your Blender, you have to remove it and re-open Blender, before installing version 1.6.2. Then re-config the Global setting after installing version 1.6.2. A lot of files and settings are changed.    
+by default, it already checked "**Merge Rigs**" and "**Make All Bones poseable**" for you. If not, check them.  
+You need to check "**FACS**", and click import.  
 
-Click "Easy Import Daz" button. By default, it already checked "Merge Rigs" and "Make All Bones Poseable" for you.  
-So, you just need to check "FACS", then import.  
-
-Now, your daz model is prepared.  
+Done.  
 
 **Be noticed, Genesis 9's twist bones are no longer in arms. Which makes MMD's twist bones can not map into Genesis 9's arm. So, any vmd motion uses twist bones, can not be converted to Genesis 9.**  
 
 
 
+### Prepare Daz model (with Daz For Blender Bridge(DFB) )
+If you are not really familiar with Daz and Blender, just choose the "**Diffeomorphic import_daz**", that's way better.  
 
-
-### Prepare Daz model (with Daz to Blender Bridge(DTB) for Blender 3.x)
-This is for those who know how to use DTB. If you are not familiar with Daz or Blender, just choose the "**Diffeomorphic Daz Importer**" way.  
-
-This one, is not the Official DTB 2022. It is a version updated by me, which works on Blender 3.x, fixed most issues in the Official DTB, and added a lot of useful options.  
+This one, is not the Official DTB 2022. It is a version updated by me, which works on Blender 3.0-4.x, fixed most issues in the Official DTB, and added a lot of useful options.  
 [https://github.com/butaixianran/DazToBlender](https://github.com/butaixianran/DazToBlender)  
 
 The best part of this one is, morph is on body mesh's shape key without driver. Also, there is no complex shader in materials, only standard Principled shader.   
@@ -160,18 +155,18 @@ The best part of this one is, morph is on body mesh's shape key without driver. 
 * In Daz, when exporting your model, check "**Include Morphs**"
 * Go to "**choose morphs**" dialog window, click **Genesis 8 Facial Morphs** and **Visemes** Buttons on the left to add those morphs into export list.  
 * Export.  
-* In Blender, on DTB's panel, click import, Done.
+* In Blender, on DFB's panel, click import, Done.
 
 
-### Prepare Daz model (with Official Daz to Blender Bridge(DTB) 2022)
-Official DTB 2022 is released, with many old bugs and problems in it, never fixed. So, we really recommend you do not use this addon for now.  
+### Prepare Daz model (with Official Daz to Blender Bridge(DTB))
+Official DTB is released, with many old bugs and problems in it, never fixed. So, we really recommend you do not use this addon.  
 
-For now, the only good part for Official DTB 2022 is, it is very easy to install. But it is not as good as the other 2 choices.    
+The only good part for Official DTB is, it is very easy to install. But it is not as good as **Diffeomorphic import_daz**.    
 
 You can learn it here about how to install or use it:  
 [https://www.daz3d.com/forums/discussion/572806/official-daztoblender-bridge-2022-what-s-new-and-how-to-use-it](https://www.daz3d.com/forums/discussion/572806/official-daztoblender-bridge-2022-what-s-new-and-how-to-use-it)  
 
-**After you installed DTB 2022:**   
+**After you installed DTB:**   
 * In Daz, when exporting your model, check "**Export Morphs**"
 * Go to "**choose morphs**" dialog window, From "Pose Controls" category, add **Eyes**, **Mouth**, **Brow**  and **Visemes** morphs to the "**Morphs to Export**" list.  
 * Export.  
@@ -185,26 +180,26 @@ But, there are some very old vmd files don't use normal vmd file structure.
 
 If you imported a vmd file like this onto Daz or CC, your model gonna jump from one pose to another, like a robot dance.  
 
-For those vmd files, just open MikuMikuDance, load a TDA model, and load this vmd file on it, then re-export it as a new vmd file.  
+For those vmd files, just open MikuMikuDance, load a **TDA model**, and load this vmd file on it, then re-export it as a new vmd file.  
 
 This new vmd file will work.  
 
 
 ## Import vmd
-It is pretty simple:
+It is pretty simple: 
 * Select your character's armature
 * Select a vmd file
 * **Select model type**
 * Check which part you'd like to import
 * If this vmd motion doesn't use IK, then uncheck IK
-* **Make sure** selected object is Daz or CC model, click "Execute", done.
+* **Make sure** you selected object is Daz or CC model's armature, click "Execute", done.
 
-Each part will be an action wrapped into a strip on a track, in NLA (Nonlinear Animation).  
+Each part of animation, will be an action wrapped into a strip on a track, in NLA (Nonlinear Animation) panel.  
 So, it won't mess up your timeline, and you can move or delete them like clips.
 
 
 ## Options
-Move your mouse onto those operators (button, checkbox or list), will display a useful tooltip.  
+Move your mouse onto those operators (button, checkbox or list), will show a useful tooltip.  
 
 High Heel Tooltip:  
 ![tooltip_high_heel](img/tooltip_high_heel.jpg)  
@@ -225,14 +220,14 @@ For now, we only do this for: center and groove bone.
 
 
 #### Arm rotation rate
-Daz/CC has different arm length with mmd model. So, if mmd model puts hands on chest, they always poke into body when on Daz/CC model.
+Daz/CC has different arm length from mmd model. So, if a mmd model puts hands on chest, they always poke into body when a Daz/CC model try to do the same.
 
 Set upperarm and forearm rotation rate to 0.8 will fix that in most cases.  
 
 But if you are using CC model, you better set it back to 1.0.   
 
 ### Arm rotation Euler plus
-Works on forearms only. Use this with **Arm rotation rate** together to deal with hand poking issue.  
+Works on forearms only. Use this with **Arm rotation rate** together to deal with poking issue of hands.  
 Default value:   
 >Upperarm rotation rate: 0.9   
 >Forearm rotation rate: 1.0   
@@ -258,15 +253,15 @@ If you picked a mmd model, addon will ignore body motion from vmd file and retar
 **Eyeball and morph motion are still loaded from vmd file. So you need to pick the same vmd file on addon, if you want to import eyeball and morph motion.**    
 
 You need blender mmd tools to import a mmd model into blender:  
-[https://github.com/UuuNyaa/blender_mmd_tools](https://github.com/UuuNyaa/blender_mmd_tools)  
+[https://github.com/MMD-Blender/blender_mmd_tools](https://github.com/MMD-Blender/blender_mmd_tools)  
 
 **When importing a mmd model, uncheck rename bones!** We use its japanese bone name to map bones.    
 ![](img/uncheck_rename_bones.jpg)  
 
-After importing mmd model, also import your vmd motion onto this mmd model **by using mmd tools, not this addon!**   
+After importing mmd model, also import vmd motion onto this mmd model (**by using mmd tools**)   
 
 Which is: select your mmd model, go to `File menu->Import->Vmd file`, and select a vmd file.  
-Now, your mmd model should has a motion on it.   
+Now, your mmd model has a motion on it.   
 
 Then select your Daz or CC model, use the pick tool of "Source" from this addon's panel, **pick the armature of your mmd model. Not the empty parent!**    
 ![](img/mmd_armature.jpg)  
@@ -295,8 +290,8 @@ This setting won't affect camera motion. Camera motion is always linear.
 With default options, this addon will convert each vmd keyframe's interpolation into a blender's most similar build-in interpolation. This works fine for most cases but not all cases. 
 
 If you want your motion on Daz/CC is the exactly as smooth as on a mmd model, there are 2 choices:  
-* You can pick a mmd model as source on this addon, so it will convert every frame, not just keyframes
-* Or, you can download [MikuMikuMoving](https://sites.google.com/site/mikumikumovingeng/), load mmd model and vmd motion into MikuMikuMoving, then export motion into a new vmd motion file. And when exporting, check "**Integrate layer**". So it will save every frame, not just keyframe. Then use that new vmd file with this addon. **(Only use the new vmd file for body motion. For facial morph, still use the original vmd file)**
+* You can pick a mmd model as source on this addon, so it will convert every frame, not just keyframes  
+* Or, you can download [MikuMikuMoving](https://sites.google.com/site/mikumikumovingeng/), load mmd model and vmd motion into MikuMikuMoving, then export motion into a new vmd motion file. And when exporting, check "**Integrate layer**". So it will save every frame, not just keyframes. Then use that new vmd file with this addon. **(Only use the new vmd file for body motion. For facial morph, still use the original vmd file)**
 
 
 ### Camera Rate/ Height Offset
@@ -305,15 +300,17 @@ Daz/CC model has different model size with mmd model. So, camera motion need to 
 Default value works fine for almost every case. 
 But if your model is a CC character with high heel, you need to move camera up with 8cm.  
 
+Also, if you installed Blender addon mmd tools, it can import a vmd camera motion too.  
+
 # Limits
 ## Mother_Bone
-On a mmd model, there is a bone called "全ての親", which means mother bone in English. A vmd motion should never uses this bone. It is designed for final user adjusts model's position after loading a vmd motion. In Blender, it is just like moving the whole object, not a bone.  
+On a mmd model, there is a bone called "全ての親", which means mother bone in English. A vmd motion should never uses this bone. It is designed for final user to adjust model's position after loading a vmd motion. In Blender, it is the samething as moving the whole object.  
 
 Since no vmd motion should use it, this mother bone is not handled in this addon.  
 
-But, there is a few vmd motion creators ignore this rule. They just uses mother bone as another hip bone. Which makes it into an issue in mmd world.   
+But, there is a few vmd motion creators ignore this rule. They just uses mother bone as another hip bone. Which is an issue in mmd world.   
 
-So, in mmd world, there is a free tool, to convert mother bone's motion into body bones, called "Motion Supporter" tool. If you have a vmd motion uses mother bone, you need to use this tool, do the conversion, then uses the converted motion with this addon.  
+So, in mmd world, there is a free tool, to convert mother bone's motion into body bones, called "Motion Supporter" tool. If you have a vmd motion uses mother bone, you need to use this tool to do the conversion, then uses the converted motion with this addon.  
 
 **MotionSupporter's How To**  
 * Download: [https://bowlroll.net/file/233713](https://bowlroll.net/file/233713)  
@@ -336,15 +333,15 @@ So, in mmd world, there is a free tool, to convert mother bone's motion into bod
 
 
 ## Shoulder Rotation
-There are 3 shoulder bones on a mmd model: shoulder, shoulder P, shoulder C. This addon ignored shoulder P and shoulder C.  
+There are 3 shoulder bones on a mmd model: shoulder, shoulder P, shoulder C. This addon ignores shoulder P and shoulder C.  
 
 
 ## Twist Bone
-MMD model also comes with twist bones, only a few vmd motions use them. With Daz Model, this can be converted nicely. But CC model's twist bones work in a different way and won't be converted well.   
+MMD model also comes with twist bones. With Daz G8, this can be converted nicely. But CC and Daz G9's twist bones work in a different way and won't be converted well.   
 
-So, if you are using a vmd file come with motion on twist bones, you better use Daz model.  
+So, if you are using a vmd file come with motion on twist bones, you better use Daz G8/8.1 model.  
 
-So far as I know, there are only 2 vmd motion creators use twist bones. They are: Natsumi San and Fairy Tale.   
+So far as I know, there are only 2 vmd motion creators use twist bones. They are Natsumi San and Fairy Tale.   
 
 ## Prop motion
 This addon won't handle that.
@@ -542,6 +539,10 @@ If one day, above download link fails, you can get new link from its release vid
 
 
 # Update Log:
+## 1.25.0
+* Try to support Blender 5
+* Hide "Clear Animation" button for now, which does not work well with Blender 5
+
 ## 1.24.2
 * Turn off IK on Daz/CC model when using a mmd model as motion source.
 
