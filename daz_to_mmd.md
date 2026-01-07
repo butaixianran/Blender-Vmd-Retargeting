@@ -3,6 +3,11 @@
 # Language
 [中文](daz_to_mmd.cn.md)  
 
+# This function no longer works
+Unfortunately, this function no longer works.  
+
+This function is based on: Diffeomorphic import_daz, blender mmd tools and blender itself. But all of those 3 have too many break changes. Especially for Diffeomorphic import_daz, which changes material's structure with non-standard nodes, also removed "Convert driver to shapekey" function from its latest version.  
+
 # Daz to MMD
 This function will convert a daz character into a MMD character with one click. Then you can export it into .pmx file and use it in MMD.  
 
