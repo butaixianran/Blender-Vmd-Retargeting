@@ -142,7 +142,11 @@ Blender版本：3.0或以上
 它已经帮你勾选了"**Merge Rigs**"和"**Make All Bones Poseable**"。如果没有，就自己勾上。  
 
 #### 对于Genesis 8
+* 对于Diffeomorphic import_daz 5.0版本：
 勾选："**Face Units**" 和 "**Visemes**"，点击导入。  
+
+* 对于Diffeomorphic import_daz 5.0之后的最新开发版本
+勾选："**Head**"，点击导入。  
 
 #### 对于Genesis 9
 勾选："**FACS**"，点击导入。  

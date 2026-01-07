@@ -119,21 +119,20 @@ When importing model to blender, you need 3 things:
 * Morphs: **For G8/8.1, it will be Facial and Viseme; For G9, it will be FACS**.
 * Make all bones poseable.  
 
-**The easiest way to do this, is clicking "Easy Import Daz" button.**  
+**The easiest way to do this, is clicking "Easy Import Daz" button.**   
+by default, it already checked "**Merge Rigs**" and "**Make All Bones poseable**" for you. If not, check them.  
 
 #### For Genesis 8
-**Click "Easy Import Daz" button**  
+* For Diffeomorphic import_daz 5.0 or earlier
+Check "**Face Units**" and "**Visemes**", then import.  
 
-by default, it already checked "**Merge Rigs**" and "**Make All Bones poseable**" for you. If not, check them.  
-You just need to check "**Face Units**" and "**Visemes**", then import.  
+* For Diffeomorphic import_daz 5.0+ or development version.  
+Check "**Head**", then import.  
 
 Done.  
 
 #### For Genesis 9
-**Click "Easy Import Daz" button**  
-
-by default, it already checked "**Merge Rigs**" and "**Make All Bones poseable**" for you. If not, check them.  
-You need to check "**FACS**", and click import.  
+Check "**FACS**", and click import.  
 
 Done.  
 
