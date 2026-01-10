@@ -47,7 +47,7 @@ This github repo is for issues and translation.
 [https://github.com/butaixianran/Blender-Vmd-Retargeting](https://github.com/butaixianran/Blender-Vmd-Retargeting)
 
 ### Version
-Addon: 1.25.0     
+Addon: 1.25.1     
 Blender: 3.0 or later  
 
 # Feature
@@ -63,8 +63,8 @@ Blender: 3.0 or later
 * (**Bonus**) [Convert Daz model to MMD](daz_to_mmd.md)
 
 # Install
-* Install the .zip file you get from online shop.  
-* Search "Vmd retargeting" in your addon list and enable it
+* Install the .zip file you get from online shop in Blender. Be noticed, Blender has addon and extension panel, they are different  
+* Search "Vmd retargeting" in your addon list and enable it  
 * In viewport, press "N" to display tool panels, select "Vmd Retarget" panel  
 
 If you are new to blender and don't know how to install a blender addon, search: "blender install addon" in google.  
@@ -541,6 +541,10 @@ If one day, above download link fails, you can get new link from its release vid
 
 
 # Update Log:
+## 1.25.1
+* Offer extension version
+* Fix a morph name bug caused by daz_importer addon's new name
+
 ## 1.25.0
 * Try to support Blender 5
 * Hide "Clear Animation" button for now, which does not work well with Blender 5
